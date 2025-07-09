@@ -50,7 +50,12 @@
       margin: 0.5rem 0;
     }
 
-    .product a {
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .product a.button {
       display: inline-block;
       margin-top: 0.5rem;
       padding: 0.5rem 1rem;
@@ -60,15 +65,13 @@
       border-radius: 4px;
     }
 
-    .back-button {
-      display: inline-block;
-      margin: 1rem;
-      padding: 0.5rem 1rem;
-      background: #2196f3;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
+    .back-link {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
       font-weight: bold;
+      text-decoration: none;
+      color: #007BFF;
     }
 
     .footer {
@@ -81,8 +84,6 @@
 </head>
 
 <body>
-  <a href="index.html" class="back-button">← Go Back</a>
-
   <header>
     <h1>Household Deals</h1>
     <p>Best household picks for your home</p>
@@ -93,9 +94,12 @@
     <div class="product">
       <img src="https://m.media-amazon.com/images/I/91v4Ny7QavL._SX569_.jpg" alt="Ganesha Statue">
       <h2>Ganesha Statue</h2>
-      <!--<p>Compact, lightweight, and perfect for home and office use.</p>-->
-      <a href="https://amzn.to/3TZYDTl" target="_blank">Buy Now</a>
+      <p>Beautiful and elegant idol for decor or gifting.</p>
+      <a href="https://amzn.to/3TZYDTl" class="button" target="_blank">Buy Now</a>
     </div>
+
+    <!-- Back to Home -->
+    <a href="index.html" class="back-link">← Back to Home</a>
   </div>
 
   <div class="footer">

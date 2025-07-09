@@ -21,17 +21,6 @@
       text-align: center;
     }
 
-    .back-button {
-      display: inline-block;
-      margin: 1rem;
-      padding: 0.5rem 1rem;
-      background: #2196f3;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-
     .container {
       padding: 1rem;
       max-width: 800px;
@@ -56,7 +45,12 @@
       margin: 0.5rem 0;
     }
 
-    .product a {
+    .product p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .product a.button {
       display: inline-block;
       margin-top: 0.5rem;
       padding: 0.5rem 1rem;
@@ -64,6 +58,15 @@
       color: white;
       text-decoration: none;
       border-radius: 4px;
+    }
+
+    .back-link {
+      display: block;
+      margin: 1rem 0;
+      text-align: center;
+      font-weight: bold;
+      text-decoration: none;
+      color: #007BFF;
     }
 
     .footer {
@@ -76,23 +79,22 @@
 </head>
 
 <body>
-  <a href="index.html" class="back-button">← Go Back</a>
-
   <header>
     <h1>Other Category Deals</h1>
     <p>Gadgets, office supplies, and more!</p>
   </header>
 
   <div class="container">
-    <!-- Product 1 -->
+    <!-- Product -->
     <div class="product">
       <img src="https://m.media-amazon.com/images/I/41kl3XMf+hL._SX300_SY300_.jpg" alt="7pcs Set Travel Organizer">
       <h2>7pcs Set Travel Organizer</h2>
-      <a href="https://amzn.to/3GqXvoO" target="_blank">Buy Now</a>
+      <p>Organize your travel items smartly with this 7-piece set.</p>
+      <a href="https://amzn.to/3GqXvoO" class="button" target="_blank">Buy Now</a>
     </div>
 
-    <!-- Product 2 -->
-
+    <!-- Back to home -->
+    <a href="index.html" class="back-link">← Back to Home</a>
   </div>
 
   <div class="footer">
