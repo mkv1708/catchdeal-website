@@ -1,115 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CatchDeal.in - Best Daily Deals</title>
+  <title>CatchDeal.in - Categories</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: #f9f9f9;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background: #ff5722;
-      color: white;
-      padding: 1rem;
       text-align: center;
+      padding: 2rem;
     }
 
     h1 {
-      margin: 0;
-      font-size: 2rem;
+      color: #ff5722;
+      font-size: 2.5rem;
     }
 
-    .container {
-      padding: 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .category-title {
-      font-size: 1.5rem;
+    .categories {
       margin-top: 2rem;
-      color: #444;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
     }
 
-    .product {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .product img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-
-    .product h2 {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-    }
-
-    .product a {
+    .categories a {
       display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
       background: #28a745;
       color: white;
+      padding: 1rem 2rem;
+      margin: 1rem;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 4px;
+      font-size: 1.2rem;
     }
 
     .footer {
-      text-align: center;
-      font-size: 0.9rem;
+      margin-top: 3rem;
       color: #777;
-      padding: 1rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>CatchDeal.in</h1>
-    <p>Top Trending Deals You Can't Miss!</p>
-  </header>
+  <h1>CatchDeal.in</h1>
+  <p>Select a category to explore deals</p>
 
-  <div class="container">
-    <!-- Category: Others -->
-    <div class="category-title">🧰 Others</div>
-
-    <!-- Product 1 -->
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/81dMpyW1cwL._SX569_.jpg" alt="Product 1">
-      <h2>Ganesh Idol for Car Dashboard</h2>
-      <p>Grab it now before the price goes up!</p>
-      <a href="https://amzn.to/3GqXvoO" target="_blank">Buy Now</a>
-    </div>
-
-    <!-- Category: Household -->
-    <div class="category-title">🏠 Household</div>
-
-    <!-- Product 2 -->
-    <div class="product">
-      <img src="https://m.media-amazon.com/images/I/71fWQ8x3sVL._SY450_.jpg" alt="Product 2">
-      <h2>Large Capacity Travel Organizer Bag</h2>
-      <p>Limited-time offer!</p>
-      <a href="https://amzn.to/407J5AF" target="_blank">Buy Now</a>
-    </div>
+  <div class="categories">
+    <a href="household.html">Household</a>
+    <a href="others.html">Others</a>
   </div>
 
-  <div class="footer">
-    &copy; 2025 CatchDeal.in | All rights reserved.
-  </div>
+  <div class="footer">&copy; 2025 CatchDeal.in | All rights reserved.</div>
 </body>
-
 </html>
