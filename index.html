@@ -100,7 +100,7 @@
 
   <!-- LOAD products.html -->
   <script>
-    fetch('/data/products.html')
+    fetch('data/products.html')
       .then(response => response.text())
       .then(html => {
         document.getElementById('products-container').innerHTML = html;
