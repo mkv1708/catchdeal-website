@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CatchDeal.in - Deals</title>
+  <title>CatchDeal.in - Top Amazon Deals</title>
 
   <style>
     body {
@@ -21,21 +21,6 @@
     h2 {
       margin-top: 3rem;
       color: #333;
-    }
-
-    .categories {
-      margin-top: 2rem;
-    }
-
-    .categories a {
-      display: inline-block;
-      background: #28a745;
-      color: white;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1rem;
     }
 
     .products {
@@ -80,25 +65,15 @@
 <body>
 
   <h1>CatchDeal.in</h1>
-  <p>Select a category to explore deals</p>
+  <p>Top curated Amazon deals</p>
 
-  <!-- Categories (can ignore for now) -->
-  <div class="categories">
-    household.htmlHousehold</a>
-    others.htmlOthers</a>
-    fashion.htmlFashion & Lifestyle</a>
-  </div>
-
-  <!-- PRODUCT SECTION -->
   <section id="top-amazon-products">
     <h2>Top Selling Products on Amazon</h2>
-
     <div id="products-container">
-      <!-- products.html will be loaded here -->
+      <!-- products.html loads here -->
     </div>
   </section>
 
-  <!-- LOAD products.html -->
   <script>
     fetch('data/products.html')
       .then(response => response.text())
@@ -106,7 +81,9 @@
         document.getElementById('products-container').innerHTML = html;
       })
       .catch(error => {
-        console.error('Error loading products:', error);
+        document.getElementById('products-container').innerHTML =
+          'Unable to load products.';
+        console.error(error);
       });
   </script>
 
