@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CatchDeal.in - Categories</title>
+  <title>CatchDeal.in - Deals</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,6 +18,11 @@
       font-size: 2.5rem;
     }
 
+    h2 {
+      margin-top: 3rem;
+      color: #333;
+    }
+
     .categories {
       margin-top: 2rem;
     }
@@ -26,10 +32,41 @@
       background: #28a745;
       color: white;
       padding: 1rem 2rem;
-      margin: 1rem;
+      margin: 0.5rem;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      padding: 1.5rem;
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-card a {
+      display: inline-block;
+      background: #ff9900;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .footer {
@@ -39,22 +76,43 @@
     }
   </style>
 </head>
+
 <body>
+
   <h1>CatchDeal.in</h1>
   <p>Select a category to explore deals</p>
 
+  <!-- Categories (can ignore for now) -->
   <div class="categories">
-    <a href="household.html">Household</a>
-    <a href="others.html">Others</a>
-    <a href="fashion.html">Fashion & Lifestyle</a>
+    household.htmlHousehold</a>
+    others.htmlOthers</a>
+    fashion.htmlFashion & Lifestyle</a>
   </div>
 
+  <!-- PRODUCT SECTION -->
   <section id="top-amazon-products">
-  <h2>Top Selling Products on Amazon</h2>
+    <h2>Top Selling Products on Amazon</h2>
 
-  <!-- Products will be added here -->
-</section>
+    <div id="products-container">
+      <!-- products.html will be loaded here -->
+    </div>
+  </section>
 
-  <div class="footer">&copy; 2025 CatchDeal.in | All rights reserved.</div>
+  <!-- LOAD products.html -->
+  <script>
+    fetch('/data/products.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('products-container').innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error loading products:', error);
+      });
+  </script>
+
+  <div class="footer">
+    © 2025 CatchDeal.in | All rights reserved.
+  </div>
+
 </body>
 </html>
