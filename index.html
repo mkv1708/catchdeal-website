@@ -1,254 +1,506 @@
-<!-- ===== ELECTRONICS ===== -->
-<div class="category-section" id="electronics">
-  <div class="category-header">
-    <div class="category-icon-wrap icon-electronics">📱</div>
-    <span class="category-name">Electronics</span>
-    <span class="category-count">Top Picks</span>
-  </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ #1 Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">realme narzo 100 Lite 5G — 4GB+128GB, 7000mAh Titan Battery, 144Hz Display</p>
-      <p class="product-why">India's #1 selling 5G phone — 7000mAh battery, silky 144Hz screen, and flagship-grade 6nm chipset at a budget price.</p>
-      <a class="product-buy" href="https://www.amazon.in/realme-7000mAh-Battery-Display-Octa-core/dp/B0GTRHJYYF?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 #2 Hot</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">REDMI A7 Pro 5G — 4GB+128GB, 6.9&quot; 120Hz Display, Segment's Largest Battery</p>
-      <p class="product-why">Massive 6.9&quot; screen, segment's fastest processor, and biggest battery — incredible value under ₹14k for daily heavy users.</p>
-      <a class="product-buy" href="https://www.amazon.in/Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y6BD3?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">OnePlus Nord Buds 3r TWS Earbuds — 54Hr Playback, 3D Spatial Audio, AI Translation</p>
-      <p class="product-why">54 hours total playback, dual-device connect, AI translation — OnePlus quality under ₹2k with over 42,000 reviews.</p>
-      <a class="product-buy" href="https://www.amazon.in/OnePlus-Playback-Translation-Dual-Device-Connectivity/dp/B0FMDL81GS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
-      </div>
-      <p class="product-name">Xiaomi Power Bank 4i — 20000mAh, 33W Fast Charging, Triple Output Ports</p>
-      <p class="product-why">33W fast charging, 12-layer protection, USB-C in/out — Xiaomi's most capable power bank for phones, tablets, and earbuds.</p>
-      <a class="product-buy" href="https://www.amazon.in/Xiaomi-20000mAh-Charging-Delivery-Supports/dp/B0DCZ3WDTB?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 Hot</span>
-      </div>
-      <p class="product-name">Fire-Boltt Ninja Call Pro Smartwatch — 1.69&quot; HD, Bluetooth Calling, 120+ Sports Modes</p>
-      <p class="product-why">Bluetooth calling, SpO2 &amp; heart rate, 120+ sports modes — India's most-reviewed smartwatch under ₹1,000 with 1.29 lakh ratings.</p>
-      <a class="product-buy" href="https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Monitoring/dp/B0B854R7NS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CatchDeal.in — Amazon Deals Curated for You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;0,700;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --sand: #F5F0E8;
+      --cream: #FDFBF7;
+      --bark: #2C2416;
+      --bark-light: #4A3F2F;
+      --amber: #D97706;
+      --amber-light: #F59E0B;
+      --amber-pale: #FEF3C7;
+      --sage-pale: #EDF2ED;
+      --stone: #8C8070;
+      --border: #E5DDD0;
+      --white: #FFFFFF;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--bark);
+      min-height: 100vh;
+    }
+    nav {
+      background: var(--bark);
+      padding: 0 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--cream);
+      text-decoration: none;
+    }
+    .nav-logo em { font-style: italic; color: var(--amber-light); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: #bbb; text-decoration: none; font-size: 0.85rem; font-weight: 400; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--amber-light);
+      border: 1px solid rgba(245,158,11,0.4);
+      padding: 4px 12px;
+      border-radius: 100px;
+      letter-spacing: 0.5px;
+    }
+    .hero {
+      background: var(--bark);
+      padding: 4.5rem 2.5rem 5.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 80px;
+      background: var(--cream);
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+    .hero-chip {
+      display: inline-block;
+      background: rgba(245,158,11,0.12);
+      border: 1px solid rgba(245,158,11,0.25);
+      color: var(--amber-light);
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--cream);
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+    }
+    .hero h1 em { font-style: italic; color: var(--amber-light); }
+    .hero p {
+      font-size: 1rem;
+      color: #9a8a78;
+      max-width: 400px;
+      margin: 0 auto 2rem;
+      line-height: 1.75;
+      font-weight: 300;
+    }
+    .hero-scroll {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--amber-light);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(245,158,11,0.35);
+      padding-bottom: 2px;
+      transition: all 0.2s;
+    }
+    .hero-scroll:hover { color: var(--cream); border-color: rgba(255,255,255,0.3); }
+    .cat-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2.5rem;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .cat-nav::-webkit-scrollbar { display: none; }
+    .cat-tab {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 1rem 1.25rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--stone);
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .cat-tab:hover { color: var(--amber); border-bottom-color: var(--amber); }
+    .cat-tab.active { color: var(--bark); border-bottom-color: var(--bark); font-weight: 600; }
+    .main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+    .section { margin-bottom: 4rem; }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon { font-size: 1.15rem; }
+    .section-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+    .section-sub { font-size: 0.75rem; color: var(--stone); margin-left: auto; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+      animation: fadeUp 0.45s ease both;
+    }
+    .card:nth-child(1){animation-delay:.05s}
+    .card:nth-child(2){animation-delay:.1s}
+    .card:nth-child(3){animation-delay:.15s}
+    .card:nth-child(4){animation-delay:.2s}
+    .card:nth-child(5){animation-delay:.25s}
+    .card:nth-child(6){animation-delay:.3s}
+    .card:hover {
+      border-color: var(--amber);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+      transform: translateY(-2px);
+    }
+    .badges { display: flex; flex-wrap: wrap; gap: 5px; }
+    .badge {
+      font-size: 0.62rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .b-best { background: var(--amber-pale); color: #92400E; }
+    .b-deal { background: var(--sage-pale); color: #3B5C3B; }
+    .b-hot { background: #FEE2E2; color: #991B1B; }
+    .b-new { background: #E0F2FE; color: #075985; }
+    .card-name {
+      font-family: 'Fraunces', serif;
+      font-size: 0.92rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    .card-meta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .card-price { font-size: 1rem; font-weight: 600; }
+    .card-rating {
+      font-size: 0.75rem;
+      color: var(--stone);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+    .stars { color: var(--amber); letter-spacing: -1px; }
+    .card-note {
+      font-size: 0.73rem;
+      color: var(--stone);
+      line-height: 1.55;
+      padding-left: 8px;
+      border-left: 2px solid var(--sand);
+    }
+    .card-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      background: var(--bark);
+      color: var(--cream);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: auto;
+      transition: background 0.2s;
+    }
+    .card-btn:hover { background: var(--bark-light); }
+    .card-btn-arrow { opacity: 0.55; font-size: 0.78rem; transition: transform 0.2s, opacity 0.2s; }
+    .card-btn:hover .card-btn-arrow { transform: translateX(3px); opacity: 1; }
+    footer {
+      background: var(--bark);
+      color: #7A6A55;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-size: 0.78rem;
+      line-height: 2;
+    }
+    .footer-logo {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+    .footer-logo em { font-style: italic; color: var(--amber-light); }
+    footer a { color: #9A8A78; text-decoration: none; }
+    footer a:hover { color: var(--amber-light); }
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding: 3.5rem 1.25rem 4.5rem; }
+      .main { padding: 2rem 1.25rem 4rem; }
+      .grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    }
+    @media (max-width: 380px) { .grid { grid-template-columns: 1fr; } }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="nav-logo">Catch<em>Deal</em>.in</a>
+    <ul class="nav-links">
+      <li><a href="#electronics">Electronics</a></li>
+      <li><a href="#audio">Audio</a></li>
+      <li><a href="#smart-home">Smart Home</a></li>
+      <li><a href="#kitchen">Kitchen Appliances</a></li>
+    </ul>
+    <span class="nav-tag">Curated Picks</span>
+  </nav>
 
-<!-- ===== AUDIO ===== -->
-<div class="category-section" id="audio">
-  <div class="category-header">
-    <div class="category-icon-wrap icon-audio">🎧</div>
-    <span class="category-name">Audio</span>
-    <span class="category-count">Top Picks</span>
-  </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">boAt Aavante Bar 490 Soundbar — 10W, Dual Drivers, 7Hr Battery, TWS Feature</p>
-      <p class="product-why">India's bestselling home soundbar under ₹1,000 — dual drivers, 7hr battery, built-in mic, and TWS mode for stereo pairing.</p>
-      <a class="product-buy" href="https://www.amazon.in/boAt-Aavante-Bar-490-Full-Range/dp/B0CH3G9VR2?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-chip">Updated Daily</div>
+      <h1>Deals worth<br><em>your attention.</em></h1>
+      <p>Carefully picked products from Amazon across categories — no noise, just good finds.</p>
+      <a href="#deals" class="hero-scroll">Browse picks ↓</a>
     </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">Amazon Echo Dot (5th Gen) — Alexa Smart Speaker with Motion Detection</p>
-      <p class="product-why">India's top smart speaker — plays music, controls smart home devices, detects motion, and answers everything. The definitive Alexa device.</p>
-      <a class="product-buy" href="https://www.amazon.in/Echo-Dot-5th-Gen-Alexa-smart-speaker/dp/B09B8XJDW5?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 Hot</span>
-      </div>
-      <p class="product-name">JBL Go Essential — Wireless Portable Bluetooth Speaker, Waterproof, Type-C</p>
-      <p class="product-why">JBL's signature rich bass in an ultra-portable waterproof body — 10,000+ reviews at 4.5 stars. The perfect travel companion.</p>
-      <a class="product-buy" href="https://www.amazon.in/LUVISEEJBL-Essential-Hidden-Camera-Detector/dp/B09NCFVNK9?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
-      </div>
-      <p class="product-name">boAt Stone 352 Pro — 14W, 12Hr Playback, RGB LEDs, Bluetooth 5.3 Speaker</p>
-      <p class="product-why">14W punchy sound, 12 hours battery, RGB light show, JioSaavn streaming included — boAt's most complete portable speaker under ₹2k.</p>
-      <a class="product-buy" href="https://www.amazon.in/boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
-      </div>
-      <p class="product-name">Tribit XSound Go — 16W, 24Hr Battery, IPX7 Waterproof Bluetooth Speaker</p>
-      <p class="product-why">24-hour battery, 150ft Bluetooth range, IPX7 waterproof — Tribit's cult-favourite outdoor speaker with 18,000+ 4.4-star reviews.</p>
-      <a class="product-buy" href="https://www.amazon.in/Bluetooth-Tribit-Upgraded-Portable-Waterproof/dp/B078S4P3J9?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- ===== SMART HOME ===== -->
-<div class="category-section" id="smart-home">
-  <div class="category-header">
-    <div class="category-icon-wrap icon-smart-home">🏠</div>
-    <span class="category-name">Smart Home</span>
-    <span class="category-count">Top Picks</span>
+  <div class="cat-nav">
+    <a href="#electronics" class="cat-tab active">📱 Electronics</a>
+    <a href="#audio" class="cat-tab">🎧 Audio</a>
+    <a href="#smart-home" class="cat-tab">🏠 Smart Home</a>
+    <a href="#kitchen" class="cat-tab">🍳 Kitchen Appliances</a>
   </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">atomberg Renesa Enzel 1200mm BLDC Ceiling Fan — 5-Star, Remote, 3Yr Warranty</p>
-      <p class="product-why">BEE 5-star rated energy saver with remote, sleep &amp; timer — 51,000+ reviews make it India's most-trusted premium ceiling fan.</p>
-      <a class="product-buy" href="https://www.amazon.in/atomberg-Renesa-Enzel-Ceiling-Warranty/dp/B0CKBVYC3W?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 Hot</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">Godrej aer Matic Auto Room Freshener Kit — 2200 Sprays, Lasts 60 Days</p>
-      <p class="product-why">Set-and-forget automatic freshener with flexi control — 32,000+ buyers love it for consistent fragrance lasting up to 60 days.</p>
-      <a class="product-buy" href="https://www.amazon.in/Godrej-Matic-Spray-Violet-Valley/dp/B07FPKJ7MP?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-new">🆕 Trending</span>
-        <span class="badge badge-prime">Prime</span>
-      </div>
-      <p class="product-name">atomberg Renesa 400mm BLDC Pedestal Fan — 5-Star, 35W, 6 Speeds, Remote</p>
-      <p class="product-why">Silent BLDC motor at just 35W — drastically cuts electricity bills vs standard fans. Remote with 6 speeds, oscillation and sleep mode.</p>
-      <a class="product-buy" href="https://www.amazon.in/Atomberg-Renesa-Pedestal-Fan-Control/dp/B09T757FCS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
-      </div>
-      <p class="product-name">Zulaxy Adhesive Wall Hooks — 10 Pack, No-Drill, Heavy Duty Stainless Steel</p>
-      <p class="product-why">No drilling, no wall damage — stainless steel adhesive hooks hold frames, bags, and kitchen items firmly. 9,000+ happy buyers.</p>
-      <a class="product-buy" href="https://www.amazon.in/Zulaxy-Drilling-Adhesive-Transparent-Stainless/dp/B0CCM8L54V?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 Hot</span>
-      </div>
-      <p class="product-name">One94Store Astronaut Galaxy Projector Night Light — 360° Nebula, Remote Control</p>
-      <p class="product-why">360° rotating galaxy projector for bedrooms, gaming rooms, and gifting — turns any room into a starfield. 6,700+ 4.1-star reviews.</p>
-      <a class="product-buy" href="https://www.amazon.in/One94store-Astronaut-Galaxy-Projector-Night/dp/B0DN1RWNSQ?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-  </div>
-</div>
 
-<!-- ===== KITCHEN ===== -->
-<div class="category-section" id="kitchen">
-  <div class="category-header">
-    <div class="category-icon-wrap icon-kitchen">🍳</div>
-    <span class="category-name">Kitchen Appliances</span>
-    <span class="category-count">Top Picks</span>
-  </div>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
+  <main class="main" id="deals">
+    <section class="section" id="electronics">
+      <div class="section-head">
+        <span class="section-icon">📱</span>
+        <h2 class="section-title">Electronics</h2>
+        <span class="section-sub">Top picks</span>
       </div>
-      <p class="product-name">NutriPro Juicer Mixer Grinder — 500W Smoothie Maker, 2 Jars, 2 Year Warranty</p>
-      <p class="product-why">Compact, powerful, and affordable — 28,000+ buyers at 4.4 stars. The go-to smoothie and grinder upgrade for Indian kitchens.</p>
-      <a class="product-buy" href="https://www.amazon.in/NutriPro-Bullet-Juicer-Grinder-Blades/dp/B09J2T124D?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-bestseller">⭐ Bestseller</span>
-        <span class="badge badge-prime">Prime</span>
+      <div class="grid">
+        <div class="card">
+          <div class="badges"><span class="badge b-best">#1 Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">realme narzo 100 Lite 5G — 4GB+128GB, 7000mAh Titan Battery, 144Hz Display</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">India's #1 selling 5G phone — 7000mAh battery, silky 144Hz screen, and flagship-grade 6nm chipset at a budget price.</p>
+          <a class="card-btn" href="https://www.amazon.in/realme-7000mAh-Battery-Display-Octa-core/dp/B0GTRHJYYF?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">#2 Hot</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">REDMI A7 Pro 5G — 4GB+128GB, 6.9&quot; 120Hz Display, Segment's Largest Battery</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Massive 6.9&quot; screen, segment's fastest processor, and biggest battery — incredible value under ₹14k for daily heavy users.</p>
+          <a class="card-btn" href="https://www.amazon.in/Storage-Segments-Fastest-Processor-Smoothest/dp/B0GS5Y6BD3?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">OnePlus Nord Buds 3r TWS Earbuds — 54Hr Playback, 3D Spatial Audio, AI Translation</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">54 hours total playback, dual-device connect, AI translation — OnePlus quality under ₹2k with over 42,000 reviews.</p>
+          <a class="card-btn" href="https://www.amazon.in/OnePlus-Playback-Translation-Dual-Device-Connectivity/dp/B0FMDL81GS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">Xiaomi Power Bank 4i — 20000mAh, 33W Fast Charging, Triple Output Ports</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">33W fast charging, 12-layer protection, USB-C in/out — Xiaomi's most capable power bank for phones, tablets, and earbuds.</p>
+          <a class="card-btn" href="https://www.amazon.in/Xiaomi-20000mAh-Charging-Delivery-Supports/dp/B0DCZ3WDTB?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">Hot</span></div>
+          <p class="card-name">Fire-Boltt Ninja Call Pro Smartwatch — 1.69&quot; HD, Bluetooth Calling, 120+ Sports Modes</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Bluetooth calling, SpO2 &amp; heart rate, 120+ sports modes — India's most-reviewed smartwatch under ₹1,000 with 1.29 lakh ratings.</p>
+          <a class="card-btn" href="https://www.amazon.in/Fire-Boltt-Bluetooth-Calling-Assistance-Monitoring/dp/B0B854R7NS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
       </div>
-      <p class="product-name">Milton Aura 1000 Thermosteel Bottle — 24Hr Hot &amp; Cold, 1L, ISI Certified</p>
-      <p class="product-why">ISI-certified vacuum insulation keeps drinks hot or cold for 24 hours — 22,000+ buyers. Perfect for office, gym, and daily commute.</p>
-      <a class="product-buy" href="https://www.amazon.in/Milton-Thermosteel-Bottle-Kitchen-Trekking/dp/B0B4RZ3XNP?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
+    </section>
+
+    <section class="section" id="audio">
+      <div class="section-head">
+        <span class="section-icon">🎧</span>
+        <h2 class="section-title">Audio</h2>
+        <span class="section-sub">Top picks</span>
       </div>
-      <p class="product-name">Pigeon Mini Handy Vegetable Chopper — 3 Blades, 400ml, Compact &amp; Easy Clean</p>
-      <p class="product-why">India's most popular kitchen chopper — 3.2 lakh reviews at 4 stars. Chop onions, herbs, and veggies in seconds with zero mess.</p>
-      <a class="product-buy" href="https://www.amazon.in/Pigeon-Stovekraft-Plastic-Chopper-Blades/dp/B01LWYDEQ7?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-hot">🔥 Hot</span>
-        <span class="badge badge-prime">Prime</span>
+      <div class="grid">
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">boAt Aavante Bar 490 Soundbar — 10W, Dual Drivers, 7Hr Battery, TWS Feature</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">India's bestselling home soundbar under ₹1,000 — dual drivers, 7hr battery, built-in mic, and TWS mode for stereo pairing.</p>
+          <a class="card-btn" href="https://www.amazon.in/boAt-Aavante-Bar-490-Full-Range/dp/B0CH3G9VR2?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">Amazon Echo Dot (5th Gen) — Alexa Smart Speaker with Motion Detection</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">India's top smart speaker — plays music, controls smart home devices, detects motion, and answers everything. The definitive Alexa device.</p>
+          <a class="card-btn" href="https://www.amazon.in/Echo-Dot-5th-Gen-Alexa-smart-speaker/dp/B09B8XJDW5?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">Hot</span></div>
+          <p class="card-name">JBL Go Essential — Wireless Portable Bluetooth Speaker, Waterproof, Type-C</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">JBL's signature rich bass in an ultra-portable waterproof body — 10,000+ reviews at 4.5 stars. The perfect travel companion.</p>
+          <a class="card-btn" href="https://www.amazon.in/LUVISEEJBL-Essential-Hidden-Camera-Detector/dp/B09NCFVNK9?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">boAt Stone 352 Pro — 14W, 12Hr Playback, RGB LEDs, Bluetooth 5.3 Speaker</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">14W punchy sound, 12 hours battery, RGB light show, JioSaavn streaming included — boAt's most complete portable speaker under ₹2k.</p>
+          <a class="card-btn" href="https://www.amazon.in/boAt-Stone-352-Pro-Bluetooth/dp/B0D6W7F7WH?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">Tribit XSound Go — 16W, 24Hr Battery, IPX7 Waterproof Bluetooth Speaker</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">24-hour battery, 150ft Bluetooth range, IPX7 waterproof — Tribit's cult-favourite outdoor speaker with 18,000+ 4.4-star reviews.</p>
+          <a class="card-btn" href="https://www.amazon.in/Bluetooth-Tribit-Upgraded-Portable-Waterproof/dp/B078S4P3J9?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
       </div>
-      <p class="product-name">amazon basics Vacuum Compression Storage Bags — Medium, 5-Pack with Hand Pump</p>
-      <p class="product-why">Shrink bulky clothes and bedding to a fraction of the space — 1.47 lakh reviews at 4.3 stars. The best space-saving hack for Indian homes.</p>
-      <a class="product-buy" href="https://www.amazon.in/AmazonBasics-Vacuum-Compression-Storage-Medium/dp/B07RTJV6G4?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-    <div class="product-card">
-      <div class="badge-row">
-        <span class="badge badge-deal">💚 Great Deal</span>
+    </section>
+
+    <section class="section" id="smart-home">
+      <div class="section-head">
+        <span class="section-icon">🏠</span>
+        <h2 class="section-title">Smart Home</h2>
+        <span class="section-sub">Top picks</span>
       </div>
-      <p class="product-name">ATOM ALISTON K1 Digital Kitchen Scale — 10kg, LCD Display, 6 Month Warranty</p>
-      <p class="product-why">Precise 10kg digital scale for baking, cooking, and dieting — 22,800+ buyers at just ₹215. Best-value kitchen gadget on Amazon India.</p>
-      <a class="product-buy" href="https://www.amazon.in/Kitchen-Manufacturer-Warranty-capacity-SF400/dp/B083C6XMKQ?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">
-        Buy on Amazon <span class="buy-arrow">→</span>
-      </a>
-    </div>
-  </div>
-</div>
+      <div class="grid">
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">atomberg Renesa Enzel 1200mm BLDC Ceiling Fan — 5-Star, Remote, 3Yr Warranty</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">BEE 5-star rated energy saver with remote, sleep &amp; timer — 51,000+ reviews make it India's most-trusted premium ceiling fan.</p>
+          <a class="card-btn" href="https://www.amazon.in/atomberg-Renesa-Enzel-Ceiling-Warranty/dp/B0CKBVYC3W?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">Hot</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">Godrej aer Matic Auto Room Freshener Kit — 2200 Sprays, Lasts 60 Days</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Set-and-forget automatic freshener with flexi control — 32,000+ buyers love it for consistent fragrance lasting up to 60 days.</p>
+          <a class="card-btn" href="https://www.amazon.in/Godrej-Matic-Spray-Violet-Valley/dp/B07FPKJ7MP?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-new">Trending</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">atomberg Renesa 400mm BLDC Pedestal Fan — 5-Star, 35W, 6 Speeds, Remote</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Silent BLDC motor at just 35W — drastically cuts electricity bills vs standard fans. Remote with 6 speeds, oscillation and sleep mode.</p>
+          <a class="card-btn" href="https://www.amazon.in/Atomberg-Renesa-Pedestal-Fan-Control/dp/B09T757FCS?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">Zulaxy Adhesive Wall Hooks — 10 Pack, No-Drill, Heavy Duty Stainless Steel</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">No drilling, no wall damage — stainless steel adhesive hooks hold frames, bags, and kitchen items firmly. 9,000+ happy buyers.</p>
+          <a class="card-btn" href="https://www.amazon.in/Zulaxy-Drilling-Adhesive-Transparent-Stainless/dp/B0CCM8L54V?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">Hot</span></div>
+          <p class="card-name">One94Store Astronaut Galaxy Projector Night Light — 360° Nebula, Remote Control</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">360° rotating galaxy projector for bedrooms, gaming rooms, and gifting — turns any room into a starfield. 6,700+ 4.1-star reviews.</p>
+          <a class="card-btn" href="https://www.amazon.in/One94store-Astronaut-Galaxy-Projector-Night/dp/B0DN1RWNSQ?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kitchen">
+      <div class="section-head">
+        <span class="section-icon">🍳</span>
+        <h2 class="section-title">Kitchen Appliances</h2>
+        <span class="section-sub">Top picks</span>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">NutriPro Juicer Mixer Grinder — 500W Smoothie Maker, 2 Jars, 2 Year Warranty</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Compact, powerful, and affordable — 28,000+ buyers at 4.4 stars. The go-to smoothie and grinder upgrade for Indian kitchens.</p>
+          <a class="card-btn" href="https://www.amazon.in/NutriPro-Bullet-Juicer-Grinder-Blades/dp/B09J2T124D?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-best">Bestseller</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">Milton Aura 1000 Thermosteel Bottle — 24Hr Hot &amp; Cold, 1L, ISI Certified</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">ISI-certified vacuum insulation keeps drinks hot or cold for 24 hours — 22,000+ buyers. Perfect for office, gym, and daily commute.</p>
+          <a class="card-btn" href="https://www.amazon.in/Milton-Thermosteel-Bottle-Kitchen-Trekking/dp/B0B4RZ3XNP?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">Pigeon Mini Handy Vegetable Chopper — 3 Blades, 400ml, Compact &amp; Easy Clean</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">India's most popular kitchen chopper — 3.2 lakh reviews at 4 stars. Chop onions, herbs, and veggies in seconds with zero mess.</p>
+          <a class="card-btn" href="https://www.amazon.in/Pigeon-Stovekraft-Plastic-Chopper-Blades/dp/B01LWYDEQ7?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-hot">Hot</span><span class="badge b-deal">Prime</span></div>
+          <p class="card-name">amazon basics Vacuum Compression Storage Bags — Medium, 5-Pack with Hand Pump</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Shrink bulky clothes and bedding to a fraction of the space — 1.47 lakh reviews at 4.3 stars. The best space-saving hack for Indian homes.</p>
+          <a class="card-btn" href="https://www.amazon.in/AmazonBasics-Vacuum-Compression-Storage-Medium/dp/B07RTJV6G4?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+        <div class="card">
+          <div class="badges"><span class="badge b-deal">Great Deal</span></div>
+          <p class="card-name">ATOM ALISTON K1 Digital Kitchen Scale — 10kg, LCD Display, 6 Month Warranty</p>
+          <div class="card-meta"><span class="card-price">Top Pick</span><span class="card-rating">Amazon India</span></div>
+          <p class="card-note">Precise 10kg digital scale for baking, cooking, and dieting — 22,800+ buyers at just ₹215. Best-value kitchen gadget on Amazon India.</p>
+          <a class="card-btn" href="https://www.amazon.in/Kitchen-Manufacturer-Warranty-capacity-SF400/dp/B083C6XMKQ?tag=catchdeal07-21" target="_blank" rel="nofollow noopener">View on Amazon <span class="card-btn-arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-logo">Catch<em>Deal</em>.in</span>
+    © 2025 CatchDeal.in — All rights reserved.<br>
+    <small>As an Amazon Associate, we earn from qualifying purchases. ·
+      <a href="#">Affiliate Disclosure</a> · <a href="#">Privacy Policy</a>
+    </small>
+  </footer>
+</body>
+</html>
