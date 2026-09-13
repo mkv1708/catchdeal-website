@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-13T22:04:16.015870+00:00",
+  "generatedAt": "2026-09-13T22:36:54.417581+00:00",
   "method": "independent-web-discovery",
-  "note": "Quality-first catalogue: only specific product names with a real sourced image are published. Images retain existing verified sources, then use Wikimedia Commons and Openverse openly licensed media. Prices, stock and ratings are not scraped from Amazon.",
+  "note": "Product images are discovered with Firecrawl image search using exact brand/model matching. Amazon and major retailer domains are excluded; weak/contextual matches are rejected. Source page metadata is retained for review.",
   "categories": [
     {
       "id": "mobiles",
@@ -36,35 +36,11 @@
   ],
   "products": [
     {
-      "title": "OnePlus 11",
+      "title": "OPPO Reno 16c",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Highlighted for its fast performance and value for money.",
-      "badge": "Popular Pick",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        },
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 206,
-      "amazonUrl": "https://www.amazon.in/s?k=OnePlus+11&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/OnePlus_AC2003_with_a_broken_screen%2C_11.jpg/960px-OnePlus_AC2003_with_a_broken_screen%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:OnePlus_AC2003_with_a_broken_screen%2C_11.jpg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 2.0 · Kent Madsen"
-    },
-    {
-      "title": "Apple iPhone 14 Pro Max",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Praised for its performance and user experience.",
+      "reason": "Highlight of performance and design.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -74,17 +50,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+iPhone+14+Pro+Max&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Mapillary_%28Satsuka_Osaka%29_2026-03-30_03H14M08S000_%2826228629836829039_at_0sb6gRorKDElUXf58AW732%29_taken_with_Apple_iPhone_13_Pro_Max_taken_with_Apple_iPhone_13_Pro_Max.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mapillary_(Satsuka_Osaka)_2026-03-30_03H14M08S000_(26228629836829039_at_0sb6gRorKDElUXf58AW732)_taken_with_Apple_iPhone_13_Pro_Max_taken_with_Apple_iPhone_13_Pro_Max.jpg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Satsuka_Osaka"
+      "amazonUrl": "https://www.amazon.in/s?k=OPPO+Reno+16c&tag=catchdeal07-21",
+      "imageUrl": "https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/323766_0_VGxvPEqVO.png?updatedAt=1782992291084",
+      "imageSourceUrl": "https://www.croma.com/oppo-reno-16c-5g-8gb-ram-256gb-stellar-purple-/p/323766?srsltid=AfmBOopLRXc7ziB_DpQkk9KeL268h4V4BL0RnLKAAGY7gHpMzPvfTBjc",
+      "imageSourceTitle": "Buy oppo Reno 16c 5G (8GB RAM, 256GB, Stellar Purple) Online - Croma"
     },
     {
-      "title": "Google Pixel 7 Pro",
+      "title": "POCO X8 Power",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Noted for its excellent photography and AI features.",
+      "reason": "Recommended for its value and features.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -94,17 +70,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+7+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Pixel_7_Pro_back_%28Hazel%29.svg/960px-Google_Pixel_7_Pro_back_%28Hazel%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_7_Pro_back_(Hazel).svg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
+      "amazonUrl": "https://www.amazon.in/s?k=POCO+X8+Power&tag=catchdeal07-21",
+      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/08/Poco-X8-and-X8-Power-Two-Budget-Phones-That-Refuse-to-Die.jpg",
+      "imageSourceUrl": "https://memeburn.com/poco-x8-x8-power-specs-price/",
+      "imageSourceTitle": "Poco X8 and X8 Power: Two Budget Phones That Refuse to Die - Memeburn"
     },
     {
-      "title": "Oppo Find X5",
+      "title": "realme 16x",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Recognized for its stylish design and powerful performance.",
+      "reason": "Best under ₹25,000 with impressive specifications.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -114,17 +90,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Oppo+Find+X5&tag=catchdeal07-21",
-      "imageUrl": "https://live.staticflickr.com/65535/51987866296_5af53d48ea_b.jpg",
-      "imageSourceUrl": "https://www.flickr.com/photos/70038540@N00/51987866296",
-      "imageSourceTitle": "Openverse · BY-NC-SA · Ciccio Pizzettaro"
+      "amazonUrl": "https://www.amazon.in/s?k=realme+16x&tag=catchdeal07-21",
+      "imageUrl": "https://static2.realme.net/images/realme-16x-5g/17815750379438be0b20e14a94939a9ba6cf300ca74cc.webp",
+      "imageSourceUrl": "https://www.realme.com/in/realme-16x-5g",
+      "imageSourceTitle": "realme 16x 5G – 7000mAh Titan Battery & 144Hz Display | realme India"
     },
     {
-      "title": "Samsung Galaxy S23 Ultra",
+      "title": "Samsung Z Flip8",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Recommended for its high-end camera capabilities and advanced features.",
+      "reason": "Compact powerhouse ideal for users seeking portability.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -134,149 +110,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+S23+Ultra&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Samsung_Galaxy_S23_Ultra%2C_512_GB%2C_Lavender_20230416_HOF00318_RAW-Export_cens.png/960px-Samsung_Galaxy_S23_Ultra%2C_512_GB%2C_Lavender_20230416_HOF00318_RAW-Export_cens.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Samsung_Galaxy_S23_Ultra%2C_512_GB%2C_Lavender_20230416_HOF00318_RAW-Export_cens.png",
-      "imageSourceTitle": "Wikimedia Commons · CC BY 4.0 · PantheraLeo1359531"
-    },
-    {
-      "title": "Xiaomi Redmi Note 12 Pro",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Mentioned for offering great specifications at an affordable price.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Xiaomi+Redmi+Note+12+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Redmi_note_12_pro_4G_Gray.jpg/960px-Redmi_note_12_pro_4G_Gray.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Redmi_note_12_pro_4G_Gray.jpg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY 4.0 · MobilGalantsuper1999PS"
-    },
-    {
-      "title": "Apple iPhone 14",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Highly recommended for its excellent performance and camera quality.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+iPhone+14&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Back_of_the_iPhone_14_Pro.jpg/960px-Back_of_the_iPhone_14_Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_the_iPhone_14_Pro.jpg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Hajoon0102"
-    },
-    {
-      "title": "Google Pixel 7",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Offers outstanding camera features and stock Android experience.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+7&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Pixel_7_Pro_back_%28Hazel%29.svg/960px-Google_Pixel_7_Pro_back_%28Hazel%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_7_Pro_back_(Hazel).svg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
-    },
-    {
-      "title": "Sony WF-1000XM6",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "These earbuds provide excellent noise isolation with improved ANC and sound customization options.",
-      "badge": "Widely Recommended",
-      "sourceCount": 3,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
-          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
-        },
-        {
-          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
-          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
-        }
-      ],
-      "score": 309,
-      "amazonUrl": "https://www.amazon.in/s?k=Sony+WF-1000XM6&tag=catchdeal07-21",
-      "imageUrl": "https://sony.scene7.com/is/image/sonyglobalsolutions/WF-1000XM6_black-1?%24primaryshotPreset%24&fmt=pjpeg&resMode=bisharp&wid=360",
-      "imageSourceUrl": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm6",
-      "imageSourceTitle": "Support for WF-1000XM6 | Sony USA"
-    },
-    {
-      "title": "Apple AirPods Pro 3",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "These earbuds feature fantastic noise isolation and seamless integration with Apple devices, enhancing the user experience.",
-      "badge": "Popular Pick",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        },
-        {
-          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
-          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
-        }
-      ],
-      "score": 206,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+AirPods+Pro+3&tag=catchdeal07-21",
-      "imageUrl": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/airpods-pro-3-hero.png",
-      "imageSourceUrl": "https://support.apple.com/en-us/125135",
-      "imageSourceTitle": "AirPods Pro 3 - Tech Specs - Apple Support"
-    },
-    {
-      "title": "Anker Soundcore Liberty 5 Pro",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "These earbuds deliver impressive ANC performance and come with customizable sound profiles through an app.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Liberty+5+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://productimages.microcenter.com/708963_036152_01_front_comping.jpg",
-      "imageSourceUrl": "https://www.microcenter.com/product/708963/anker-soundcore-liberty-5-pro-active-noise-cancelling-true-wireless-bluetooth-earbuds-black",
-      "imageSourceTitle": "Anker Soundcore Liberty 5 Pro Active Noise Cancelling True Wireless  Bluetooth Earbuds - Black - Micro Center"
+      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Z+Flip8&tag=catchdeal07-21",
+      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/e1770bc2-f710-432d-900d-725b109d6eb8.jpg",
+      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-z-flip8-256gb-unlocked-graphite/JJGRF3TF7P",
+      "imageSourceTitle": "Samsung Galaxy Z Flip8 256GB (Unlocked) Graphite - Best Buy"
     },
     {
       "title": "Anker Soundcore Space A40 Truly Wireless",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "These budget-friendly earbuds offer good ANC and a warm sound profile with decent noise isolation.",
+      "reason": "Budget-friendly earbuds with ANC and strong noise isolation performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -296,7 +140,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "They feature great ANC and a secure fit suitable for workouts while producing a warm sound profile.",
+      "reason": "Lower mid-range earbuds that offer excellent ANC and comfortable fit.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -312,31 +156,31 @@
       "imageSourceTitle": "Buy OnePlus Buds 4 - OnePlus United States"
     },
     {
-      "title": "AirPods Pro 3",
+      "title": "Sony WH-1000XM6",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Recommended for their seamless integration with Apple devices and excellent sound performance.",
+      "reason": "Best overall noise cancelling headphones with warm sound and excellent mic performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
         {
-          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
-          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
         }
       ],
-      "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=AirPods+Pro+3&tag=catchdeal07-21",
-      "imageUrl": "https://webobjects2.cdw.com/is/image/CDW/8504976?$product-main$",
-      "imageSourceUrl": "https://www.cdw.com/product/apple-airpods-pro-3-wireless-earbuds-noise-cancelling/8504976",
-      "imageSourceTitle": "Apple AirPods Pro 3 - Wireless Earbuds - Noise Cancelling - MFHP4LL/A -  Headphones - CDW.com"
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Sony+WH-1000XM6&tag=catchdeal07-21",
+      "imageUrl": "https://d1ncau8tqf99kp.cloudfront.net/converted/153731_original_local_1200x1050_v3_converted.webp",
+      "imageSourceUrl": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-t?srsltid=AfmBOorxCN8aGkClTUad9vxzQJnIksbHjzHkhZxyAW89uwf8lw0tWo_P",
+      "imageSourceTitle": "Sony - WH-1000XM6- Best Wireless Noise Cancelling Headphones - Sandstone"
     },
     {
-      "title": "Galaxy Buds4 Pro",
+      "title": "1+ Buds Pro 3",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Noted for their rich audio experience and comfortable fit.",
+      "reason": "Recommended for excellent performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -346,17 +190,37 @@
         }
       ],
       "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Galaxy+Buds4+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/us/sm-r640nzkaxar/gallery/us-galaxy-buds4-r640-sm-r640nzkaxar-551382198?$product-details-jpg$",
-      "imageSourceUrl": "https://www.samsung.com/us/audio-sound/galaxy-buds4-pro/buy/galaxy-buds4-pro-black-sku-sm-r640nzkaxar/",
-      "imageSourceTitle": "Samsung - Galaxy Buds4 Pro True Wireless Earbuds - Black"
+      "amazonUrl": "https://www.amazon.in/s?k=1%2B+Buds+Pro+3&tag=catchdeal07-21",
+      "imageUrl": "https://image01.oneplus.net/media/202412/24/1375c584df0a7239a821e432ddba7bb4.png",
+      "imageSourceUrl": "https://www.oneplus.com/us/product/oneplus-buds-pro-3",
+      "imageSourceTitle": "OnePlus Buds Pro 3 Sapphire Blue"
+    },
+    {
+      "title": "Bose QC Ultra 2",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Known for superior noise cancellation.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
+          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Bose+QC+Ultra+2&tag=catchdeal07-21",
+      "imageUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/7/2025/06/bose-quietcomfort-ultra-vs-quietcomfort-ultra-2-earbuds.jpg",
+      "imageSourceUrl": "https://www.trustedreviews.com/versus/bose-quietcomfort-ultra-vs-quietcomfort-ultra-earbuds-2",
+      "imageSourceTitle": "Bose QC Ultra vs QC Ultra Earbuds 2: Should you upgrade?"
     },
     {
       "title": "Amazfit Bip 6",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Recommended for its comprehensive fitness tracking features.",
+      "reason": "Positively recommended for its features in wearables.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -368,15 +232,35 @@
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+6&tag=catchdeal07-21",
       "imageUrl": "https://us.amazfit.com/cdn/shop/files/Gallery_Battery.png?v=1769604251&width=1946",
-      "imageSourceUrl": "https://us.amazfit.com/products/bip-6?srsltid=AfmBOor6UihvsTrKbMQWH-_DslZJAgpaCgFtCDHJGnst6dBNWPh-IBR3",
+      "imageSourceUrl": "https://us.amazfit.com/products/bip-6?srsltid=AfmBOorTxrmkx3MaDFjlgQBp_MA1yIWrvhlmdKiSHQtbJsI11w1iDbjz",
       "imageSourceTitle": "Amazfit Bip 6 Health and Fitness Tracker - Black - Black"
+    },
+    {
+      "title": "Amazfit Bip Max",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Recommended due to its advanced functionalities.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+Max&tag=catchdeal07-21",
+      "imageUrl": "https://us.amazfit.com/cdn/shop/files/whatbox_b2d2ed35-c07d-456c-b6fe-630d6d190cb0.jpg?v=1779105498&width=1946",
+      "imageSourceUrl": "https://us.amazfit.com/products/bip-max?srsltid=AfmBOora6j9MHPo85YarLEKvzxOtS7Fs2Puh1emfhK6NAfMuG90ss94k",
+      "imageSourceTitle": "Amazfit Bip Max Smartwatch"
     },
     {
       "title": "Apple Watch 10",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Praised for its advanced features and integration with Apple devices.",
+      "reason": "Recommended for comprehensive health monitoring.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -387,16 +271,16 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Apple+Watch+10&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Apple_Watch_10.JPG/960px-Apple_Watch_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_Watch_10.JPG",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · KK IN HK"
+      "imageUrl": "https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/article/Apple-Watch-Series-10-lineup-240909_big.jpg.large.jpg",
+      "imageSourceUrl": "https://www.apple.com/newsroom/2024/09/introducing-apple-watch-series-10/",
+      "imageSourceTitle": "Introducing Apple Watch Series 10 - Apple"
     },
     {
       "title": "Fitbit Air",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Noted for its scientific testing and health tracking capabilities.",
+      "reason": "Highly favored for fitness tracking capabilities.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -407,16 +291,16 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Air&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Google_Fitbit_Air_-_1.jpg/960px-Google_Fitbit_Air_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Fitbit_Air_-_1.jpg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Kyu3a"
+      "imageUrl": "https://fsastore.com/dw/image/v2/BFKW_PRD/on/demandware.static/-/Sites-hec-master/default/dw0577315b/images/large/2026-JULY-ARRIVALS/42711-Google-Fitbit-Air-Screenless-Fitness-and-Health-Tracking-Obsidian-LS-02.jpg",
+      "imageSourceUrl": "https://fsastore.com/google-fitbit-air-screenless-fitness-and-health-tracker-one-size/42711m.html?srsltid=AfmBOorrCg0vrHT3t9AoQ27-byO566Zy3lWvpxVgpL-z-3RXRbDJCbJ8",
+      "imageSourceTitle": "Google Fitbit Air, Screenless Fitness and Health Tracker, One Size by  Google Fitbit | FSA Store"
     },
     {
-      "title": "Pixel Watch 3",
+      "title": "Fitbit Charge 6",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Recommended for its Google integration and wearable tech features.",
+      "reason": "Noted for its effectiveness in fitness tracking.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -426,37 +310,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Pixel+Watch+3&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Pixel_Watch_3-41_%28Champagne_Gold_%2B_Hazel%29.svg/960px-Google_Pixel_Watch_3-41_%28Champagne_Gold_%2B_Hazel%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_Watch_3-41_(Champagne_Gold_%2B_Hazel).svg",
-      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
-    },
-    {
-      "title": "Shark Stratos Upright Vacuum with Duo Clean Power Fins",
-      "category": "home-comfort",
-      "categoryLabel": "Home",
-      "icon": "🏠",
-      "reason": "Lauded for its powerful cleaning performance and ease of use.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.goodhousekeeping.com/",
-          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Shark+Stratos+Upright+Vacuum+with+Duo+Clean+Power+Fins&tag=catchdeal07-21",
-      "imageUrl": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1215389173249187",
-      "imageSourceUrl": "https://www.facebook.com/groups/404332383094115/posts/3201057556754903/",
-      "imageSourceTitle": "Brand New & Sealed Shark Stratos DuoClean PowerFins HairPro Upright Vacuum  – AZ3002 Retail is $529, I'm selling for $450. Item is absolutely Brand New  and Sealed in the original box! Shark"
+      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Charge+6&tag=catchdeal07-21",
+      "imageUrl": "https://www.heartratemonitorsusa.com/cdn/shop/files/fitbit-activity-monitors-black-fitbit-charge-6-activity-and-fitness-tracker-33297168662701.jpg?v=1736814159&width=1000",
+      "imageSourceUrl": "https://www.heartratemonitorsusa.com/products/fitbit-charge-6-activity-and-fitness-tracker?srsltid=AfmBOoqEPwoYPHPBUPHLkA-zZ5xQJx-P70eZtNlHp7hBHAKUQrdcSPCS",
+      "imageSourceTitle": "Fitbit Charge 6 Fitness Tracker Porcelain"
     },
     {
       "title": "Bells of Steel All-in-One Home Gym",
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Budget-friendly option that combines the functionality of a squat rack and a functional trainer.",
+      "reason": "Best Budget Home Gym",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -467,16 +331,16 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Bells+of+Steel+All-in-One+Home+Gym&tag=catchdeal07-21",
-      "imageUrl": "https://preview.redd.it/bells-of-steel-all-in-one-v0-26q0anissuac1.jpeg?auto=webp&s=71f58ed276eb619d006d4e1b0404fae6ba7bac5e",
-      "imageSourceUrl": "https://www.reddit.com/r/homegym/comments/1904uer/bells_of_steel_all_in_one/",
-      "imageSourceTitle": "Bells of steel all In one : r/homegym"
+      "imageUrl": "https://i.garagegymreviews.com/322/758/198/3/bells_of_steel_all_in_one_home_gym.webp",
+      "imageSourceUrl": "https://www.garagegymreviews.com/equipment/bells-of-steel-all-in-one-home-gym",
+      "imageSourceTitle": "Bells of Steel All-in-One Home Gym | Garage Gym Reviews"
     },
     {
       "title": "Bowflex Xtreme 2 SE Home Gym",
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Highly versatile machine with over 70 exercise combinations aimed at upper body training.",
+      "reason": "Best Home Gym for Upper Body",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -488,7 +352,7 @@
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Bowflex+Xtreme+2+SE+Home+Gym&tag=catchdeal07-21",
       "imageUrl": "https://www.bowflex.com/cdn/shop/files/bowflex-xtreme-2-se-home-gym-hero-sqr-2000x2000.png?v=1784038624&width=1600",
-      "imageSourceUrl": "https://www.bowflex.com/products/xtreme-2-se-home-gym-1st-gen?srsltid=AfmBOooK0ntEPyB6ieAZJ6KrubcXNAmdTYZsttN8Md6eg8iyfIzWJMbD",
+      "imageSourceUrl": "https://www.bowflex.com/products/xtreme-2-se-home-gym-1st-gen?srsltid=AfmBOorGGw2u56rEVo2jbzopLr-VimsCDZPBqg6z_w5wNQs1_jkQBM7X",
       "imageSourceTitle": "Xtreme 2 SE Home Gym - Our Best-Selling Power Rod Gym – BowFlex"
     },
     {
@@ -496,7 +360,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Designed for lower-body workouts, it converts into multiple machines for varied exercises.",
+      "reason": "Best Home Gym for Lower Body",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -507,16 +371,16 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Freak+Athlete+Hyper+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://freakathlete.co/cdn/shop/files/hpx_500lb_9plates_v5.jpg?v=1787967575&width=1080",
-      "imageSourceUrl": "https://freakathlete.co/products/hyper-pro?srsltid=AfmBOoqrAycFfTaJkg7iNWWl-Rk4rRghBFljqFSTZ2xyhgu516OogNnS",
-      "imageSourceTitle": "Hyper Pro X"
+      "imageUrl": "https://cdn-ilbpcgf.nitrocdn.com/oYuCommTzsGQSwpvkrjrxmZojSdETFmy/assets/images/optimized/rev-7f7931a/shreddeddad.com/wp-content/uploads/2024/08/freak-athlete-hyper-pro-GHD.png",
+      "imageSourceUrl": "https://shreddeddad.com/product/freak-athlete-hyper-pro/",
+      "imageSourceTitle": "Freak Athlete Hyper Pro - Freak Athlete Discount Code"
     },
     {
       "title": "Major Fitness Heritage Series B17 Flying Fortress All-In-One Functional Trainer with Smith Machine",
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Offers impressive versatility with multiple training options including a Smith machine and functional training capabilities.",
+      "reason": "Best All-In-One Home Gym",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -527,16 +391,36 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=Major+Fitness+Heritage+Series+B17+Flying+Fortress+All-In-One+Functional+Trainer+with+Smith+Machine&tag=catchdeal07-21",
-      "imageUrl": "https://www.majorfitness.com/cdn/shop/files/45_e463ece5-2e56-4711-bc27-1c09bccc2fd7.png?v=1776234467&width=1600",
-      "imageSourceUrl": "https://www.majorfitness.com/products/heritage-series-b17-all-in-one-functional-trainer-with-smith-machine?srsltid=AfmBOorvBMO5OQNHCQZqPXUs1d7q_stNmT25v_K3rHuSetFJVs2g0eVf",
-      "imageSourceTitle": "Major Fitness B17 Flying Fortress All-In-One Functional Trainer with Smith Machine"
+      "imageUrl": "https://www.fitnesszone.com/Merchant2/graphics/00000001/13/major%20fitness%20b17%20upgraded%20ajustable%20leg%20holder_800x800.webp",
+      "imageSourceUrl": "https://www.fitnesszone.com/product/major-fitness-b17-flying-fortress-smith-machine.html?srsltid=AfmBOopbtRz7ZACctiGtK8zoLo63gxfmGu03wEVGeTN4unS66_GBTmgi",
+      "imageSourceTitle": "Major Fitness Heritage Series B17 Flying Fortress All-In-One Functional  Trainer with Smith Machine"
+    },
+    {
+      "title": "PRx Profile PRO Squat Rack",
+      "category": "fitness",
+      "categoryLabel": "Fitness",
+      "icon": "💪",
+      "reason": "Best CrossFit Home Gym",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.garagegymreviews.com/best-home-gyms",
+          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=PRx+Profile+PRO+Squat+Rack&tag=catchdeal07-21",
+      "imageUrl": "https://www.torquefitness.com/cdn/shop/files/PRxProfile3x3ProSquatRackwithMutligripBar03.webp?v=1752780522&width=800",
+      "imageSourceUrl": "https://www.torquefitness.com/products/prx-profile-pro-squat-rack-with-multi-grip-bar?srsltid=AfmBOorlnrMzv_OGGty9OoUlpZyNmBwL6Cj8sOuJRhlyiX3XBLDdPweq",
+      "imageSourceTitle": "PRx Profile® PRO Squat Rack with Multi-grip Bar (89\")"
     },
     {
       "title": "REP Fitness Ares 2.0",
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Compatible with REP power racks, this trainer adds versatility and smooth functionality to your existing setup.",
+      "reason": "Best Home Gym Compatible with a REP Rack",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -547,9 +431,49 @@
       ],
       "score": 104,
       "amazonUrl": "https://www.amazon.in/s?k=REP+Fitness+Ares+2.0&tag=catchdeal07-21",
-      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_%28IA_reportofminister00albe_1%29.pdf/page1-960px-A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_%28IA_reportofminister00albe_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_(IA_reportofminister00albe_1).pdf",
-      "imageSourceTitle": "Wikimedia Commons · Public domain · Alberta. Fitness and Amateur Sport Survey Committee"
+      "imageUrl": "https://repfitness.com/cdn/shop/files/Ares2.0-Lifestyle-714-Edit.jpg?v=1762444638&width=1445",
+      "imageSourceUrl": "https://repfitness.com/products/ares-2-0-builder",
+      "imageSourceTitle": "Ares - 2.0 Cable Attachment for PR-4000/5000 Power Racks | Gym Rack Cable Attachment | REP Fitness"
+    },
+    {
+      "title": "Dialed Motion Smart Trainer",
+      "category": "fitness",
+      "categoryLabel": "Fitness",
+      "icon": "💪",
+      "reason": "Innovative design with smart features.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=lsEVtqyiaZM",
+          "title": "The Best (NEW) Home Gym Equipment You'll Actually Want!"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Dialed+Motion+Smart+Trainer&tag=catchdeal07-21",
+      "imageUrl": "https://dialedmotion.com/cdn/shop/files/dialed_motion_hero_mobile_3x_e40044f1-f745-463d-8842-c9f259d4e6f6.webp?v=1778726542&width=3840",
+      "imageSourceUrl": "https://dialedmotion.com/",
+      "imageSourceTitle": "Dialed Motion"
+    },
+    {
+      "title": "Force USA C10 All-In-One Trainer",
+      "category": "fitness",
+      "categoryLabel": "Fitness",
+      "icon": "💪",
+      "reason": "Versatile all-in-one solution for effective training.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=lsEVtqyiaZM",
+          "title": "The Best (NEW) Home Gym Equipment You'll Actually Want!"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Force+USA+C10+All-In-One+Trainer&tag=catchdeal07-21",
+      "imageUrl": "https://fitnesssystems.biz/wp-content/uploads/2025/08/C10_01.jpg",
+      "imageSourceUrl": "https://fitnesssystems.biz/product/force-usa-c10-all-in-one-trainer/",
+      "imageSourceTitle": "Force USA C10 All-In-One Trainer, Functional Trainer Power Rack w/ Smith Machine, 6-Pulley Cable System, Vertical Lat Pulldown, Multi-Station Home Gym"
     }
   ]
 }
