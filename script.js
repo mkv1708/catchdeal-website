@@ -20,6 +20,7 @@ const badgeClass=b=>({"Widely Recommended":"badge-bestseller","Popular Pick":"ba
 const sourceLabel=p=>p.sourceCount>1?`${p.sourceCount} independent guides`:"Independent guide pick";
 const visualForCategory=id=>`assets/visuals/${id}.svg`;
 const visualImg=(id,label)=>`<img src="${escapeHtml(visualForCategory(id))}" alt="${escapeHtml(label)}" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">`;
+const productImg=(p,id,label)=>p.imageUrl?`<img src="${escapeHtml(p.imageUrl)}" alt="${escapeHtml(p.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${escapeHtml(visualForCategory(id))}'" style="width:100%;height:100%;object-fit:contain;display:block;background:#fff;padding:10px">`:visualImg(id,label);
 
 function setCategory(category){
  state.category=category;
@@ -46,7 +47,7 @@ function renderCategoryNavigation(){
 function renderFeatured(){
  const picks=[...(catalogue.products||[])].sort((a,b)=>(b.score||0)-(a.score||0)).slice(0,3);
  featured.innerHTML=picks.length?picks.map(p=>
-   `<article class="featured-card"><div style="height:118px;border-radius:16px;overflow:hidden;margin-bottom:14px">${visualImg(p.category,p.categoryLabel||p.category)}</div><div class="featured-top"><span class="featured-symbol">${escapeHtml(p.icon||"🛍️")}</span><span class="featured-badge">${escapeHtml(p.badge||"Worth a Look")}</span></div><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.reason||"Appears in a current independent buying guide.")}</p><a href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Check on Amazon <span>→</span></a></article>`
+   `<article class="featured-card"><div style="height:150px;border-radius:16px;overflow:hidden;margin-bottom:14px;background:#fff">${productImg(p,p.category,p.categoryLabel||p.category)}</div><div class="featured-top"><span class="featured-symbol">${escapeHtml(p.icon||"🛍️")}</span><span class="featured-badge">${escapeHtml(p.badge||"Worth a Look")}</span></div><h3>${escapeHtml(p.title)}</h3><p>${escapeHtml(p.reason||"Appears in a current independent buying guide.")}</p><a href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Check on Amazon <span>→</span></a></article>`
  ).join(""):'<div class="empty-state">Featured picks will appear after the next catalogue refresh.</div>';
 }
 
@@ -56,7 +57,7 @@ function renderProducts(){
    const items=products.filter(p=>p.category===cat.id);
    if(!items.length)return "";
    return `<section class="category-section" id="${escapeHtml(cat.id)}" data-category="${escapeHtml(cat.id)}"><div class="category-header"><div class="category-icon-wrap">${escapeHtml(cat.icon||"🛍️")}</div><span class="category-name">${escapeHtml(cat.label)}</span><span class="category-count">${items.length} picks</span></div><div class="products-grid">${items.map(p=>
-     `<article class="product-card"><div class="product-visual">${visualImg(cat.id,`${p.title} category artwork`)}</div><div class="badge-row"><span class="badge ${badgeClass(p.badge)}">${escapeHtml(p.badge||"Worth a Look")}</span></div><p class="product-name">${escapeHtml(p.title)}</p><div class="product-meta"><span>✓ ${escapeHtml(sourceLabel(p))}</span></div><p class="product-why">${escapeHtml(p.reason||"Appears in a current independent buying guide.")}</p><a class="product-buy" href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Check on Amazon <span class="buy-arrow">→</span></a></article>`
+     `<article class="product-card"><div class="product-visual">${productImg(p,cat.id,`${p.title} category artwork`)}</div><div class="badge-row"><span class="badge ${badgeClass(p.badge)}">${escapeHtml(p.badge||"Worth a Look")}</span></div><p class="product-name">${escapeHtml(p.title)}</p><div class="product-meta"><span>✓ ${escapeHtml(sourceLabel(p))}</span></div><p class="product-why">${escapeHtml(p.reason||"Appears in a current independent buying guide.")}</p><a class="product-buy" href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Check on Amazon <span class="buy-arrow">→</span></a></article>`
    ).join("")}</div></section>`;
  }).join("")||'<div class="empty-state">No fresh picks are available yet. Please check back soon.</div>';
 }
