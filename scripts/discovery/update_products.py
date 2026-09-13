@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 FIRECRAWL_SEARCH_URL = "https://api.firecrawl.dev/v2/search"
+COMMONS_API_URL = "https://commons.wikimedia.org/w/api.php"
 OUTPUT = Path("data/products.json")
 
 CATEGORIES = [
@@ -44,6 +45,19 @@ def post_json(url, payload, headers=None, retries=3):
             if attempt<retries-1:
                 time.sleep(2**attempt); continue
             raise RuntimeError(f"Firecrawl request failed: {exc}") from exc
+
+
+def get_json(url, params, retries=3):
+    full_url=url+"?"+urllib.parse.urlencode(params)
+    req=urllib.request.Request(full_url,headers={"User-Agent":"CatchDeal/1.0 (https://catchdeal.in/)"})
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req,timeout=45) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except Exception:
+            if attempt<retries-1:
+                time.sleep(1.5*(attempt+1)); continue
+            raise
 
 
 def search_category(category, year, api_key):
@@ -113,60 +127,78 @@ def collect_category(category, web_results, partner_tag):
 
 
 def tokens(value):
-    stop={"the","and","with","for","edition","wireless","smart","phone","smartphone"}
+    stop={"the","and","with","for","edition","wireless","smart","phone","smartphone","black","white"}
     return [x for x in re.findall(r"[a-z0-9]+",value.casefold()) if len(x)>1 and x not in stop]
 
 
-def choose_image(product_name, image_results):
+def load_existing_images():
+    if not OUTPUT.exists(): return {}
+    try:
+        old=json.loads(OUTPUT.read_text(encoding="utf-8"))
+        return {key_for(p.get("title","")): {k:p[k] for k in ("imageUrl","imageSourceUrl","imageSourceTitle") if p.get(k)}
+                for p in old.get("products",[]) if p.get("title") and p.get("imageUrl")}
+    except Exception:
+        return {}
+
+
+def search_commons_image(product_name):
+    params={
+        "action":"query","format":"json","generator":"search","gsrsearch":product_name,
+        "gsrnamespace":6,"gsrlimit":10,"prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":900,
+    }
+    data=get_json(COMMONS_API_URL,params)
     wanted=tokens(product_name)
     best=None; best_score=-1
-    for item in image_results:
-        image_url=item.get("imageUrl") or ""
-        page_url=item.get("url") or ""
-        title=item.get("title") or ""
+    for page in (data.get("query") or {}).get("pages",{}).values():
+        title=page.get("title") or ""
+        info=(page.get("imageinfo") or [{}])[0]
+        image_url=info.get("thumburl") or info.get("url") or ""
         if not image_url.startswith("https://"): continue
-        width=item.get("imageWidth") or 0; height=item.get("imageHeight") or 0
-        if width and height and (width<220 or height<220): continue
-        hay=(title+" "+page_url+" "+image_url).casefold()
+        hay=title.casefold()
         matches=sum(1 for t in wanted if t in hay)
-        if wanted and matches<min(2,len(wanted)): continue
-        score=matches*10 + (4 if "official" in hay else 0) + (3 if "support" in hay or "product" in hay else 0)
+        required=1 if len(wanted)<=1 else min(2,len(wanted))
+        if matches<required: continue
+        meta=info.get("extmetadata") or {}
+        license_name=((meta.get("LicenseShortName") or {}).get("value") or "").strip()
+        artist=re.sub("<[^>]+>","",((meta.get("Artist") or {}).get("value") or "")).strip()
+        score=matches*10
+        if "logo" in hay or "icon" in hay: score-=8
         if score>best_score:
-            best_score=score; best={"imageUrl":image_url,"imageSourceUrl":page_url,"imageSourceTitle":title}
+            source="https://commons.wikimedia.org/wiki/"+urllib.parse.quote(title.replace(" ","_"),safe=":_/()")
+            label="Wikimedia Commons"
+            if license_name: label+=f" · {license_name}"
+            if artist: label+=f" · {artist[:80]}"
+            best={"imageUrl":image_url,"imageSourceUrl":source,"imageSourceTitle":label}
+            best_score=score
     return best
 
 
-def search_product_image(product_name, api_key):
-    if not api_key: return None
-    payload={"query":f'"{product_name}" official product image',"limit":5,"sources":[{"type":"images"}],"excludeDomains":EXCLUDED_DOMAINS}
-    result=post_json(FIRECRAWL_SEARCH_URL,payload,headers={"Authorization":f"Bearer {api_key}"})
-    if not result.get("success"): return None
-    return choose_image(product_name,(result.get("data") or {}).get("images") or [])
-
-
-def enrich_images(products, api_key):
-    if not api_key:
-        print("NOTE: FIRECRAWL_API_KEY is not set, so product-specific image search is skipped.")
-        return
-    print(f"Resolving product images for {len(products)} picks…")
-    found=0
-    for i,product in enumerate(products, start=1):
+def enrich_images(products):
+    existing=load_existing_images()
+    print(f"Resolving product images for {len(products)} picks using free Wikimedia Commons…")
+    reused=0; found=0
+    for i,product in enumerate(products,start=1):
+        old=existing.get(key_for(product["title"]))
+        if old:
+            product.update(old); reused+=1
+            print(f"  kept {i}/{len(products)}: {product['title']}")
+            continue
         try:
-            image=search_product_image(product["title"],api_key)
+            image=search_commons_image(product["title"])
             if image:
                 product.update(image); found+=1
-                print(f"  image {i}/{len(products)}: {product['title']}")
+                print(f"  commons {i}/{len(products)}: {product['title']}")
             else:
-                print(f"  no exact image: {product['title']}")
+                print(f"  no free image: {product['title']}")
         except Exception as exc:
             print(f"  image lookup failed for {product['title']}: {exc}",file=sys.stderr)
-        time.sleep(0.45)
-    print(f"Resolved {found}/{len(products)} product images.")
+        time.sleep(0.15)
+    print(f"Images ready: {reused} retained + {found} new free Commons matches.")
 
 
 def write_catalogue(products):
     payload={"generatedAt":datetime.now(timezone.utc).isoformat(),"method":"independent-web-discovery",
-             "note":"Product names are discovered from independent public buying guides. Product images are resolved separately from public web image search when a matching source is available. Prices, stock and ratings are not scraped from Amazon.",
+             "note":"Product recommendations come from independent public buying guides. Product images use retained verified image URLs or free Wikimedia Commons matches when available. Prices, stock and ratings are not scraped from Amazon.",
              "categories":[{"id":c["id"],"label":c["label"],"icon":c["icon"]} for c in CATEGORIES],"products":products}
     OUTPUT.parent.mkdir(parents=True,exist_ok=True)
     OUTPUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
@@ -192,7 +224,7 @@ def main():
     if len(all_products)<8:
         print("WARNING: Not enough reliable products were discovered. Existing catalogue is left unchanged.",file=sys.stderr)
         return 0
-    enrich_images(all_products,api_key)
+    enrich_images(all_products)
     write_catalogue(all_products)
     print(f"Generated {len(all_products)} CatchDeal picks across {len(CATEGORIES)} categories.")
     if failures:
