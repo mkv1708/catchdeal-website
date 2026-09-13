@@ -1,0 +1,1 @@
+Product images are resolved by Firecrawl image search in the discovery workflow. The workflow prefers exact-model image results from manufacturer/support/newsroom pages when available, excludes large marketplaces, and stores only the remote image URL plus source page URL. If no credible exact-match image is found, the frontend falls back to local category artwork.
