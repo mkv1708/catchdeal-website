@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CatchDeal.in — Discover Products Worth Buying</title>
-  <meta name="description" content="Discover useful products surfaced from current independent buying guides, then check live prices and availability on Amazon India.">
+  <title>CatchDeal.in — Smart Picks. Better Deals.</title>
+  <meta name="description" content="Discover curated products and buy on Amazon India through CatchDeal.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://catchdeal.in/">
-  <meta property="og:title" content="CatchDeal.in — Discover Products Worth Buying">
-  <meta property="og:description" content="A cleaner way to discover useful products and check them on Amazon India.">
+  <meta property="og:title" content="CatchDeal.in — Smart Picks. Better Deals.">
+  <meta property="og:description" content="Curated product picks with quick Amazon India buying links.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://catchdeal.in/">
-  <meta name="theme-color" content="#111827">
+  <meta name="theme-color" content="#ff6b00">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
@@ -21,131 +21,91 @@
   <header class="site-header">
     <div class="nav-shell">
       <a href="./" class="brand" aria-label="CatchDeal home">
-        <span class="brand-mark">C</span>
-        <span class="brand-word">Catch<span>Deal</span></span>
+        <span class="brand-bag">✓</span>
+        <span class="brand-copy"><strong>Catch<span>Deal</span></strong><small>Smart Picks. Better Deals.</small></span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#featured">Top picks</a>
+        <a class="active" href="#top-deals">Home</a>
         <a href="#categories">Categories</a>
-        <a href="#deals">All picks</a>
+        <a href="#deals">Products</a>
         <a href="about.html">About</a>
       </nav>
-      <a class="nav-action" href="#deals">Browse deals <span>→</span></a>
+      <label class="nav-search">
+        <span>⌕</span>
+        <input id="nav-search" type="search" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+      </label>
+      <a class="nav-action" href="#top-deals">🔥 Today's Picks</a>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-glow hero-glow-one"></div>
-      <div class="hero-glow hero-glow-two"></div>
-      <div class="hero-shell">
+    <section class="hero-wrap">
+      <div class="hero-card">
         <div class="hero-copy">
-          <span class="hero-kicker"><span class="live-dot"></span> Product discovery, simplified</span>
-          <h1>Find products worth <span>checking out.</span></h1>
-          <p>We scan current independent buying guides and turn the noise into a simple shortlist. You choose the product; Amazon India shows the live price, stock and reviews.</p>
-          <div class="hero-search" role="search">
-            <span class="search-icon" aria-hidden="true">⌕</span>
-            <input id="hero-search" type="search" placeholder="Search phones, earbuds, smartwatches..." autocomplete="off" aria-label="Search product picks">
-            <a href="#deals" id="hero-search-button">Search picks</a>
-          </div>
-          <div class="hero-proof">
-            <span>✓ Independent guide discovery</span>
-            <span>✓ Amazon India links</span>
-            <span>✓ Refreshed automatically</span>
+          <span class="hero-kicker">TRENDING PRODUCTS • SMART PICKS • AMAZON INDIA</span>
+          <h1>Discover.<br>Compare.<br><span>Buy now.</span></h1>
+          <p>Popular products, picked from current buying guides and ready to shop on Amazon India.</p>
+          <a class="hero-cta" href="#top-deals">Shop Top Picks <span>→</span></a>
+          <div class="hero-trust">
+            <span>◉ Curated picks</span>
+            <span>↗ Amazon India links</span>
+            <span>⚡ Refreshed automatically</span>
           </div>
         </div>
-        <div class="hero-panel" aria-label="CatchDeal highlights">
-          <div class="panel-top">
-            <span>CatchDeal snapshot</span>
-            <span class="panel-status">LIVE</span>
-          </div>
-          <div class="panel-stat-grid">
-            <div><strong id="hero-product-count">—</strong><span>current picks</span></div>
-            <div><strong id="hero-category-count">—</strong><span>categories</span></div>
-          </div>
-          <div class="panel-feature">
-            <span class="panel-label">Why people use it</span>
-            <strong>Less scrolling.<br>More useful choices.</strong>
-            <p>No giant catalogue. Just products that keep appearing in current recommendations.</p>
-          </div>
+        <div class="hero-showcase" id="hero-showcase" aria-label="Featured products">
+          <div class="hero-product-placeholder"></div>
+          <div class="hero-product-placeholder"></div>
+          <div class="hero-product-placeholder"></div>
         </div>
       </div>
     </section>
 
-    <section class="benefit-strip" aria-label="How CatchDeal works">
-      <div><span class="benefit-icon">01</span><div><strong>We scan</strong><small>Independent buying guides</small></div></div>
-      <div><span class="benefit-icon">02</span><div><strong>We shortlist</strong><small>Products worth a closer look</small></div></div>
-      <div><span class="benefit-icon">03</span><div><strong>You decide</strong><small>Check live details on Amazon</small></div></div>
+    <section class="category-band" id="categories">
+      <div class="category-scroll" id="category-cards"></div>
     </section>
 
-    <section class="section-shell" id="categories">
-      <div class="section-heading compact-heading">
-        <div><span class="eyebrow">Shop by category</span><h2>Jump straight to what you need</h2></div>
-      </div>
-      <div class="category-grid" id="category-cards">
-        <div class="category-skeleton"></div><div class="category-skeleton"></div><div class="category-skeleton"></div>
-      </div>
-    </section>
-
-    <section class="section-shell featured-section" id="featured">
-      <div class="section-heading">
-        <div><span class="eyebrow">Trending across guides</span><h2>Start with these picks</h2><p>Products that stand out based on repeated mentions and current recommendations.</p></div>
+    <section class="section-shell" id="top-deals">
+      <div class="section-heading shop-heading">
+        <div>
+          <span class="eyebrow">🔥 Today's Top Picks</span>
+          <h2>Products worth checking out</h2>
+          <p>Tap Buy Now to see the current product options on Amazon India.</p>
+        </div>
         <span class="fresh-pill" id="updated-label">Updating…</span>
       </div>
       <div class="featured-grid" id="featured-products">
-        <div class="featured-skeleton"></div><div class="featured-skeleton"></div><div class="featured-skeleton"></div>
+        <div class="featured-skeleton"></div><div class="featured-skeleton"></div><div class="featured-skeleton"></div><div class="featured-skeleton"></div><div class="featured-skeleton"></div>
       </div>
     </section>
 
     <section class="catalogue" id="deals">
       <div class="section-shell">
         <div class="catalogue-head">
-          <div><span class="eyebrow">Explore the shortlist</span><h2>All current product picks</h2><p>Filter by category or search the catalogue. Prices and availability are checked directly on Amazon.</p></div>
+          <div><span class="eyebrow">Explore all picks</span><h2>Shop by category</h2></div>
         </div>
-
         <div class="catalogue-toolbar">
           <label class="search-box">
             <span aria-hidden="true">⌕</span>
-            <input id="product-search" type="search" placeholder="Search current picks..." autocomplete="off" aria-label="Search products">
+            <input id="product-search" type="search" placeholder="Search phones, earbuds, watches..." autocomplete="off" aria-label="Search products">
             <button id="clear-search" type="button" aria-label="Clear search">×</button>
           </label>
-          <div class="tabs" id="category-tabs" aria-label="Product categories">
-            <button class="tab active" data-category="all" type="button">All</button>
-          </div>
+          <div class="tabs" id="category-tabs" aria-label="Product categories"><button class="tab active" data-category="all" type="button">All</button></div>
         </div>
-
-        <div class="results-meta">
-          <span id="results-count">Loading picks…</span>
-          <button id="reset-filters" type="button">Reset filters</button>
-        </div>
-        <div class="products-wrapper" id="products-container">
-          <div class="loading-card">Loading current picks…</div>
-        </div>
+        <div class="results-meta"><span id="results-count">Loading picks…</span><button id="reset-filters" type="button">Reset filters</button></div>
+        <div class="products-wrapper" id="products-container"><div class="loading-card">Loading current picks…</div></div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="footer-shell">
-      <div class="footer-brand-block">
-        <a href="./" class="brand footer-brand"><span class="brand-mark">C</span><span class="brand-word">Catch<span>Deal</span></span></a>
-        <p>Simple product discovery for Amazon India.</p>
-      </div>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <div><a href="./" class="brand footer-brand"><span class="brand-bag">✓</span><span class="brand-copy"><strong>Catch<span>Deal</span></strong><small>Smart Picks. Better Deals.</small></span></a></div>
+      <div class="footer-links"><a href="about.html">About</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a></div>
       <div class="footer-legal">As an Amazon Associate, we earn from qualifying purchases.<br>© <span id="year"></span> CatchDeal.in</div>
     </div>
   </footer>
 
-  <div class="mobile-shop-bar">
-    <span><strong id="mobile-count">Picks</strong> available</span>
-    <a href="#deals">Browse <span>→</span></a>
-  </div>
-
+  <div class="mobile-shop-bar"><span><strong id="mobile-count">Picks</strong> available</span><a href="#top-deals">Shop now</a></div>
   <script src="script.js" defer></script>
 </body>
 </html>
