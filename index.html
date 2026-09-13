@@ -1,403 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CatchDeal.in — Curated Amazon Finds</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatchDeal.in — Simple, Curated Amazon Picks</title>
+  <meta name="description" content="Simple, curated Amazon India picks across mobiles, audio, home, kitchen and everyday essentials. Compare quickly and shop with confidence.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://catchdeal.in/">
+  <meta property="og:title" content="CatchDeal.in — Simple, Curated Amazon Picks">
+  <meta property="og:description" content="Useful Amazon India finds, selected to make everyday buying simpler.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://catchdeal.in/">
+  <meta name="theme-color" content="#f8f5ef">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --cream: #f8f5ef;
-      --paper: #fffdf9;
-      --ink: #2f281f;
-      --ink-soft: #5f5649;
-      --line: #e7dfd1;
-      --accent: #c1843f;
-      --accent-soft: #eadbc8;
-      --accent-deep: #8e6232;
-      --chip: #f3ece3;
-      --shadow: rgba(47, 40, 31, 0.06);
-      --green-bg: #edf4ee;
-      --green-text: #4d6b52;
-      --rose-bg: #f8efec;
-      --rose-text: #8a6156;
-      --blue-bg: #eef2f7;
-      --blue-text: #50657d;
-    }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--ink);
-      min-height: 100vh;
-    }
-    nav {
-      background: rgba(248,245,239,0.92);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--line);
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-logo {
-      font-family: 'Fraunces', serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: var(--ink);
-      text-decoration: none;
-      letter-spacing: -0.4px;
-    }
-    .nav-logo span { color: var(--accent); }
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: var(--ink-soft);
-      text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--ink); }
-    .nav-badge {
-      border: 1px solid var(--accent-soft);
-      color: var(--accent-deep);
-      background: var(--paper);
-      font-size: 0.76rem;
-      font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 999px;
-    }
-    .hero {
-      padding: 5.25rem 2rem 4.5rem;
-      text-align: center;
-      background: linear-gradient(180deg, #f5efe6 0%, var(--cream) 100%);
-      border-bottom: 1px solid var(--line);
-    }
-    .hero-eyebrow {
-      display: inline-block;
-      background: var(--chip);
-      border: 1px solid var(--line);
-      color: var(--accent-deep);
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      padding: 7px 14px;
-      border-radius: 999px;
-      margin-bottom: 1.4rem;
-    }
-    .hero h1 {
-      font-family: 'Fraunces', serif;
-      font-size: clamp(2.35rem, 5vw, 4rem);
-      font-weight: 600;
-      letter-spacing: -1.2px;
-      line-height: 1.08;
-      margin-bottom: 1rem;
-    }
-    .hero h1 em {
-      font-style: italic;
-      color: var(--accent);
-      font-weight: 500;
-    }
-    .hero p {
-      max-width: 560px;
-      margin: 0 auto 2rem;
-      color: var(--ink-soft);
-      font-size: 1.02rem;
-      line-height: 1.75;
-      font-weight: 400;
-    }
-    .hero-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 22px;
-      border-radius: 999px;
-      border: 1px solid var(--accent-soft);
-      background: var(--paper);
-      color: var(--ink);
-      text-decoration: none;
-      font-weight: 600;
-      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
-    }
-    .hero-cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px var(--shadow);
-      border-color: #d7c0a3;
-    }
-    .section-header {
-      padding: 3rem 2rem 1.2rem;
-      max-width: 1180px;
-      margin: 0 auto;
-    }
-    .section-label {
-      color: var(--accent-deep);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 1.6px;
-      text-transform: uppercase;
-      margin-bottom: 0.55rem;
-    }
-    .section-title {
-      font-family: 'Fraunces', serif;
-      font-size: 1.9rem;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-    }
-    .section-copy {
-      color: var(--ink-soft);
-      margin-top: 0.65rem;
-      max-width: 640px;
-      line-height: 1.7;
-      font-size: 0.96rem;
-    }
-    .tabs {
-      display: flex;
-      gap: 0.6rem;
-      padding: 0 2rem 2rem;
-      max-width: 1180px;
-      margin: 0 auto;
-      overflow-x: auto;
-      scrollbar-width: none;
-    }
-    .tabs::-webkit-scrollbar { display: none; }
-    .tab {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 9px 16px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: var(--paper);
-      color: var(--ink-soft);
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 500;
-      white-space: nowrap;
-      transition: all 0.2s;
-    }
-    .tab:hover { color: var(--ink); border-color: #d8ccb9; }
-    .tab.active {
-      background: #efe6d8;
-      color: var(--ink);
-      border-color: #d8ccb9;
-    }
-    .products-wrapper {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 0 2rem 4rem;
-    }
-    .category-section { margin-bottom: 3.2rem; }
-    .category-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.95rem;
-      border-bottom: 1px solid var(--line);
-    }
-    .category-icon-wrap {
-      width: 38px;
-      height: 38px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      background: var(--chip);
-    }
-    .icon-electronics { background: #f1eee7; }
-    .icon-audio { background: #eee9f0; }
-    .icon-smart-home { background: #edf1ea; }
-    .icon-kitchen { background: #f6eee5; }
-    .category-name {
-      font-family: 'Fraunces', serif;
-      font-size: 1.16rem;
-      font-weight: 600;
-    }
-    .category-count {
-      margin-left: auto;
-      color: var(--ink-soft);
-      font-size: 0.8rem;
-    }
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 1rem;
-    }
-    .product-card {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 1.15rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-      transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
-      box-shadow: 0 6px 18px var(--shadow);
-    }
-    .product-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 26px rgba(47, 40, 31, 0.09);
-      border-color: #d9cbb7;
-    }
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .badge {
-      font-size: 0.66rem;
-      font-weight: 600;
-      padding: 4px 8px;
-      border-radius: 999px;
-      letter-spacing: 0.2px;
-    }
-    .badge-bestseller { background: var(--accent-soft); color: var(--accent-deep); }
-    .badge-hot { background: var(--rose-bg); color: var(--rose-text); }
-    .badge-deal { background: var(--green-bg); color: var(--green-text); }
-    .badge-new { background: var(--blue-bg); color: var(--blue-text); }
-    .badge-prime { background: var(--chip); color: var(--ink-soft); }
-    .product-name {
-      font-family: 'Fraunces', serif;
-      font-size: 0.95rem;
-      line-height: 1.38;
-      font-weight: 600;
-      color: var(--ink);
-      min-height: 3.25rem;
-    }
-    .product-why {
-      color: var(--ink-soft);
-      font-size: 0.8rem;
-      line-height: 1.6;
-      padding-left: 9px;
-      border-left: 2px solid var(--accent-soft);
-      min-height: 4.6rem;
-    }
-    .product-buy {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      width: 100%;
-      margin-top: auto;
-      background: #efe6d8;
-      color: var(--ink);
-      border: 1px solid #dbcbb6;
-      border-radius: 12px;
-      padding: 11px 16px;
-      text-decoration: none;
-      font-size: 0.88rem;
-      font-weight: 600;
-      transition: background 0.18s, border-color 0.18s;
-    }
-    .product-buy:hover {
-      background: #eadcc7;
-      border-color: #d0b692;
-    }
-    .buy-arrow { font-size: 12px; transition: transform 0.2s; }
-    .product-buy:hover .buy-arrow { transform: translateX(2px); }
-    footer {
-      border-top: 1px solid var(--line);
-      background: #f3ede4;
-      color: var(--ink-soft);
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.82rem;
-      line-height: 1.8;
-    }
-    .footer-logo {
-      display: block;
-      font-family: 'Fraunces', serif;
-      font-size: 1.16rem;
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 0.45rem;
-    }
-    .footer-logo span { color: var(--accent); }
-    footer a { color: var(--ink-soft); text-decoration: none; }
-    footer a:hover { color: var(--ink); }
-    @media (max-width: 760px) {
-      nav { padding: 0 1.2rem; }
-      .nav-links { display: none; }
-      .hero { padding: 4rem 1.25rem 3.5rem; }
-      .section-header, .tabs, .products-wrapper { padding-left: 1.25rem; padding-right: 1.25rem; }
-      .products-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-      .product-name { min-height: auto; }
-      .product-why { min-height: auto; }
-    }
-    @media (max-width: 430px) {
-      .products-grid { grid-template-columns: 1fr; }
-      .hero h1 { letter-spacing: -0.8px; }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="#" class="nav-logo">Catch<span>Deal</span>.in</a>
-    <ul class="nav-links">
-      <li><a href="#mobiles">Mobiles</a></li>
-      <li><a href="#audio">Audio</a></li>
-      <li><a href="#smart-devices">Wearables</a></li>
-      <li><a href="#kitchen">Kitchen</a></li>
-      <li><a href="#home-comfort">Home</a></li>
-    </ul>
-    <span class="nav-badge">Curated Picks</span>
+  <nav class="site-nav">
+    <a href="./" class="nav-logo">Catch<span>Deal</span>.in</a>
+    <div class="nav-links" aria-label="Main navigation">
+      <a href="#deals">Deals</a>
+      <a href="#categories">Categories</a>
+      <a href="about.html">About</a>
+    </div>
+    <a class="nav-cta" href="#deals">Shop picks <span>→</span></a>
   </nav>
 
-  <section class="hero">
-    <div class="hero-eyebrow">Updated regularly</div>
-    <h1>Useful finds for<br><em>everyday buying.</em></h1>
-    <p>A calm, curated view of Amazon products across popular categories — selected to help you compare quickly and choose with confidence.</p>
-    <a href="#deals" class="hero-cta">Browse picks <span>↓</span></a>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="hero-eyebrow">Less searching · Better picking</span>
+        <h1>Good products.<br><em>Less scrolling.</em></h1>
+        <p>We hand-pick useful products on Amazon India and keep the experience simple — so you can find something worth buying faster.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#deals">Explore picks <span>↓</span></a>
+          <span class="micro-trust">✓ Curated regularly</span>
+        </div>
+      </div>
+    </section>
 
-  <div id="deals">
-    <div class="section-header">
-      <p class="section-label">Curated selection</p>
-      <h2 class="section-title">Popular products on Amazon India</h2>
-      <p class="section-copy">Browse category-wise picks with short, practical notes. The layout stays simple so the products stay easy to scan.</p>
-    </div>
+    <section class="trust-strip" aria-label="Why use CatchDeal">
+      <div><strong>Curated</strong><span>Shortlist, not clutter</span></div>
+      <div><strong>Practical</strong><span>Quick reasons for each pick</span></div>
+      <div><strong>Amazon India</strong><span>Open the deal and decide</span></div>
+    </section>
 
-    <div class="tabs">
-      <a href="#deals" class="tab active"><span>•</span> All</a>
-      <a href="#mobiles" class="tab"><span>📱</span> Mobiles</a>
-      <a href="#audio" class="tab"><span>🎧</span> Audio</a>
-      <a href="#smart-devices" class="tab"><span>⌚</span> Wearables</a>
-      <a href="#kitchen" class="tab"><span>🍳</span> Kitchen</a>
-      <a href="#home-comfort" class="tab"><span>🏠</span> Home Comfort</a>
-    </div>
+    <section id="deals" class="deals-section">
+      <div class="section-header">
+        <div>
+          <p class="section-label">Today's shortlist</p>
+          <h2 class="section-title">Find your next useful buy</h2>
+          <p class="section-copy">Search the shortlist or filter by category. No complicated comparisons — just a few products worth a closer look.</p>
+        </div>
+        <div class="updated-pill" id="updated-label">Updated regularly</div>
+      </div>
 
-    <div class="products-wrapper" id="products-container">
-      <p style="color: var(--ink-soft); font-size: 0.92rem;">Loading products...</p>
-    </div>
-  </div>
+      <div class="controls">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="product-search" type="search" placeholder="Search products..." autocomplete="off" aria-label="Search products">
+          <button id="clear-search" type="button" aria-label="Clear search">×</button>
+        </label>
+        <div class="tabs" id="category-tabs" aria-label="Product categories">
+          <button class="tab active" data-category="all" type="button">All</button>
+          <button class="tab" data-category="mobiles" type="button">📱 Mobiles</button>
+          <button class="tab" data-category="audio" type="button">🎧 Audio</button>
+          <button class="tab" data-category="smart-devices" type="button">⌚ Wearables</button>
+          <button class="tab" data-category="kitchen" type="button">🍳 Kitchen</button>
+          <button class="tab" data-category="home-comfort" type="button">🏠 Home</button>
+        </div>
+      </div>
+
+      <div class="results-meta">
+        <span id="results-count">Loading picks…</span>
+        <button id="reset-filters" type="button">Reset filters</button>
+      </div>
+      <div class="products-wrapper" id="products-container">
+        <div class="loading-card">Loading today's picks…</div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <span class="footer-logo">Catch<span>Deal</span>.in</span>
-    © 2025 CatchDeal.in — All rights reserved.<br>
-    <small>As an Amazon Associate, we earn from qualifying purchases. <a href="#">Affiliate Disclosure</a> · <a href="#">Privacy Policy</a></small>
+    <p>Simple, curated product discovery for Amazon India.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="copyright">© <span id="year"></span> CatchDeal.in</div>
   </footer>
 
-  <script>
-    fetch('data/products.html')
-      .then(r => r.text())
-      .then(html => {
-        document.getElementById('products-container').innerHTML = html;
-      })
-      .catch(() => {
-        document.getElementById('products-container').innerHTML = '<p style="color: var(--ink-soft); font-size: 0.92rem;">Unable to load products right now. Please refresh.</p>';
-      });
-  </script>
+  <div class="mobile-shop-bar">
+    <span><strong id="mobile-count">Picks</strong> worth exploring</span>
+    <a href="#deals">Browse <span>→</span></a>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
