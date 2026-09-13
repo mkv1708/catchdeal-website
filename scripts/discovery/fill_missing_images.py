@@ -1,143 +1,85 @@
 import json
+import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-CATALOGUE = Path("data/products.json")
-COMMONS_API_URL = "https://commons.wikimedia.org/w/api.php"
+CATALOGUE=Path("data/products.json")
+SEARCH_URL="https://api.firecrawl.dev/v2/search"
+BAD_WORDS=("street","road","building","landscape","cityscape","selfie","portrait","sample photo","camera sample","shot on","wallpaper","screenshot","logo","icon","case","cover","screen protector","poster","advertisement")
+BLOCKED=("amazon.in","amazon.com","flipkart.com","meesho.com","ebay.com","walmart.com","aliexpress.com","temu.com")
+STOP={"the","and","with","for","edition","wireless","smart","phone","smartphone","black","white","truly","product","official","image"}
 
-ARTICLE_PHRASES = (
-    "best ", "top ", "buying guide", "our picks", "you need", "from amazon",
-    "recommendations", "gift guide", "deals", "things to buy"
-)
-BAD_IMAGE_WORDS = (
-    "street", "road", "building", "landscape", "cityscape", "selfie", "portrait",
-    "sample photo", "camera sample", "shot on", "taken with", "photographed with",
-    "wallpaper", "screenshot", "logo", "icon", "store", "shop", "billboard",
-    "case", "cover", "screen protector", "advertisement", "poster"
-)
+def tokens(v): return [x for x in re.findall(r"[a-z0-9]+",str(v).casefold()) if len(x)>1 and x not in STOP]
+def clean_name(v):
+    v=re.sub(r"\s+"," ",str(v or "")).strip(" -–—|:;,.\t\n"); low=v.casefold()
+    if len(v)<5 or len(v)>100 or len(v.split())<2:return None
+    if low.startswith(("best ","top ","our picks","buying guide")):return None
+    if any(x in low for x in ("iphone","galaxy","pixel","reno","realme","oneplus","redmi","poco","cmf phone")) and not re.search(r"\d",v):return None
+    return v
 
+def exact(t,text): return bool(re.search(r"(?<![a-z0-9])"+re.escape(t)+r"(?![a-z0-9])",text.casefold()))
+def relevant(name,title):
+    wanted=tokens(name); hay=title.casefold()
+    if not wanted or any(x in hay for x in BAD_WORDS):return False
+    model=[x for x in wanted if any(c.isdigit() for c in x)]
+    if model and not all(exact(x,hay) for x in model):return False
+    if not exact(wanted[0],hay):return False
+    need=max(2,(len(wanted)*2+2)//3)
+    return sum(exact(x,hay) for x in wanted)>=min(need,len(wanted))
 
-def tokens(value):
-    stop={"the","and","with","for","edition","wireless","smart","phone","smartphone","black","white","truly"}
-    return [x for x in re.findall(r"[a-z0-9]+", str(value).casefold()) if len(x)>1 and x not in stop]
-
-
-def get_json(params, retries=3):
-    url=COMMONS_API_URL+"?"+urllib.parse.urlencode(params)
-    req=urllib.request.Request(url,headers={"User-Agent":"CatchDeal/1.0 (https://catchdeal.in/; product image resolver)"})
-    for attempt in range(retries):
+def post(payload,key,retries=3):
+    body=json.dumps(payload).encode(); headers={"Content-Type":"application/json","Authorization":f"Bearer {key}"}
+    for n in range(retries):
         try:
-            with urllib.request.urlopen(req,timeout=45) as response:
-                return json.loads(response.read().decode("utf-8"))
-        except Exception:
-            if attempt == retries-1: raise
-            time.sleep(1.5*(attempt+1))
+            req=urllib.request.Request(SEARCH_URL,data=body,headers=headers,method="POST")
+            with urllib.request.urlopen(req,timeout=60) as r:return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            if e.code in (429,500,502,503,504) and n<retries-1:time.sleep(2**n);continue
+            raise
 
-
-def clean_product_name(name):
-    name=re.sub(r"\s+", " ", str(name or "")).strip(" -–—|:;,.\t\n")
-    low=name.casefold()
-    if len(name)<5 or len(name)>100 or len(name.split())<2: return None
-    if any(low.startswith(x) for x in ARTICLE_PHRASES): return None
-    if any(x in low for x in ("best fall decorations", "air fryer toaster ovens", "things you need")): return None
-    if any(x in low for x in ("iphone", "galaxy", "pixel", "reno", "realme", "oneplus", "redmi", "poco", "cmf phone")) and not re.search(r"\d", name): return None
-    return name
-
-
-def exact_token_present(token, text):
-    return bool(re.search(r"(?<![a-z0-9])"+re.escape(token)+r"(?![a-z0-9])", text.casefold()))
-
-
-def relevant_image(product_name, title, description=""):
-    wanted=tokens(product_name)
-    hay=(title+" "+description).casefold()
-    if not wanted or any(word in hay for word in BAD_IMAGE_WORDS): return False
-    matches=sum(1 for t in wanted if exact_token_present(t,hay))
-    required=max(2,(len(wanted)*3+3)//4)
-    if matches < min(required,len(wanted)): return False
-    model_tokens=[t for t in wanted if any(c.isdigit() for c in t)]
-    if model_tokens and not all(exact_token_present(t,hay) for t in model_tokens): return False
-    # Brand/first meaningful token must appear too; avoids model-number collisions.
-    if wanted and not exact_token_present(wanted[0],hay): return False
-    return True
-
-
-def search_commons(product_name):
-    # Search Commons file namespace, then inspect only a small result set with machine-readable metadata.
-    data=get_json({
-        "action":"query","format":"json","generator":"search","gsrsearch":'"'+product_name+'"',
-        "gsrnamespace":6,"gsrlimit":8,"prop":"imageinfo",
-        "iiprop":"url|extmetadata|size","iiurlwidth":900,
-        "iiextmetadatafilter":"ImageDescription|LicenseShortName|Artist"
-    })
-    best=None; best_score=-1
-    for page in (data.get("query") or {}).get("pages",{}).values():
-        title=page.get("title") or ""
-        info=(page.get("imageinfo") or [{}])[0]
-        image=info.get("thumburl") or info.get("url") or ""
-        if not image.startswith("https://"): continue
-        width=info.get("thumbwidth") or info.get("width") or 0
-        height=info.get("thumbheight") or info.get("height") or 0
-        if width and height and (width<300 or height<300): continue
-        meta=info.get("extmetadata") or {}
-        desc=re.sub("<[^>]+>"," ",((meta.get("ImageDescription") or {}).get("value") or ""))
-        if not relevant_image(product_name,title,desc): continue
-        wanted=tokens(product_name)
-        hay=(title+" "+desc).casefold()
-        score=sum(10 for t in wanted if exact_token_present(t,hay))
-        # Prefer filenames that look like the actual product, not contextual photos.
-        if all(exact_token_present(t,title) for t in wanted if any(c.isdigit() for c in t)): score+=8
-        license_name=((meta.get("LicenseShortName") or {}).get("value") or "").strip()
-        artist=re.sub("<[^>]+>","",((meta.get("Artist") or {}).get("value") or "")).strip()
-        if score>best_score:
-            source="https://commons.wikimedia.org/wiki/"+urllib.parse.quote(title.replace(" ","_"),safe=":_/()")
-            label="Wikimedia Commons"+(f" · {license_name}" if license_name else "")+(f" · {artist[:80]}" if artist else "")
-            best={"imageUrl":image,"imageSourceUrl":source,"imageSourceTitle":label}
-            best_score=score
+def find_image(name,key):
+    payload={"query":f'"{name}" product image',"limit":20,"sources":[{"type":"images"}],"country":"IN","excludeDomains":list(BLOCKED)}
+    data=post(payload,key)
+    results=(data.get("data") or {}).get("images") or []
+    best=None; score=-1
+    for r in results:
+        title=str(r.get("title") or ""); image=str(r.get("imageUrl") or ""); source=str(r.get("url") or "")
+        if not image.startswith("https://") or not source.startswith("http"):continue
+        host=urllib.parse.urlparse(source).netloc.casefold().removeprefix("www.")
+        if any(host==d or host.endswith("."+d) for d in BLOCKED):continue
+        w=int(r.get("imageWidth") or 0); h=int(r.get("imageHeight") or 0)
+        if w and h and (w<300 or h<300):continue
+        if not relevant(name,title):continue
+        wanted=tokens(name); s=sum(10 for x in wanted if exact(x,title))
+        if s>score: best={"imageUrl":image,"imageSourceUrl":source,"imageSourceTitle":title[:160] or host}; score=s
     return best
 
-
 def main():
-    if not CATALOGUE.exists(): return 0
+    key=os.environ.get("FIRECRAWL_API_KEY","").strip()
+    if not key: print("FIRECRAWL_API_KEY missing; leaving live catalogue unchanged."); CATALOGUE.unlink(missing_ok=True); return 0
+    if not CATALOGUE.exists():return 0
     data=json.loads(CATALOGUE.read_text(encoding="utf-8")); products=data.get("products") or []
-    cleaned=[]; rejected=[]
-    for p in products:
-        name=clean_product_name(p.get("title"))
-        if not name:
-            rejected.append(p.get("title","(untitled)")); continue
-        p["title"]=name
-        p.pop("imageUrl",None); p.pop("imageSourceUrl",None); p.pop("imageSourceTitle",None)
-        cleaned.append(p)
-    products=cleaned
-    print(f"Quality filter: kept {len(products)} clean product names; rejected {len(rejected)} questionable entries.")
-
-    print(f"Wikimedia verification: checking {len(products)} products from scratch; no Openverse dependency.")
-    found=0
+    publish=[]
+    print(f"Firecrawl image search: checking {len(products)} exact product names; Amazon/major retailers excluded.")
     for i,p in enumerate(products,1):
-        try:
-            image=search_commons(p["title"])
-            if image:
-                p.update(image); found+=1; print(f"  verified {i}/{len(products)}: {p['title']}")
-            else:
-                print(f"  no safe match {i}/{len(products)}: {p['title']}")
-        except Exception as exc:
-            print(f"  lookup failed {i}/{len(products)}: {p['title']}: {exc}")
-        time.sleep(0.25)
-
-    publishable=[p for p in products if p.get("imageUrl")]
-    # Never replace a healthy live catalogue with an empty/tiny result because a public image service had an outage.
-    if len(publishable)<8:
-        print(f"Only {len(publishable)} verified products found; refusing to replace the live catalogue. Remove generated JSON so workflow validation/publish safely skips.")
-        CATALOGUE.unlink(missing_ok=True)
-        return 0
-
-    print(f"Publishing {len(publishable)} products with strictly matched Wikimedia images; omitting {len(products)-len(publishable)} without a safe match.")
-    data["products"]=publishable
-    data["note"]="Strict image catalogue: images are resolved from Wikimedia Commons only. Every refresh discards old assignments and publishes only products whose image filename/description closely matches the brand and model. Weak matches and scene/camera-sample images are rejected."
+        name=clean_name(p.get("title"))
+        if not name: print(f"  rejected name {i}: {p.get('title')}"); continue
+        p["title"]=name
+        for k in ("imageUrl","imageSourceUrl","imageSourceTitle"):p.pop(k,None)
+        try: image=find_image(name,key)
+        except Exception as e: print(f"  image search failed {i}/{len(products)}: {name}: {e}"); image=None
+        if image: p.update(image); publish.append(p); print(f"  matched {i}/{len(products)}: {name}")
+        else: print(f"  no strong match {i}/{len(products)}: {name}")
+        time.sleep(.35)
+    if len(publish)<8:
+        print(f"Only {len(publish)} strong image matches; refusing to replace live catalogue."); CATALOGUE.unlink(missing_ok=True); return 0
+    data["products"]=publish
+    data["note"]="Product images are discovered with Firecrawl image search using exact brand/model matching. Amazon and major retailer domains are excluded; weak/contextual matches are rejected. Source page metadata is retained for review."
     CATALOGUE.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"Publishing {len(publish)} products with strong image-search matches.")
     return 0
-
-if __name__=="__main__": raise SystemExit(main())
+if __name__=="__main__":raise SystemExit(main())
