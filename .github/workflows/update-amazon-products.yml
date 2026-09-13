@@ -30,7 +30,9 @@ jobs:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: python scripts/discovery/update_products.py
 
-      - name: Fill remaining images from free licensed web sources
+      - name: Find and verify product images with Firecrawl
+        env:
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: python scripts/discovery/fill_missing_images.py
 
       - name: Validate generated catalogue if refreshed
