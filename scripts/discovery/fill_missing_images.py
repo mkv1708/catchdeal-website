@@ -6,7 +6,7 @@ import urllib.request
 from pathlib import Path
 
 CATALOGUE = Path("data/products.json")
-OPENVERSE_URL = "https://api.openverse.org/v1/images/"
+COMMONS_API_URL = "https://commons.wikimedia.org/w/api.php"
 
 ARTICLE_PHRASES = (
     "best ", "top ", "buying guide", "our picks", "you need", "from amazon",
@@ -15,7 +15,8 @@ ARTICLE_PHRASES = (
 BAD_IMAGE_WORDS = (
     "street", "road", "building", "landscape", "cityscape", "selfie", "portrait",
     "sample photo", "camera sample", "shot on", "taken with", "photographed with",
-    "wallpaper", "screenshot", "logo", "icon", "store", "shop", "billboard"
+    "wallpaper", "screenshot", "logo", "icon", "store", "shop", "billboard",
+    "case", "cover", "screen protector", "advertisement", "poster"
 )
 
 
@@ -24,10 +25,16 @@ def tokens(value):
     return [x for x in re.findall(r"[a-z0-9]+", str(value).casefold()) if len(x)>1 and x not in stop]
 
 
-def get_json(url, params):
-    req=urllib.request.Request(url+"?"+urllib.parse.urlencode(params), headers={"User-Agent":"CatchDeal/1.0 (https://catchdeal.in/)"})
-    with urllib.request.urlopen(req, timeout=45) as response:
-        return json.loads(response.read().decode("utf-8"))
+def get_json(params, retries=3):
+    url=COMMONS_API_URL+"?"+urllib.parse.urlencode(params)
+    req=urllib.request.Request(url,headers={"User-Agent":"CatchDeal/1.0 (https://catchdeal.in/; product image resolver)"})
+    for attempt in range(retries):
+        try:
+            with urllib.request.urlopen(req,timeout=45) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except Exception:
+            if attempt == retries-1: raise
+            time.sleep(1.5*(attempt+1))
 
 
 def clean_product_name(name):
@@ -40,45 +47,57 @@ def clean_product_name(name):
     return name
 
 
-def relevant_image(product_name, title, tags=""):
+def exact_token_present(token, text):
+    return bool(re.search(r"(?<![a-z0-9])"+re.escape(token)+r"(?![a-z0-9])", text.casefold()))
+
+
+def relevant_image(product_name, title, description=""):
     wanted=tokens(product_name)
-    hay=(title+" "+tags).casefold()
-    if any(word in hay for word in BAD_IMAGE_WORDS): return False
-    if not wanted: return False
-    matches=sum(1 for t in wanted if re.search(r"(?<![a-z0-9])"+re.escape(t)+r"(?![a-z0-9])", hay))
-    # Require nearly the whole product identity, not just two coincidental words.
-    required=max(2, (len(wanted)*3 + 3)//4)
-    if matches < min(required, len(wanted)): return False
-    # Model-like tokens (numbers/alphanumeric model codes) are mandatory.
+    hay=(title+" "+description).casefold()
+    if not wanted or any(word in hay for word in BAD_IMAGE_WORDS): return False
+    matches=sum(1 for t in wanted if exact_token_present(t,hay))
+    required=max(2,(len(wanted)*3+3)//4)
+    if matches < min(required,len(wanted)): return False
     model_tokens=[t for t in wanted if any(c.isdigit() for c in t)]
-    if model_tokens and not all(re.search(r"(?<![a-z0-9])"+re.escape(t)+r"(?![a-z0-9])", hay) for t in model_tokens): return False
+    if model_tokens and not all(exact_token_present(t,hay) for t in model_tokens): return False
+    # Brand/first meaningful token must appear too; avoids model-number collisions.
+    if wanted and not exact_token_present(wanted[0],hay): return False
     return True
 
 
-def choose(product_name, results):
-    wanted=tokens(product_name); best=None; best_score=-1
-    for item in results:
-        image=item.get("url") or item.get("thumbnail") or ""
+def search_commons(product_name):
+    # Search Commons file namespace, then inspect only a small result set with machine-readable metadata.
+    data=get_json({
+        "action":"query","format":"json","generator":"search","gsrsearch":'"'+product_name+'"',
+        "gsrnamespace":6,"gsrlimit":8,"prop":"imageinfo",
+        "iiprop":"url|extmetadata|size","iiurlwidth":900,
+        "iiextmetadatafilter":"ImageDescription|LicenseShortName|Artist"
+    })
+    best=None; best_score=-1
+    for page in (data.get("query") or {}).get("pages",{}).values():
+        title=page.get("title") or ""
+        info=(page.get("imageinfo") or [{}])[0]
+        image=info.get("thumburl") or info.get("url") or ""
         if not image.startswith("https://"): continue
-        title=item.get("title") or ""
-        tags=" ".join((t.get("name") or "") for t in (item.get("tags") or []) if isinstance(t,dict))
-        if not relevant_image(product_name,title,tags): continue
-        width=item.get("width") or 0; height=item.get("height") or 0
-        if width and height and (width < 300 or height < 300): continue
-        hay=(title+" "+tags).casefold()
-        matches=sum(1 for t in wanted if t in hay); score=matches*10
-        if any(x in hay for x in ("product","device","headphones","earbuds","watch","vacuum","gym","trainer")): score+=3
-        if score > best_score:
-            source=item.get("foreign_landing_url") or item.get("detail_url") or "https://openverse.org/"
-            license_name=(item.get("license") or "").upper(); creator=item.get("creator") or ""
-            label="Openverse"+(f" · {license_name}" if license_name else "")+(f" · {creator[:80]}" if creator else "")
-            best={"imageUrl":image,"imageSourceUrl":source,"imageSourceTitle":label}; best_score=score
+        width=info.get("thumbwidth") or info.get("width") or 0
+        height=info.get("thumbheight") or info.get("height") or 0
+        if width and height and (width<300 or height<300): continue
+        meta=info.get("extmetadata") or {}
+        desc=re.sub("<[^>]+>"," ",((meta.get("ImageDescription") or {}).get("value") or ""))
+        if not relevant_image(product_name,title,desc): continue
+        wanted=tokens(product_name)
+        hay=(title+" "+desc).casefold()
+        score=sum(10 for t in wanted if exact_token_present(t,hay))
+        # Prefer filenames that look like the actual product, not contextual photos.
+        if all(exact_token_present(t,title) for t in wanted if any(c.isdigit() for c in t)): score+=8
+        license_name=((meta.get("LicenseShortName") or {}).get("value") or "").strip()
+        artist=re.sub("<[^>]+>","",((meta.get("Artist") or {}).get("value") or "")).strip()
+        if score>best_score:
+            source="https://commons.wikimedia.org/wiki/"+urllib.parse.quote(title.replace(" ","_"),safe=":_/()")
+            label="Wikimedia Commons"+(f" · {license_name}" if license_name else "")+(f" · {artist[:80]}" if artist else "")
+            best={"imageUrl":image,"imageSourceUrl":source,"imageSourceTitle":label}
+            best_score=score
     return best
-
-
-def search_openverse(product_name):
-    data=get_json(OPENVERSE_URL,{"q":'"'+product_name+'"',"page_size":30,"mature":"false"})
-    return choose(product_name,data.get("results") or [])
 
 
 def main():
@@ -87,30 +106,37 @@ def main():
     cleaned=[]; rejected=[]
     for p in products:
         name=clean_product_name(p.get("title"))
-        if not name: rejected.append(p.get("title","(untitled)")); continue
+        if not name:
+            rejected.append(p.get("title","(untitled)")); continue
         p["title"]=name
-        # Never trust an old image blindly. It may be a camera sample or unrelated scene.
         p.pop("imageUrl",None); p.pop("imageSourceUrl",None); p.pop("imageSourceTitle",None)
         cleaned.append(p)
     products=cleaned
     print(f"Quality filter: kept {len(products)} clean product names; rejected {len(rejected)} questionable entries.")
-    for name in rejected: print(f"  rejected name: {name}")
 
-    print(f"Strict Openverse verification: checking {len(products)} products from scratch.")
+    print(f"Wikimedia verification: checking {len(products)} products from scratch; no Openverse dependency.")
     found=0
     for i,p in enumerate(products,1):
         try:
-            image=search_openverse(p["title"])
+            image=search_commons(p["title"])
             if image:
                 p.update(image); found+=1; print(f"  verified {i}/{len(products)}: {p['title']}")
-            else: print(f"  no strictly matching licensed image: {p['title']}")
-        except Exception as exc: print(f"  lookup failed: {p['title']}: {exc}")
-        time.sleep(0.3)
+            else:
+                print(f"  no safe match {i}/{len(products)}: {p['title']}")
+        except Exception as exc:
+            print(f"  lookup failed {i}/{len(products)}: {p['title']}: {exc}")
+        time.sleep(0.25)
 
     publishable=[p for p in products if p.get("imageUrl")]
-    print(f"Publishing {len(publishable)} products with strictly matched images; omitting {len(products)-len(publishable)} without a verified match.")
+    # Never replace a healthy live catalogue with an empty/tiny result because a public image service had an outage.
+    if len(publishable)<8:
+        print(f"Only {len(publishable)} verified products found; refusing to replace the live catalogue. Remove generated JSON so workflow validation/publish safely skips.")
+        CATALOGUE.unlink(missing_ok=True)
+        return 0
+
+    print(f"Publishing {len(publishable)} products with strictly matched Wikimedia images; omitting {len(products)-len(publishable)} without a safe match.")
     data["products"]=publishable
-    data["note"]="Strict image catalogue: every refresh discards old image assignments and republishes only products whose licensed image metadata closely matches the full product name/model. Scene photos, camera samples and weak keyword matches are rejected."
+    data["note"]="Strict image catalogue: images are resolved from Wikimedia Commons only. Every refresh discards old assignments and publishes only products whose image filename/description closely matches the brand and model. Weak matches and scene/camera-sample images are rejected."
     CATALOGUE.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     return 0
 
