@@ -1,0 +1,49 @@
+name: Update CatchDeal Amazon Products
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-products:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch and rank Amazon products
+        env:
+          AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_CREDENTIAL_VERSION: ${{ secrets.AMAZON_CREDENTIAL_VERSION }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+        run: python scripts/amazon/update_products.py
+
+      - name: Validate generated catalogue
+        run: |
+          python - <<'PY'
+          import json
+          data=json.load(open("data/products.json"))
+          assert data["products"], "No products were generated"
+          assert all(p.get("asin") and p.get("image") and p.get("amazonUrl") for p in data["products"]), "A product is missing required fields"
+          print(f"Validated {len(data['products'])} products.")
+          PY
+
+      - name: Publish catalogue
+        run: |
+          git config user.name "catchdeal-bot"
+          git config user.email "catchdeal-bot@users.noreply.github.com"
+          git add data/products.json
+          if git diff --cached --quiet; then
+            echo "No catalogue changes to publish."
+          else
+            git commit -m "chore: refresh Amazon product catalogue"
+            git push
+          fi
