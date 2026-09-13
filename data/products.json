@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-13T21:25:27.457362+00:00",
+  "generatedAt": "2026-09-13T21:47:19.719193+00:00",
   "method": "independent-web-discovery",
-  "note": "Product names are discovered from independent public buying guides. Product images are resolved separately from public web image search when a matching source is available. Prices, stock and ratings are not scraped from Amazon.",
+  "note": "Product recommendations come from independent public buying guides. Product images use retained verified image URLs or free Wikimedia Commons matches when available. Prices, stock and ratings are not scraped from Amazon.",
   "categories": [
     {
       "id": "mobiles",
@@ -36,11 +36,35 @@
   ],
   "products": [
     {
-      "title": "iPhone Duo",
+      "title": "OnePlus 10 Pro",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Mentioned for its advanced technology and ecosystem integration.",
+      "reason": "Offers great value with high-end specifications and fast charging.",
+      "badge": "Popular Pick",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        },
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 206,
+      "amazonUrl": "https://www.amazon.in/s?k=OnePlus+10+Pro&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/OnePlus_7_Pro.jpg/960px-OnePlus_7_Pro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:OnePlus_7_Pro.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Dsr07"
+    },
+    {
+      "title": "Google Pixel 7 Pro",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Noted for its superior camera quality and clean software interface.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -50,17 +74,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=iPhone+Duo&tag=catchdeal07-21",
-      "imageUrl": "https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3://cms/product/8c/ed/8cedd097eb2e136b02d54b6f0fdb0e4b/260910160011029793.webp",
-      "imageSourceUrl": "https://ispace.ge/en/product/iphone-duo-256-gb-star-white-mk2d4af-a",
-      "imageSourceTitle": "iPhone Duo, 256 GB, Star White buy at the price of GEL in Tbilisi from an  official Apple partner in Georgia."
+      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+7+Pro&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Pixel_7_Pro_back_%28Hazel%29.svg/960px-Google_Pixel_7_Pro_back_%28Hazel%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_7_Pro_back_(Hazel).svg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
     },
     {
-      "title": "OPPO Reno 16c",
+      "title": "iPhone 14 Pro Max",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Noted for its excellent camera features and design.",
+      "reason": "Highlights include excellent software support and user experience.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -70,17 +94,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=OPPO+Reno+16c&tag=catchdeal07-21",
-      "imageUrl": "https://img-prd-pim.poorvika.com/product/Oppo-reno-16c-5g-starry-white-12gb-256gb-Front-Back-View.webp",
-      "imageSourceUrl": "https://www.poorvika.com/oppo-reno-16c-5g-starry-white-12gb-256gb/p",
-      "imageSourceTitle": "Oppo Reno 16c 5G ( Starry White, 12GB-256GB )"
+      "amazonUrl": "https://www.amazon.in/s?k=iPhone+14+Pro+Max&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Back_of_the_iPhone_14_Pro_Max.jpg/960px-Back_of_the_iPhone_14_Pro_Max.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_the_iPhone_14_Pro_Max.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Hajoon0102"
     },
     {
-      "title": "POCO X8 Power",
+      "title": "Samsung Galaxy S22 Ultra",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Recommended for its impressive performance and value for money.",
+      "reason": "Recommended for its powerful performance and camera capabilities.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -90,17 +114,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=POCO+X8+Power&tag=catchdeal07-21",
-      "imageUrl": "https://i02.appmifile.com/mi-com-product/fly-birds/poco-x8/m/bg-screen01-2.jpg",
-      "imageSourceUrl": "https://www.mi.com/global/product/poco-x8/",
-      "imageSourceTitle": "All Specs, Features of POCO X8 | Xiaomi Global"
+      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+S22+Ultra&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Back_of_the_Samsung_Galaxy_S22_Ultra.jpg/960px-Back_of_the_Samsung_Galaxy_S22_Ultra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Back_of_the_Samsung_Galaxy_S22_Ultra.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Hajoon0102"
     },
     {
-      "title": "realme 16x",
+      "title": "Sony Xperia 1 IV",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Commended for being a great choice under budget.",
+      "reason": "Impressive multimedia features and display quality.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -110,17 +134,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=realme+16x&tag=catchdeal07-21",
-      "imageUrl": "https://izoleapv4-prod-assets.izoleap.com/izoleap_m_31/pims/cp_img/6942729000029_1-thumbnail_v1786969418837.webp",
-      "imageSourceUrl": "https://www.poojaratele.com/product/realme-16x-5g-endurance-brown-128-gb-4-gb-ram?srsltid=AfmBOoovDYrpB0a-VJA-HKjCQGlaCb_UizYd1oI1JTmEN6uuMdhrjL_o",
-      "imageSourceTitle": "realme 16x 5G | Dimensity 6300 | 7000mAh"
+      "amazonUrl": "https://www.amazon.in/s?k=Sony+Xperia+1+IV&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Sony_Xperia_1_IV.jpg/960px-Sony_Xperia_1_IV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sony_Xperia_1_IV.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Müllowitsch"
     },
     {
-      "title": "Samsung Z Flip8",
+      "title": "Xiaomi 12 Pro",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Highlights compact design and versatility.",
+      "reason": "Recognized for its great performance and competitive pricing.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -130,31 +154,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Z+Flip8&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=Xiaomi+12+Pro&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Xiaomi_12.jpg/960px-Xiaomi_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Xiaomi_12.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · 洛微"
     },
     {
-      "title": "TATA Phone",
+      "title": "Google Pixel 6",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Explained as a strong contender in the budget segment.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=TATA+Phone&tag=catchdeal07-21"
-    },
-    {
-      "title": "Google Pixel 7",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Praised for its exceptional software experience and photography features.",
+      "reason": "Known for its exceptional photo quality and clean software experience.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -164,14 +174,17 @@
         }
       ],
       "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+7&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+6&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Google_Pixel_6_Pro_front.svg/960px-Google_Pixel_6_Pro_front.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_6_Pro_front.svg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
     },
     {
       "title": "iPhone 14 Pro",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Recommended for its high performance and excellent camera capabilities.",
+      "reason": "Offers excellent camera capabilities and robust performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -191,7 +204,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "These earbuds bring improvements in noise cancelling and microphone performance compared to their predecessor.",
+      "reason": "The best truly wireless noise-cancelling earbuds, featuring improved ANC and a comfortable fit.",
       "badge": "Widely Recommended",
       "sourceCount": 3,
       "sources": [
@@ -219,7 +232,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "They feature remarkable noise isolation and seamless integration with Apple devices.",
+      "reason": "These earbuds feature top-notch noise isolation and seamless integration with Apple devices, ideal for iPhone users.",
       "badge": "Popular Pick",
       "sourceCount": 2,
       "sources": [
@@ -243,7 +256,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "They excel in noise isolation performance, coming close to top models while being more affordable.",
+      "reason": "These earbuds excel in noise isolation and comfort, with a customizable sound profile for personalized listening.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -259,31 +272,11 @@
       "imageSourceTitle": "Anker Soundcore Liberty 5 Pro Active Noise Cancelling True Wireless  Bluetooth Earbuds - Black - Micro Center"
     },
     {
-      "title": "Anker Soundcore P31i",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "These offer adaptive ANC along with LDAC support, making them a strong budget option.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+P31i&tag=catchdeal07-21",
-      "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_a6795e10-44d7-4cb1-bf14-785169b9ae47",
-      "imageSourceUrl": "https://www.target.com/p/soundcore-p31i-by-anker-real-time-adaptive-noise-cancelling/-/A-1010157710",
-      "imageSourceTitle": "Soundcore P31i by Anker, Real-Time Adaptive Noise Cancelling"
-    },
-    {
       "title": "Anker Soundcore Space A40 Truly Wireless",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "They provide strong noise isolation and adaptive ANC, along with a good battery life.",
+      "reason": "They provide adaptive noise cancellation and impressive sound quality at a budget-friendly price.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -303,7 +296,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "These offer excellent ANC and a stable fit, making them ideal for long listening sessions.",
+      "reason": "These earbuds offer excellent ANC and a stable fit, making them great for both casual listening and workouts.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -319,11 +312,28 @@
       "imageSourceTitle": "Buy OnePlus Buds 4 - OnePlus United States"
     },
     {
+      "title": "Sony WH-1000XM6",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "These headphones provide exceptional noise cancellation and sound quality with a warm sound profile and customizable EQ options.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Sony+WH-1000XM6&tag=catchdeal07-21"
+    },
+    {
       "title": "AirPods Pro 3",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Noted for their seamless integration with Apple devices and excellent sound quality.",
+      "reason": "Known for seamless integration with Apple devices and excellent audio performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -343,7 +353,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Highlighted for their ergonomic design and premium sound quality.",
+      "reason": "Features adaptive sound technology and long battery life.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -363,7 +373,7 @@
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Recommended for its balance of features and value.",
+      "reason": "Recommended for its balance of features and affordability.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -383,7 +393,7 @@
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Noted for its advanced capabilities and affordability.",
+      "reason": "Noted for its large display and comprehensive fitness tracking.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -400,7 +410,7 @@
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Recommended for its integration with Apple's ecosystem and health features.",
+      "reason": "Recognized for its versatility and extensive app ecosystem.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -410,14 +420,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+Watch+10&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+Watch+10&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Apple_Watch_10.JPG/960px-Apple_Watch_10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_Watch_10.JPG",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · KK IN HK"
     },
     {
       "title": "Fitbit Air",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Highlighted for its comprehensive health tracking functionality.",
+      "reason": "Highlighted for its advanced health tracking capabilities.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -427,14 +440,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Air&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Air&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Google_Fitbit_Air_-_1.jpg/960px-Google_Fitbit_Air_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Fitbit_Air_-_1.jpg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Kyu3a"
     },
     {
       "title": "Fitbit Charge 6",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Recognized for its fitness tracking and user-friendly interface.",
+      "reason": "Acclaimed for its accurate heart rate monitoring.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -451,7 +467,7 @@
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Showcased for its versatile smartwatch capabilities.",
+      "reason": "Praised for its integration with Google services.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -461,14 +477,34 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Pixel+Watch+3&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=Pixel+Watch+3&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Pixel_Watch_3-41_%28Champagne_Gold_%2B_Hazel%29.svg/960px-Google_Pixel_Watch_3-41_%28Champagne_Gold_%2B_Hazel%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Google_Pixel_Watch_3-41_(Champagne_Gold_%2B_Hazel).svg",
+      "imageSourceTitle": "Wikimedia Commons · CC BY-SA 4.0 · Mliu92"
+    },
+    {
+      "title": "Amazfit Balance 2 XT",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Focuses on wellness tracking, including stress and sleep analysis.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.consumerreports.org/electronics-computers/smartwatches-fitness-trackers/best-smartwatches-of-the-year-a7491608600/",
+          "title": "Best Smartwatches and Fitness Trackers of 2026 - Consumer Reports"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Balance+2+XT&tag=catchdeal07-21"
     },
     {
       "title": "Amazfit T-Rex 3 Pro",
       "category": "smart-devices",
       "categoryLabel": "Wearables",
       "icon": "⌚",
-      "reason": "Combines sturdy design with robust fitness features for outdoor enthusiasts.",
+      "reason": "Sturdy design with a long battery life suitable for outdoor enthusiasts.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -481,28 +517,11 @@
       "amazonUrl": "https://www.amazon.in/s?k=Amazfit+T-Rex+3+Pro&tag=catchdeal07-21"
     },
     {
-      "title": "Garmin Forerunner 170",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Designed for serious runners with detailed tracking features.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.consumerreports.org/electronics-computers/smartwatches-fitness-trackers/best-smartwatches-of-the-year-a7491608600/",
-          "title": "Best Smartwatches and Fitness Trackers of 2026 - Consumer Reports"
-        }
-      ],
-      "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Garmin+Forerunner+170&tag=catchdeal07-21"
-    },
-    {
       "title": "Le Creuset Heritage Stoneware Deep Baker with Lid",
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "Noted for its versatility in baking and stylish design.",
+      "reason": "High-quality stoneware ideal for versatile baking.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -519,7 +538,7 @@
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "Highlighted for its durability and efficient packing features.",
+      "reason": "Durable and expandable design perfect for travel.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -536,7 +555,7 @@
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "Recognized for its strong suction power and innovative cleaning technology.",
+      "reason": "Effectively cleans multiple floor types with advanced suction.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -552,11 +571,11 @@
       "imageSourceTitle": "Brand New & Sealed Shark Stratos DuoClean PowerFins HairPro Upright Vacuum  – AZ3002 Retail is $529, I'm selling for $450. Item is absolutely Brand New  and Sealed in the original box! Shark"
     },
     {
-      "title": "TCL Portable Air Conditioner",
+      "title": "TCL mart Portable Air Conditioner",
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "Recommended for its efficient cooling performance during summer.",
+      "reason": "Offers efficient cooling for small spaces during hot weather.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -566,17 +585,14 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=TCL+Portable+Air+Conditioner&tag=catchdeal07-21",
-      "imageUrl": "https://images.thdstatic.com/productImages/8a09bfa2-d8dc-43d5-9bd1-927c0402b918/svn/tcl-portable-air-conditioners-h8p36w-64_1000.jpg",
-      "imageSourceUrl": "https://www.homedepot.com/p/TCL-8-000-BTU-DOE-Smart-Portable-Air-Conditioner-Cools-350-sq-ft-with-Dehumidifier-Remote-and-Wi-Fi-in-White-H8P36W/336174819",
-      "imageSourceTitle": "TCL 8,000 BTU Smart Portable Air Conditioner, White"
+      "amazonUrl": "https://www.amazon.in/s?k=TCL+mart+Portable+Air+Conditioner&tag=catchdeal07-21"
     },
     {
-      "title": "Easyroot Utensil Kitchen Rack",
+      "title": "Easyroot Utensil Kitchen Rack Wood Wooden 3 Tier Space Saving Storage Organizer For Kitchen, Office, Study Diy",
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "This wooden 3-tier rack provides space-saving storage, ideal for organizing kitchen or office items.",
+      "reason": "Designed for optimal space-saving, this organizer helps keep your kitchen clutter-free.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -586,17 +602,14 @@
         }
       ],
       "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Easyroot+Utensil+Kitchen+Rack&tag=catchdeal07-21",
-      "imageUrl": "https://rukminim3.flixcart.com/image/480/640/xif0q/kitchen-rack/9/k/d/2-shelves-stainless-steel-kitchen-cabinet-shelf-organizer-enriched-0-original-imag94yefurf76qf.jpeg?q=20",
-      "imageSourceUrl": "https://bytemaster.ir/?b=27006209001360",
-      "imageSourceTitle": "Kitchen Rack Spice Rack Organizer For Corner Cabinet Easyroot Utensil  Kitchen Rack Iron 3-Tier Counter-"
+      "amazonUrl": "https://www.amazon.in/s?k=Easyroot+Utensil+Kitchen+Rack+Wood+Wooden+3+Tier+Space+Saving+Storage+Organizer+For+Kitchen%2C+Office%2C+Study+Diy&tag=catchdeal07-21"
     },
     {
-      "title": "Elitekitch Printed Blue Fencing Marble Chakla Belan Set",
+      "title": "Elitekitch Printed Blue Fencing Marble Chakla Belan Set Elegant Blue Pattern Rolling Pin & Board",
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "This product offers an elegant blue pattern, making it a stylish addition to any kitchen.",
+      "reason": "This product combines beauty with functionality, making it a perfect addition to your kitchen.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -606,17 +619,14 @@
         }
       ],
       "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Elitekitch+Printed+Blue+Fencing+Marble+Chakla+Belan+Set&tag=catchdeal07-21",
-      "imageUrl": "https://5.imimg.com/data5/SELLER/PDFImage/2026/3/591329239/US/HU/NN/65860515/printed-ston-chakla-belan-500x500.png",
-      "imageSourceUrl": "https://www.indiamart.com/proddetail/blue-fencing-printed-marble-chakla-belan-set-2858890436130.html?srsltid=AfmBOor86tvKSv8aswCgsEIpZVC3ylujXYRP5o1alLKc3J5Eao67rL0T",
-      "imageSourceTitle": "Blue Fencing Printed Marble Chakla Belan Set at ₹ 290/piece | Moradabad |  ID: 2858890436130"
+      "amazonUrl": "https://www.amazon.in/s?k=Elitekitch+Printed+Blue+Fencing+Marble+Chakla+Belan+Set+Elegant+Blue+Pattern+Rolling+Pin+%26+Board&tag=catchdeal07-21"
     },
     {
       "title": "Malaikah Ceramic Tea Coffee & Sugar Container - 300 Ml",
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "This ceramic container is both functional and aesthetically pleasing for tea and sugar storage.",
+      "reason": "This elegant container adds a decorative touch while keeping your tea, coffee, and sugar fresh.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -636,7 +646,7 @@
       "category": "home-comfort",
       "categoryLabel": "Home",
       "icon": "🏠",
-      "reason": "This larger ceramic container is designed for practical storage of tea and coffee in an elegant manner.",
+      "reason": "The spacious design allows for easy storage of your kitchen staples while maintaining a stylish look.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -656,7 +666,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Budget-friendly and combines a functional trainer and squat rack.",
+      "reason": "Combines functional training and squat rack features for a flexible home gym solution at an affordable price.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -676,7 +686,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Offers over 70 different exercise combinations and upgradable resistance.",
+      "reason": "Offers over 70 exercises and considerable resistance, making it excellent for upper body workouts.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -696,7 +706,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Compact machine that provides numerous lower-body exercise options.",
+      "reason": "Incredibly versatile with multiple lower body exercises that can improve strength and performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -716,7 +726,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Highly versatile all-in-one design for various workout modalities.",
+      "reason": "Highly versatile all-in-one design allowing for diverse workouts, including weight lifting and functional training.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -736,7 +746,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Adds ton of versatility to a REP power rack with dual weight stacks.",
+      "reason": "Seamlessly integrates with REP power racks, providing smooth cable motion and extensive exercise options.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -746,14 +756,17 @@
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=REP+Fitness+Ares+2.0&tag=catchdeal07-21"
+      "amazonUrl": "https://www.amazon.in/s?k=REP+Fitness+Ares+2.0&tag=catchdeal07-21",
+      "imageUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_%28IA_reportofminister00albe_1%29.pdf/page1-960px-A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_%28IA_reportofminister00albe_1%29.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:A_Report_of_the_Ministerial_Committee_on_Fitness_and_Amateur_Sport_in_Alberta_(IA_reportofminister00albe_1).pdf",
+      "imageSourceTitle": "Wikimedia Commons · Public domain · Alberta. Fitness and Amateur Sport Survey Committee"
     },
     {
       "title": "Speediance Gym Monster Home Gym",
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "A compact, smart functional trainer with multiple training modes.",
+      "reason": "Compact, smart functional trainer with digital resistance features, suitable for various workouts.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -770,7 +783,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Extremely well constructed and versatile for multiple movements including leg extensions and curls.",
+      "reason": "This smart trainer is noted for its adaptability and ease of use in various fitness routines.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -787,7 +800,7 @@
       "category": "fitness",
       "categoryLabel": "Fitness",
       "icon": "💪",
-      "reason": "Combines various gym functions in a well-designed ecosystem, suitable for home gym users.",
+      "reason": "Recognized for its multifunctionality, catering to a wide range of exercises.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
