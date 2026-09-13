@@ -1,0 +1,595 @@
+{
+  "generatedAt": "2026-09-13T20:58:02.289731+00:00",
+  "method": "independent-web-discovery",
+  "note": "Product names are discovered from independent public buying guides. Prices, stock, ratings and Amazon product images are intentionally not scraped.",
+  "categories": [
+    {
+      "id": "mobiles",
+      "label": "Mobiles",
+      "icon": "📱"
+    },
+    {
+      "id": "audio",
+      "label": "Audio",
+      "icon": "🎧"
+    },
+    {
+      "id": "smart-devices",
+      "label": "Wearables",
+      "icon": "⌚"
+    },
+    {
+      "id": "kitchen",
+      "label": "Kitchen",
+      "icon": "🍳"
+    },
+    {
+      "id": "home-comfort",
+      "label": "Home",
+      "icon": "🏠"
+    },
+    {
+      "id": "fitness",
+      "label": "Fitness",
+      "icon": "💪"
+    }
+  ],
+  "products": [
+    {
+      "title": "Apple iPhone 13",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Provides a premium experience with seamless software integration.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+iPhone+13&tag=catchdeal07-21"
+    },
+    {
+      "title": "Google Pixel 6",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Renowned for its exceptional camera and software support.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+6&tag=catchdeal07-21"
+    },
+    {
+      "title": "OnePlus 9",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Known for its fast charging and high refresh rate display.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=OnePlus+9&tag=catchdeal07-21"
+    },
+    {
+      "title": "Realme GT Master Edition",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Combines good performance with an attractive design.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Realme+GT+Master+Edition&tag=catchdeal07-21"
+    },
+    {
+      "title": "Samsung Galaxy S21",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Offers excellent performance and camera quality.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+S21&tag=catchdeal07-21"
+    },
+    {
+      "title": "Xiaomi Mi 11",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Delivers great value with top-notch specifications.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
+          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Xiaomi+Mi+11&tag=catchdeal07-21"
+    },
+    {
+      "title": "Apple iPhone 14",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Recommended for its excellent camera performance and seamless integration with the Apple ecosystem.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+iPhone+14&tag=catchdeal07-21"
+    },
+    {
+      "title": "Google Pixel 7",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Highlighted for its impressive photography capabilities and stock Android experience.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+7&tag=catchdeal07-21"
+    },
+    {
+      "title": "Sony WF-1000XM6",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "These earbuds excel in noise cancelling and microphone performance, offering warm sound with excellent noise isolation.",
+      "badge": "Widely Recommended",
+      "sourceCount": 3,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
+          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
+        },
+        {
+          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
+          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
+        }
+      ],
+      "score": 309,
+      "amazonUrl": "https://www.amazon.in/s?k=Sony+WF-1000XM6&tag=catchdeal07-21"
+    },
+    {
+      "title": "Apple AirPods Pro 3",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "They deliver excellent noise isolation and seamless integration with Apple devices, making them perfect for iPhone users.",
+      "badge": "Popular Pick",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        },
+        {
+          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
+          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
+        }
+      ],
+      "score": 206,
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+AirPods+Pro+3&tag=catchdeal07-21"
+    },
+    {
+      "title": "Anker Soundcore Liberty 5 Pro",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "They provide exceptional noise isolation and comfort, with stable in-ear fit, making them great for various activities.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Liberty+5+Pro&tag=catchdeal07-21"
+    },
+    {
+      "title": "Anker Soundcore P31i",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Offering adaptive ANC and good comfort, these buds are great for everyday use at a budget price.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+P31i&tag=catchdeal07-21"
+    },
+    {
+      "title": "Anker Soundcore Space A40 Truly Wireless",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "They are affordable with great noise isolation and adaptive features, fitting well in budget categories.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Space+A40+Truly+Wireless&tag=catchdeal07-21"
+    },
+    {
+      "title": "OnePlus Buds 4",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "These earbuds feature outstanding ANC and a comfortable fit, ideal for long listening sessions.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=OnePlus+Buds+4&tag=catchdeal07-21"
+    },
+    {
+      "title": "AirPods Pro 3",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Most impressive from a tech standpoint, featuring a heart rate sensor and refined sound quality.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
+          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=AirPods+Pro+3&tag=catchdeal07-21"
+    },
+    {
+      "title": "Bose QC Ultra Gen 2",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Exceptional noise cancelling strength and comfort, with clear sound and detailed treble.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
+          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Bose+QC+Ultra+Gen+2&tag=catchdeal07-21"
+    },
+    {
+      "title": "Amazfit Bip 6",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Recommended for its features and functionality at a competitive price.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+6&tag=catchdeal07-21"
+    },
+    {
+      "title": "Amazfit Bip Max",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Highlights its improved performance and battery life.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+Max&tag=catchdeal07-21"
+    },
+    {
+      "title": "Apple Watch 10",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Acknowledged for its advanced health monitoring features.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+Watch+10&tag=catchdeal07-21"
+    },
+    {
+      "title": "Fitbit Air",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Lauded for its comprehensive health tracking capabilities.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Air&tag=catchdeal07-21"
+    },
+    {
+      "title": "Fitbit Charge 6",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Praised for its fitness tracking accuracy and user-friendly interface.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Charge+6&tag=catchdeal07-21"
+    },
+    {
+      "title": "Pixel Watch 3",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Noted for seamless integration with Google services.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
+          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Pixel+Watch+3&tag=catchdeal07-21"
+    },
+    {
+      "title": "Amazfit Balance 2 XT",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "Noted for its unique health tracking features and stylish design.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.consumerreports.org/electronics-computers/smartwatches-fitness-trackers/best-smartwatches-of-the-year-a7491608600/",
+          "title": "Best Smartwatches and Fitness Trackers of 2026 - Consumer Reports"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Balance+2+XT&tag=catchdeal07-21"
+    },
+    {
+      "title": "Amazfit T-Rex 3 Pro",
+      "category": "smart-devices",
+      "categoryLabel": "Wearables",
+      "icon": "⌚",
+      "reason": "This watch is commended for its rugged design and multiple sports modes.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.consumerreports.org/electronics-computers/smartwatches-fitness-trackers/best-smartwatches-of-the-year-a7491608600/",
+          "title": "Best Smartwatches and Fitness Trackers of 2026 - Consumer Reports"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+T-Rex+3+Pro&tag=catchdeal07-21"
+    },
+    {
+      "title": "Air Fryer Toaster Oven",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Selected for its multifunctionality, combining air frying and toasting.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Air+Fryer+Toaster+Oven&tag=catchdeal07-21"
+    },
+    {
+      "title": "Heritage Stoneware Deep Baker",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Praised for durability and even baking results.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Heritage+Stoneware+Deep+Baker&tag=catchdeal07-21"
+    },
+    {
+      "title": "Le Creuset Heritage Stoneware Deep Baker with Lid",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Noted for its versatility and quality in baking.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Le+Creuset+Heritage+Stoneware+Deep+Baker+with+Lid&tag=catchdeal07-21"
+    },
+    {
+      "title": "Samsonite Freeform Hardside Expandable Luggage",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Chosen for its lightweight and durable design for travelers.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Samsonite+Freeform+Hardside+Expandable+Luggage&tag=catchdeal07-21"
+    },
+    {
+      "title": "Shark Stratos Upright Vacuum with Duo Clean Power Fins",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Highlighted for its powerful cleaning capabilities and ease of use.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Shark+Stratos+Upright+Vacuum+with+Duo+Clean+Power+Fins&tag=catchdeal07-21"
+    },
+    {
+      "title": "TCL mart Portable Air Conditioner",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Recommended for efficient cooling in various spaces.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=TCL+mart+Portable+Air+Conditioner&tag=catchdeal07-21"
+    },
+    {
+      "title": "Borosilicate Glass Oil Dispenser",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Features measurement markings and an elegant design, ensuring airtight and leakproof storage.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=p0_VfLvSkXo",
+          "title": "20 Useful & Beautiful Kitchen Products | Kitchen Organizing Essentials"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Borosilicate+Glass+Oil+Dispenser&tag=catchdeal07-21"
+    },
+    {
+      "title": "Brass Ghee Dani",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Has an inner tin lining to avoid contact between food and brass, making it safer for storing ghee.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=p0_VfLvSkXo",
+          "title": "20 Useful & Beautiful Kitchen Products | Kitchen Organizing Essentials"
+        }
+      ],
+      "score": 103,
+      "amazonUrl": "https://www.amazon.in/s?k=Brass+Ghee+Dani&tag=catchdeal07-21"
+    }
+  ]
+}
