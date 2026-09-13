@@ -1,7 +1,13 @@
-name: Update CatchDeal Amazon Products
+name: Refresh CatchDeal Product Picks
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "20 3 * * 1"
+
+concurrency:
+  group: catchdeal-product-refresh
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -18,32 +24,40 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch and rank Amazon products
+      - name: Discover and rank products from independent web guides
         env:
-          AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
-          AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
-          AMAZON_CREDENTIAL_VERSION: ${{ secrets.AMAZON_CREDENTIAL_VERSION }}
           AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
-        run: python scripts/amazon/update_products.py
+          FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+        run: python scripts/discovery/update_products.py
 
-      - name: Validate generated catalogue
+      - name: Validate generated catalogue if refreshed
         run: |
+          if [ ! -f data/products.json ]; then
+            echo "No new catalogue was generated. Existing HTML fallback remains live."
+            exit 0
+          fi
           python - <<'PY'
           import json
           data=json.load(open("data/products.json"))
-          assert data["products"], "No products were generated"
-          assert all(p.get("asin") and p.get("image") and p.get("amazonUrl") for p in data["products"]), "A product is missing required fields"
-          print(f"Validated {len(data['products'])} products.")
+          products=data.get("products", [])
+          assert products, "Generated catalogue is empty"
+          assert all(p.get("title") and p.get("category") and p.get("amazonUrl") for p in products), "A product is missing required fields"
+          assert all("amazon.in/s?" in p["amazonUrl"] for p in products), "Affiliate destination must be an Amazon India search URL"
+          print(f"Validated {len(products)} discovered products.")
           PY
 
-      - name: Publish catalogue
+      - name: Publish refreshed catalogue
         run: |
+          if [ ! -f data/products.json ]; then
+            echo "Nothing to publish."
+            exit 0
+          fi
           git config user.name "catchdeal-bot"
           git config user.email "catchdeal-bot@users.noreply.github.com"
           git add data/products.json
           if git diff --cached --quiet; then
             echo "No catalogue changes to publish."
           else
-            git commit -m "chore: refresh Amazon product catalogue"
+            git commit -m "chore: refresh CatchDeal product picks"
             git push
           fi
