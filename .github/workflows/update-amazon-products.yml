@@ -30,6 +30,9 @@ jobs:
           FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
         run: python scripts/discovery/update_products.py
 
+      - name: Fill remaining images from free licensed web sources
+        run: python scripts/discovery/fill_missing_images.py
+
       - name: Validate generated catalogue if refreshed
         run: |
           if [ ! -f data/products.json ]; then
@@ -43,7 +46,8 @@ jobs:
           assert products, "Generated catalogue is empty"
           assert all(p.get("title") and p.get("category") and p.get("amazonUrl") for p in products), "A product is missing required fields"
           assert all("amazon.in/s?" in p["amazonUrl"] for p in products), "Affiliate destination must be an Amazon India search URL"
-          print(f"Validated {len(products)} discovered products.")
+          images=sum(bool(p.get("imageUrl")) for p in products)
+          print(f"Validated {len(products)} products; {images} have product images.")
           PY
 
       - name: Publish refreshed catalogue
