@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T22:36:54.417581+00:00",
+  "generatedAt": "2026-09-14T09:05:13.529074+00:00",
   "method": "independent-web-discovery",
   "note": "Product images are discovered with Firecrawl image search using exact brand/model matching. Amazon and major retailer domains are excluded; weak/contextual matches are rejected. Source page metadata is retained for review.",
   "categories": [
@@ -36,31 +36,11 @@
   ],
   "products": [
     {
-      "title": "OPPO Reno 16c",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Highlight of performance and design.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=OPPO+Reno+16c&tag=catchdeal07-21",
-      "imageUrl": "https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/323766_0_VGxvPEqVO.png?updatedAt=1782992291084",
-      "imageSourceUrl": "https://www.croma.com/oppo-reno-16c-5g-8gb-ram-256gb-stellar-purple-/p/323766?srsltid=AfmBOopLRXc7ziB_DpQkk9KeL268h4V4BL0RnLKAAGY7gHpMzPvfTBjc",
-      "imageSourceTitle": "Buy oppo Reno 16c 5G (8GB RAM, 256GB, Stellar Purple) Online - Croma"
-    },
-    {
       "title": "POCO X8 Power",
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Recommended for its value and features.",
+      "reason": "Recommended comparison with OPPO Reno 16c",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -80,7 +60,7 @@
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Best under ₹25,000 with impressive specifications.",
+      "reason": "Best under ₹25,000",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -100,7 +80,7 @@
       "category": "mobiles",
       "categoryLabel": "Mobiles",
       "icon": "📱",
-      "reason": "Compact powerhouse ideal for users seeking portability.",
+      "reason": "Compact powerhouse",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -116,11 +96,139 @@
       "imageSourceTitle": "Samsung Galaxy Z Flip8 256GB (Unlocked) Graphite - Best Buy"
     },
     {
+      "title": "Google Pixel 6",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Praised for its excellent photo capabilities.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+6&tag=catchdeal07-21",
+      "imageUrl": "https://media.wired.com/photos/616e0b46436c4f5f5e47d166/1:1/w_1800,h_1800,c_limit/Gear-Google-Pixel-6-top.jpg",
+      "imageSourceUrl": "https://www.wired.com/story/google-pixel-6-price-specs-release-date/",
+      "imageSourceTitle": "Google Pixel 6, Pixel 6 Pro: Specs, Price, Release Date, Details | WIRED"
+    },
+    {
+      "title": "Samsung Galaxy S21",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Noted for its impressive display and performance.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+S21&tag=catchdeal07-21",
+      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6441/6441109_sd.jpg;maxHeight=750;maxWidth=345?format=webp",
+      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-s21-ultra-5g-128gb-unlocked-phantom-black/J3ZYGCKGLZ/sku/12069370",
+      "imageSourceTitle": "Samsung Galaxy S21 Ultra 5G - 128 GB - Phantom Black - Unlocked"
+    },
+    {
+      "title": "Samsung Galaxy Z Flip 3",
+      "category": "mobiles",
+      "categoryLabel": "Mobiles",
+      "icon": "📱",
+      "reason": "Recommended for its innovative foldable design.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.techradar.com/news/best-phone",
+          "title": "The best phone 2026: top smartphones in the US right now"
+        }
+      ],
+      "score": 102,
+      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+Z+Flip+3&tag=catchdeal07-21",
+      "imageUrl": "https://www.becextech.co.nz/media/catalog/product/cache/87bf6cc783e51bde4c0e5a7b582a0719/N/B/NBXTSGZFlip3AnyCol_1_1.jpg",
+      "imageSourceUrl": "https://becextech.com/products/samsung-galaxy-z-flip-3.html?srsltid=AfmBOortIlbyCjHpahuZ2f1v6nA0jNfemx1c3qY8K4fcfILRUNpyZNjQ",
+      "imageSourceTitle": "Samsung Galaxy Z Flip 3 5G F7110 8GB Ram 256GB Rom - Cream"
+    },
+    {
+      "title": "Apple AirPods Pro 3",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Best earbuds for iPhone users with exceptional noise isolation performance.",
+      "badge": "Popular Pick",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        },
+        {
+          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
+          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
+        }
+      ],
+      "score": 206,
+      "amazonUrl": "https://www.amazon.in/s?k=Apple+AirPods+Pro+3&tag=catchdeal07-21",
+      "imageUrl": "https://www.apple.com/v/airpods-pro/t/images/overview/welcome/hero__b0eal3mn03ua_large.jpg",
+      "imageSourceUrl": "https://www.apple.com/airpods-pro/",
+      "imageSourceTitle": "AirPods Pro 3 - Apple"
+    },
+    {
+      "title": "Sony WF-1000XM6",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Next generation earbuds with exceptional noise isolation and sound customization options.",
+      "badge": "Popular Pick",
+      "sourceCount": 2,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        },
+        {
+          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
+          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
+        }
+      ],
+      "score": 206,
+      "amazonUrl": "https://www.amazon.in/s?k=Sony+WF-1000XM6&tag=catchdeal07-21",
+      "imageUrl": "https://d1ncau8tqf99kp.cloudfront.net/converted/151997_original_local_1200x1050_v3_converted.webp",
+      "imageSourceUrl": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm6-b?srsltid=AfmBOop5x9UeQwN8Fnl1jufMhAJoEvzXGL8A6o1z1TtwFegP9ifjuC9w",
+      "imageSourceTitle": "Sony WF-1000XM6 The Best Truly Wireless Noise Cancelling Earbuds | Black |  WF-1000XM6/B | Sony Electronics"
+    },
+    {
+      "title": "Anker Soundcore Liberty 5 Pro",
+      "category": "audio",
+      "categoryLabel": "Audio",
+      "icon": "🎧",
+      "reason": "Best mid-range Bluetooth earbuds with excellent noise isolation performance.",
+      "badge": "Worth a Look",
+      "sourceCount": 1,
+      "sources": [
+        {
+          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
+          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
+        }
+      ],
+      "score": 104,
+      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Liberty+5+Pro&tag=catchdeal07-21",
+      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/d458f3c1-761f-4708-b2f7-f46492ad73e4.png;maxHeight=750;maxWidth=345?format=webp",
+      "imageSourceUrl": "https://www.bestbuy.com/product/anker-soundcore-liberty-5-pro-noise-cancelling-earbuds-with-guinness-world-records-certified-call-quality-black/JJ858RP5T6",
+      "imageSourceTitle": "Anker Soundcore Liberty 5 Pro Noise Cancelling Earbuds with Guinness World  Records Certified Call Quality Black - Best Buy"
+    },
+    {
       "title": "Anker Soundcore Space A40 Truly Wireless",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Budget-friendly earbuds with ANC and strong noise isolation performance.",
+      "reason": "Best budget Bluetooth earbuds with ANC and strong noise isolation.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -140,7 +248,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Lower mid-range earbuds that offer excellent ANC and comfortable fit.",
+      "reason": "Best lower mid-range wireless earbuds with excellent ANC and comfortable fit.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -160,7 +268,7 @@
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Best overall noise cancelling headphones with warm sound and excellent mic performance.",
+      "reason": "Best wireless earbuds with improvements in noise cancelling and microphone performance.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -176,11 +284,11 @@
       "imageSourceTitle": "Sony - WH-1000XM6- Best Wireless Noise Cancelling Headphones - Sandstone"
     },
     {
-      "title": "1+ Buds Pro 3",
+      "title": "AirPods Pro 3",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Recommended for excellent performance.",
+      "reason": "Ranked as the 2nd best earbuds.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -190,17 +298,17 @@
         }
       ],
       "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=1%2B+Buds+Pro+3&tag=catchdeal07-21",
-      "imageUrl": "https://image01.oneplus.net/media/202412/24/1375c584df0a7239a821e432ddba7bb4.png",
-      "imageSourceUrl": "https://www.oneplus.com/us/product/oneplus-buds-pro-3",
-      "imageSourceTitle": "OnePlus Buds Pro 3 Sapphire Blue"
+      "amazonUrl": "https://www.amazon.in/s?k=AirPods+Pro+3&tag=catchdeal07-21",
+      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-3-hero-select-202509_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1758077264181",
+      "imageSourceUrl": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
+      "imageSourceTitle": "AirPods Pro 3"
     },
     {
-      "title": "Bose QC Ultra 2",
+      "title": "Galaxy Buds4 Pro",
       "category": "audio",
       "categoryLabel": "Audio",
       "icon": "🎧",
-      "reason": "Known for superior noise cancellation.",
+      "reason": "Ranked as the 4th best earbuds.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
@@ -210,110 +318,30 @@
         }
       ],
       "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Bose+QC+Ultra+2&tag=catchdeal07-21",
-      "imageUrl": "https://www.trustedreviews.com/wp-content/uploads/sites/7/2025/06/bose-quietcomfort-ultra-vs-quietcomfort-ultra-2-earbuds.jpg",
-      "imageSourceUrl": "https://www.trustedreviews.com/versus/bose-quietcomfort-ultra-vs-quietcomfort-ultra-earbuds-2",
-      "imageSourceTitle": "Bose QC Ultra vs QC Ultra Earbuds 2: Should you upgrade?"
+      "amazonUrl": "https://www.amazon.in/s?k=Galaxy+Buds4+Pro&tag=catchdeal07-21",
+      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/7f5ba246-7691-4917-9f31-2868311aa20f.jpg;maxHeight=750;maxWidth=345?format=webp",
+      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-buds4-pro-wireless-earbud-headphones-black/JJGRF3Q958",
+      "imageSourceTitle": "Samsung - Galaxy Buds4 Pro Wireless Earbud Headphones - Black"
     },
     {
-      "title": "Amazfit Bip 6",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Positively recommended for its features in wearables.",
+      "title": "Samsonite Freeform Hardside Expandable Luggage",
+      "category": "home-comfort",
+      "categoryLabel": "Home",
+      "icon": "🏠",
+      "reason": "Recommended for travel efficiency and durability.",
       "badge": "Worth a Look",
       "sourceCount": 1,
       "sources": [
         {
-          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
-          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
+          "url": "https://www.goodhousekeeping.com/",
+          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
         }
       ],
       "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+6&tag=catchdeal07-21",
-      "imageUrl": "https://us.amazfit.com/cdn/shop/files/Gallery_Battery.png?v=1769604251&width=1946",
-      "imageSourceUrl": "https://us.amazfit.com/products/bip-6?srsltid=AfmBOorTxrmkx3MaDFjlgQBp_MA1yIWrvhlmdKiSHQtbJsI11w1iDbjz",
-      "imageSourceTitle": "Amazfit Bip 6 Health and Fitness Tracker - Black - Black"
-    },
-    {
-      "title": "Amazfit Bip Max",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Recommended due to its advanced functionalities.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
-          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Amazfit+Bip+Max&tag=catchdeal07-21",
-      "imageUrl": "https://us.amazfit.com/cdn/shop/files/whatbox_b2d2ed35-c07d-456c-b6fe-630d6d190cb0.jpg?v=1779105498&width=1946",
-      "imageSourceUrl": "https://us.amazfit.com/products/bip-max?srsltid=AfmBOora6j9MHPo85YarLEKvzxOtS7Fs2Puh1emfhK6NAfMuG90ss94k",
-      "imageSourceTitle": "Amazfit Bip Max Smartwatch"
-    },
-    {
-      "title": "Apple Watch 10",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Recommended for comprehensive health monitoring.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
-          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+Watch+10&tag=catchdeal07-21",
-      "imageUrl": "https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/article/Apple-Watch-Series-10-lineup-240909_big.jpg.large.jpg",
-      "imageSourceUrl": "https://www.apple.com/newsroom/2024/09/introducing-apple-watch-series-10/",
-      "imageSourceTitle": "Introducing Apple Watch Series 10 - Apple"
-    },
-    {
-      "title": "Fitbit Air",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Highly favored for fitness tracking capabilities.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
-          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Air&tag=catchdeal07-21",
-      "imageUrl": "https://fsastore.com/dw/image/v2/BFKW_PRD/on/demandware.static/-/Sites-hec-master/default/dw0577315b/images/large/2026-JULY-ARRIVALS/42711-Google-Fitbit-Air-Screenless-Fitness-and-Health-Tracking-Obsidian-LS-02.jpg",
-      "imageSourceUrl": "https://fsastore.com/google-fitbit-air-screenless-fitness-and-health-tracker-one-size/42711m.html?srsltid=AfmBOorrCg0vrHT3t9AoQ27-byO566Zy3lWvpxVgpL-z-3RXRbDJCbJ8",
-      "imageSourceTitle": "Google Fitbit Air, Screenless Fitness and Health Tracker, One Size by  Google Fitbit | FSA Store"
-    },
-    {
-      "title": "Fitbit Charge 6",
-      "category": "smart-devices",
-      "categoryLabel": "Wearables",
-      "icon": "⌚",
-      "reason": "Noted for its effectiveness in fitness tracking.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=tw4tPFcmk6I",
-          "title": "Best Smartwatch and Health Tracker Deals in 2026! - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Fitbit+Charge+6&tag=catchdeal07-21",
-      "imageUrl": "https://www.heartratemonitorsusa.com/cdn/shop/files/fitbit-activity-monitors-black-fitbit-charge-6-activity-and-fitness-tracker-33297168662701.jpg?v=1736814159&width=1000",
-      "imageSourceUrl": "https://www.heartratemonitorsusa.com/products/fitbit-charge-6-activity-and-fitness-tracker?srsltid=AfmBOoqEPwoYPHPBUPHLkA-zZ5xQJx-P70eZtNlHp7hBHAKUQrdcSPCS",
-      "imageSourceTitle": "Fitbit Charge 6 Fitness Tracker Porcelain"
+      "amazonUrl": "https://www.amazon.in/s?k=Samsonite+Freeform+Hardside+Expandable+Luggage&tag=catchdeal07-21",
+      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/samsonite-luggage-6813b7a9bf6b5.png?crop=0.5xw:1xh;center,top&resize=640:*",
+      "imageSourceUrl": "https://www.oprahdaily.com/life/a64567872/samsonite-luggage-set-review/",
+      "imageSourceTitle": "Samsonite Freeform Hardside Expandable Luggage Set Review"
     },
     {
       "title": "Bells of Steel All-in-One Home Gym",
@@ -374,106 +402,6 @@
       "imageUrl": "https://cdn-ilbpcgf.nitrocdn.com/oYuCommTzsGQSwpvkrjrxmZojSdETFmy/assets/images/optimized/rev-7f7931a/shreddeddad.com/wp-content/uploads/2024/08/freak-athlete-hyper-pro-GHD.png",
       "imageSourceUrl": "https://shreddeddad.com/product/freak-athlete-hyper-pro/",
       "imageSourceTitle": "Freak Athlete Hyper Pro - Freak Athlete Discount Code"
-    },
-    {
-      "title": "Major Fitness Heritage Series B17 Flying Fortress All-In-One Functional Trainer with Smith Machine",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best All-In-One Home Gym",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Major+Fitness+Heritage+Series+B17+Flying+Fortress+All-In-One+Functional+Trainer+with+Smith+Machine&tag=catchdeal07-21",
-      "imageUrl": "https://www.fitnesszone.com/Merchant2/graphics/00000001/13/major%20fitness%20b17%20upgraded%20ajustable%20leg%20holder_800x800.webp",
-      "imageSourceUrl": "https://www.fitnesszone.com/product/major-fitness-b17-flying-fortress-smith-machine.html?srsltid=AfmBOopbtRz7ZACctiGtK8zoLo63gxfmGu03wEVGeTN4unS66_GBTmgi",
-      "imageSourceTitle": "Major Fitness Heritage Series B17 Flying Fortress All-In-One Functional  Trainer with Smith Machine"
-    },
-    {
-      "title": "PRx Profile PRO Squat Rack",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best CrossFit Home Gym",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=PRx+Profile+PRO+Squat+Rack&tag=catchdeal07-21",
-      "imageUrl": "https://www.torquefitness.com/cdn/shop/files/PRxProfile3x3ProSquatRackwithMutligripBar03.webp?v=1752780522&width=800",
-      "imageSourceUrl": "https://www.torquefitness.com/products/prx-profile-pro-squat-rack-with-multi-grip-bar?srsltid=AfmBOorlnrMzv_OGGty9OoUlpZyNmBwL6Cj8sOuJRhlyiX3XBLDdPweq",
-      "imageSourceTitle": "PRx Profile® PRO Squat Rack with Multi-grip Bar (89\")"
-    },
-    {
-      "title": "REP Fitness Ares 2.0",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best Home Gym Compatible with a REP Rack",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=REP+Fitness+Ares+2.0&tag=catchdeal07-21",
-      "imageUrl": "https://repfitness.com/cdn/shop/files/Ares2.0-Lifestyle-714-Edit.jpg?v=1762444638&width=1445",
-      "imageSourceUrl": "https://repfitness.com/products/ares-2-0-builder",
-      "imageSourceTitle": "Ares - 2.0 Cable Attachment for PR-4000/5000 Power Racks | Gym Rack Cable Attachment | REP Fitness"
-    },
-    {
-      "title": "Dialed Motion Smart Trainer",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Innovative design with smart features.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=lsEVtqyiaZM",
-          "title": "The Best (NEW) Home Gym Equipment You'll Actually Want!"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Dialed+Motion+Smart+Trainer&tag=catchdeal07-21",
-      "imageUrl": "https://dialedmotion.com/cdn/shop/files/dialed_motion_hero_mobile_3x_e40044f1-f745-463d-8842-c9f259d4e6f6.webp?v=1778726542&width=3840",
-      "imageSourceUrl": "https://dialedmotion.com/",
-      "imageSourceTitle": "Dialed Motion"
-    },
-    {
-      "title": "Force USA C10 All-In-One Trainer",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Versatile all-in-one solution for effective training.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=lsEVtqyiaZM",
-          "title": "The Best (NEW) Home Gym Equipment You'll Actually Want!"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Force+USA+C10+All-In-One+Trainer&tag=catchdeal07-21",
-      "imageUrl": "https://fitnesssystems.biz/wp-content/uploads/2025/08/C10_01.jpg",
-      "imageSourceUrl": "https://fitnesssystems.biz/product/force-usa-c10-all-in-one-trainer/",
-      "imageSourceTitle": "Force USA C10 All-In-One Trainer, Functional Trainer Power Rack w/ Smith Machine, 6-Pulley Cable System, Vertical Lat Pulldown, Multi-Station Home Gym"
     }
   ]
 }
