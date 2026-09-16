@@ -1,407 +1,658 @@
 {
-  "generatedAt": "2026-09-14T09:05:13.529074+00:00",
-  "method": "independent-web-discovery",
-  "note": "Product images are discovered with Firecrawl image search using exact brand/model matching. Amazon and major retailer domains are excluded; weak/contextual matches are rejected. Source page metadata is retained for review.",
+  "generatedAt": "2026-09-16T21:27:43.339338+00:00",
+  "productCount": 50,
   "categories": [
     {
-      "id": "mobiles",
-      "label": "Mobiles",
-      "icon": "📱"
-    },
-    {
-      "id": "audio",
-      "label": "Audio",
-      "icon": "🎧"
-    },
-    {
-      "id": "smart-devices",
-      "label": "Wearables",
-      "icon": "⌚"
-    },
-    {
-      "id": "kitchen",
-      "label": "Kitchen",
-      "icon": "🍳"
-    },
-    {
-      "id": "home-comfort",
-      "label": "Home",
+      "id": "home-kitchen",
+      "label": "Home & Kitchen",
       "icon": "🏠"
     },
     {
-      "id": "fitness",
-      "label": "Fitness",
-      "icon": "💪"
+      "id": "beauty",
+      "label": "Beauty",
+      "icon": "✨"
+    },
+    {
+      "id": "electronics",
+      "label": "Electronics",
+      "icon": "💻"
+    },
+    {
+      "id": "books",
+      "label": "Books",
+      "icon": "📚"
+    },
+    {
+      "id": "toys-games",
+      "label": "Toys & Games",
+      "icon": "🧸"
+    },
+    {
+      "id": "baby",
+      "label": "Baby",
+      "icon": "👶"
+    },
+    {
+      "id": "sports-fitness",
+      "label": "Sports, Fitness & Outdoors",
+      "icon": "🏃"
+    },
+    {
+      "id": "health-personal-care",
+      "label": "Health & Personal Care",
+      "icon": "❤️"
+    },
+    {
+      "id": "car-motorbike",
+      "label": "Car & Motorbike",
+      "icon": "🚗"
+    },
+    {
+      "id": "clothing-accessories",
+      "label": "Clothing & Accessories",
+      "icon": "👕"
     }
   ],
   "products": [
     {
-      "title": "POCO X8 Power",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Recommended comparison with OPPO Reno 16c",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=POCO+X8+Power&tag=catchdeal07-21",
-      "imageUrl": "https://memeburn.com/wp-content/uploads/2026/08/Poco-X8-and-X8-Power-Two-Budget-Phones-That-Refuse-to-Die.jpg",
-      "imageSourceUrl": "https://memeburn.com/poco-x8-x8-power-specs-price/",
-      "imageSourceTitle": "Poco X8 and X8 Power: Two Budget Phones That Refuse to Die - Memeburn"
+      "id": "B07QP9PTZP",
+      "asin": "B07QP9PTZP",
+      "title": "LPG cylinder booking",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07QP9PTZP?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07QP9PTZP",
+      "rating": "4.5 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "realme 16x",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Best under ₹25,000",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=realme+16x&tag=catchdeal07-21",
-      "imageUrl": "https://static2.realme.net/images/realme-16x-5g/17815750379438be0b20e14a94939a9ba6cf300ca74cc.webp",
-      "imageSourceUrl": "https://www.realme.com/in/realme-16x-5g",
-      "imageSourceTitle": "realme 16x 5G – 7000mAh Titan Battery & 144Hz Display | realme India"
+      "id": "B0821PN8L4",
+      "asin": "B0821PN8L4",
+      "title": "Amazon Brand - Presto! Garbage Bags | Medium | 180 Count | 30 Bags X 6 Rolls | 19 X 21 Inches | For Dry & Wet Waste | Black",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61fn1xtHO4L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0821PN8L4?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0821PN8L4",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Samsung Z Flip8",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Compact powerhouse",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=PrZvLxaXFKU",
-          "title": "Best Smartphone Buying Guide 2026!       - YouTube"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Z+Flip8&tag=catchdeal07-21",
-      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/e1770bc2-f710-432d-900d-725b109d6eb8.jpg",
-      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-z-flip8-256gb-unlocked-graphite/JJGRF3TF7P",
-      "imageSourceTitle": "Samsung Galaxy Z Flip8 256GB (Unlocked) Graphite - Best Buy"
+      "id": "B083C6XMKQ",
+      "asin": "B083C6XMKQ",
+      "title": "ATOM/Aliston K1 Series A121/SF-400 Digital Weighing Machine/Scale (10kg, 1g accuracy) High Precision Scale for Food with Large LCD Display, Tare Function Multi weighing mode-g, oz For Home, Kitchen",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51C6yp8HitL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B083C6XMKQ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B083C6XMKQ",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Google Pixel 6",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Praised for its excellent photo capabilities.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Google+Pixel+6&tag=catchdeal07-21",
-      "imageUrl": "https://media.wired.com/photos/616e0b46436c4f5f5e47d166/1:1/w_1800,h_1800,c_limit/Gear-Google-Pixel-6-top.jpg",
-      "imageSourceUrl": "https://www.wired.com/story/google-pixel-6-price-specs-release-date/",
-      "imageSourceTitle": "Google Pixel 6, Pixel 6 Pro: Specs, Price, Release Date, Details | WIRED"
+      "id": "B0821PYKVK",
+      "asin": "B0821PYKVK",
+      "title": "Amazon Brand - Presto! Garbage Bags | Large | 90 Count | 15 Bags X 6 Rolls | 24 X 32 Inches | For Dry & Wet Waste | Black",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61fn1xtHO4L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0821PYKVK?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0821PYKVK",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Samsung Galaxy S21",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Noted for its impressive display and performance.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+S21&tag=catchdeal07-21",
-      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6441/6441109_sd.jpg;maxHeight=750;maxWidth=345?format=webp",
-      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-s21-ultra-5g-128gb-unlocked-phantom-black/J3ZYGCKGLZ/sku/12069370",
-      "imageSourceTitle": "Samsung Galaxy S21 Ultra 5G - 128 GB - Phantom Black - Unlocked"
+      "id": "B06VX8YR6Q",
+      "asin": "B06VX8YR6Q",
+      "title": "Ezee Live Life Ezee Way Black Garbage Bags for Dustbin|90 Pcs|Medium 19 X 21 Inches|30 Pcs X Pack of 3, 3 count",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71erHCKJ3WL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B06VX8YR6Q?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B06VX8YR6Q",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Samsung Galaxy Z Flip 3",
-      "category": "mobiles",
-      "categoryLabel": "Mobiles",
-      "icon": "📱",
-      "reason": "Recommended for its innovative foldable design.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.techradar.com/news/best-phone",
-          "title": "The best phone 2026: top smartphones in the US right now"
-        }
-      ],
-      "score": 102,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsung+Galaxy+Z+Flip+3&tag=catchdeal07-21",
-      "imageUrl": "https://www.becextech.co.nz/media/catalog/product/cache/87bf6cc783e51bde4c0e5a7b582a0719/N/B/NBXTSGZFlip3AnyCol_1_1.jpg",
-      "imageSourceUrl": "https://becextech.com/products/samsung-galaxy-z-flip-3.html?srsltid=AfmBOortIlbyCjHpahuZ2f1v6nA0jNfemx1c3qY8K4fcfILRUNpyZNjQ",
-      "imageSourceTitle": "Samsung Galaxy Z Flip 3 5G F7110 8GB Ram 256GB Rom - Cream"
+      "id": "B09S6M7JQJ",
+      "asin": "B09S6M7JQJ",
+      "title": "Ghar Soaps Sandalwood & Saffron Magic Bar For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Handmade Soaps For Glowing | Skin Brightening Soap For Men & Women",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71RVMzxM9GL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09S6M7JQJ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09S6M7JQJ",
+      "rating": "3.8 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Apple AirPods Pro 3",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Best earbuds for iPhone users with exceptional noise isolation performance.",
-      "badge": "Popular Pick",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        },
-        {
-          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
-          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
-        }
-      ],
-      "score": 206,
-      "amazonUrl": "https://www.amazon.in/s?k=Apple+AirPods+Pro+3&tag=catchdeal07-21",
-      "imageUrl": "https://www.apple.com/v/airpods-pro/t/images/overview/welcome/hero__b0eal3mn03ua_large.jpg",
-      "imageSourceUrl": "https://www.apple.com/airpods-pro/",
-      "imageSourceTitle": "AirPods Pro 3 - Apple"
+      "id": "B01CCGW4OE",
+      "asin": "B01CCGW4OE",
+      "title": "Cetaphil Gentle Skin Hydrating Face Wash 118ml, Paraben Free, Sulphate-Free Gentle Skin Hydrating Cleanser with Niacinamide, Vitamin B5 for Dry to Normal, Sensitive Skin",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Ti2uv6V3L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B01CCGW4OE?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B01CCGW4OE",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Sony WF-1000XM6",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Next generation earbuds with exceptional noise isolation and sound customization options.",
-      "badge": "Popular Pick",
-      "sourceCount": 2,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        },
-        {
-          "url": "https://www.soundguys.com/best-wireless-earbuds-2-14313/",
-          "title": "The best wireless earbuds of 2026: Lab-tested by experts"
-        }
-      ],
-      "score": 206,
-      "amazonUrl": "https://www.amazon.in/s?k=Sony+WF-1000XM6&tag=catchdeal07-21",
-      "imageUrl": "https://d1ncau8tqf99kp.cloudfront.net/converted/151997_original_local_1200x1050_v3_converted.webp",
-      "imageSourceUrl": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm6-b?srsltid=AfmBOop5x9UeQwN8Fnl1jufMhAJoEvzXGL8A6o1z1TtwFegP9ifjuC9w",
-      "imageSourceTitle": "Sony WF-1000XM6 The Best Truly Wireless Noise Cancelling Earbuds | Black |  WF-1000XM6/B | Sony Electronics"
+      "id": "B000LQUA6M",
+      "asin": "B000LQUA6M",
+      "title": "Simple Kind To Skin Refreshing Facial Wash 150 ml | 100% Soap-Free Facewash that doesn't dry out your skin| For All Skin Types",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51wqZYWGr+L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B000LQUA6M?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B000LQUA6M",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Anker Soundcore Liberty 5 Pro",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Best mid-range Bluetooth earbuds with excellent noise isolation performance.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Liberty+5+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/d458f3c1-761f-4708-b2f7-f46492ad73e4.png;maxHeight=750;maxWidth=345?format=webp",
-      "imageSourceUrl": "https://www.bestbuy.com/product/anker-soundcore-liberty-5-pro-noise-cancelling-earbuds-with-guinness-world-records-certified-call-quality-black/JJ858RP5T6",
-      "imageSourceTitle": "Anker Soundcore Liberty 5 Pro Noise Cancelling Earbuds with Guinness World  Records Certified Call Quality Black - Best Buy"
+      "id": "B07Q7C4Q45",
+      "asin": "B07Q7C4Q45",
+      "title": "Scalpe Pro Daily Anti-Dandruff Shampoo | Removes Dandruff from Source | Prevents Itching & Irritation | Scalpe Science | Climbazole Formulation | Dermatologically Tested | For Women & Men | 100ml",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61tiecR+5hL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Q7C4Q45?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Q7C4Q45",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Anker Soundcore Space A40 Truly Wireless",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Best budget Bluetooth earbuds with ANC and strong noise isolation.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Anker+Soundcore+Space+A40+Truly+Wireless&tag=catchdeal07-21",
-      "imageUrl": "https://i.rtings.com/assets/products/NKlHASXu/anker-soundcore-space-a40-truly-wireless/design-medium.jpg?format=auto",
-      "imageSourceUrl": "https://www.rtings.com/headphones/reviews/anker/soundcore-space-a40-truly-wireless",
-      "imageSourceTitle": "Anker Soundcore Space A40 Truly Wireless Review - RTINGS.com"
+      "id": "B0GYCT961V",
+      "asin": "B0GYCT961V",
+      "title": "Ghar Soaps De-Tan Face Wash | For Tan Reducing, Brightening & Glowing Skin | With Sandalwood, Saffron, Coconut Oil & Goat milk | For All Skin Types | 100ml (Pack of 1)",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71x-JgwRslL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0GYCT961V?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0GYCT961V",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "OnePlus Buds 4",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Best lower mid-range wireless earbuds with excellent ANC and comfortable fit.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=OnePlus+Buds+4&tag=catchdeal07-21",
-      "imageUrl": "https://image01.oneplus.net/media/202506/24/aed2227696b83bfbb7c30309984fbc2b.png?x-amz-process=image/format,webp/quality,Q_80",
-      "imageSourceUrl": "https://www.oneplus.com/product/oneplus-buds-4",
-      "imageSourceTitle": "Buy OnePlus Buds 4 - OnePlus United States"
+      "id": "B0DDHM6D3L",
+      "asin": "B0DDHM6D3L",
+      "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbuds Design, TPE Anti Tangle Wire, in line Controls, Wide Compatibility(White)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51GGwjwSr0L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DDHM6D3L?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DDHM6D3L",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Sony WH-1000XM6",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Best wireless earbuds with improvements in noise cancelling and microphone performance.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.rtings.com/headphones/reviews/best/wireless-earbuds",
-          "title": "The 6 Best Wireless Earbuds of 2026 - RTINGS.com"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Sony+WH-1000XM6&tag=catchdeal07-21",
-      "imageUrl": "https://d1ncau8tqf99kp.cloudfront.net/converted/153731_original_local_1200x1050_v3_converted.webp",
-      "imageSourceUrl": "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-t?srsltid=AfmBOorxCN8aGkClTUad9vxzQJnIksbHjzHkhZxyAW89uwf8lw0tWo_P",
-      "imageSourceTitle": "Sony - WH-1000XM6- Best Wireless Noise Cancelling Headphones - Sandstone"
+      "id": "B0D2R2MXXJ",
+      "asin": "B0D2R2MXXJ",
+      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy Tab S/A Series, Galaxy S10/M54/M55/A80/A90/S25/S24, White",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/512UVkoMMEL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0D2R2MXXJ",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "AirPods Pro 3",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Ranked as the 2nd best earbuds.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
-          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
-        }
-      ],
-      "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=AirPods+Pro+3&tag=catchdeal07-21",
-      "imageUrl": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/airpods-pro-3-hero-select-202509_FMT_WHH?wid=752&hei=636&fmt=jpeg&qlt=90&.v=1758077264181",
-      "imageSourceUrl": "https://www.apple.com/shop/buy-airpods/airpods-pro-3",
-      "imageSourceTitle": "AirPods Pro 3"
+      "id": "B098NS6PVG",
+      "asin": "B098NS6PVG",
+      "title": "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61W8xeZTwxL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B098NS6PVG?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B098NS6PVG",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Galaxy Buds4 Pro",
-      "category": "audio",
-      "categoryLabel": "Audio",
-      "icon": "🎧",
-      "reason": "Ranked as the 4th best earbuds.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.youtube.com/watch?v=ZpP3-fUWQew",
-          "title": "TOP 10 Earbuds in 2026 (RANKED with my CUSTOM Scoring System)"
-        }
-      ],
-      "score": 103,
-      "amazonUrl": "https://www.amazon.in/s?k=Galaxy+Buds4+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/7f5ba246-7691-4917-9f31-2868311aa20f.jpg;maxHeight=750;maxWidth=345?format=webp",
-      "imageSourceUrl": "https://www.bestbuy.com/product/samsung-galaxy-buds4-pro-wireless-earbud-headphones-black/JJGRF3Q958",
-      "imageSourceTitle": "Samsung - Galaxy Buds4 Pro Wireless Earbud Headphones - Black"
+      "id": "B0FMDL81GS",
+      "asin": "B0FMDL81GS",
+      "title": "OnePlus Nord Buds 3r TWS Earbuds up to 54 Hours Playback, 2-mic Clear Calls, 3D Spatial Audio, AI Translation, 12.4mm Drivers, Dual-Device Connectivity, 47ms Low Latency - Ash Black",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51nBTTG3hNL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FMDL81GS?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FMDL81GS",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Samsonite Freeform Hardside Expandable Luggage",
-      "category": "home-comfort",
-      "categoryLabel": "Home",
-      "icon": "🏠",
-      "reason": "Recommended for travel efficiency and durability.",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.goodhousekeeping.com/",
-          "title": "Good Housekeeping: Trusted Home Advice, Product Reviews ..."
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Samsonite+Freeform+Hardside+Expandable+Luggage&tag=catchdeal07-21",
-      "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/samsonite-luggage-6813b7a9bf6b5.png?crop=0.5xw:1xh;center,top&resize=640:*",
-      "imageSourceUrl": "https://www.oprahdaily.com/life/a64567872/samsonite-luggage-set-review/",
-      "imageSourceTitle": "Samsonite Freeform Hardside Expandable Luggage Set Review"
+      "id": "B0FM38916Y",
+      "asin": "B0FM38916Y",
+      "title": "boAt Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant & 120cm Cable (Active Black)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51sxI5xpalL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FM38916Y?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FM38916Y",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Bells of Steel All-in-One Home Gym",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best Budget Home Gym",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Bells+of+Steel+All-in-One+Home+Gym&tag=catchdeal07-21",
-      "imageUrl": "https://i.garagegymreviews.com/322/758/198/3/bells_of_steel_all_in_one_home_gym.webp",
-      "imageSourceUrl": "https://www.garagegymreviews.com/equipment/bells-of-steel-all-in-one-home-gym",
-      "imageSourceTitle": "Bells of Steel All-in-One Home Gym | Garage Gym Reviews"
+      "id": "9387779262",
+      "asin": "9387779262",
+      "title": "My First Library Boxset For Kids (10 Board Books) | Ages 0–3 Years | Early Learning | Gift Set For Babies | Toddlers & Preschoolers | Latest Premium Edition | Abc | Numbers | Shapes | Colors & More",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71RPFp7+gfL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/9387779262?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/9387779262",
+      "rating": "4.5 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Bowflex Xtreme 2 SE Home Gym",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best Home Gym for Upper Body",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Bowflex+Xtreme+2+SE+Home+Gym&tag=catchdeal07-21",
-      "imageUrl": "https://www.bowflex.com/cdn/shop/files/bowflex-xtreme-2-se-home-gym-hero-sqr-2000x2000.png?v=1784038624&width=1600",
-      "imageSourceUrl": "https://www.bowflex.com/products/xtreme-2-se-home-gym-1st-gen?srsltid=AfmBOorGGw2u56rEVo2jbzopLr-VimsCDZPBqg6z_w5wNQs1_jkQBM7X",
-      "imageSourceTitle": "Xtreme 2 SE Home Gym - Our Best-Selling Power Rod Gym – BowFlex"
+      "id": "935886592X",
+      "asin": "935886592X",
+      "title": "PARMAR SSC Fatman | GK/GS Theory Book | English Medium | 2nd Edition, 2026 | Useful For SSC CGL and CHSL (Tier 1 & 2) | CPO | MTS | Steno | Selection ... One Day Competitive Examination | Parmar Sir",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/814wsw5PsoL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/935886592X?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/935886592X",
+      "rating": "4.5 out of 5 stars",
+      "rank": null
     },
     {
-      "title": "Freak Athlete Hyper Pro",
-      "category": "fitness",
-      "categoryLabel": "Fitness",
-      "icon": "💪",
-      "reason": "Best Home Gym for Lower Body",
-      "badge": "Worth a Look",
-      "sourceCount": 1,
-      "sources": [
-        {
-          "url": "https://www.garagegymreviews.com/best-home-gyms",
-          "title": "Best Home Gyms (2026) Personally Tested - Garage Gym Reviews"
-        }
-      ],
-      "score": 104,
-      "amazonUrl": "https://www.amazon.in/s?k=Freak+Athlete+Hyper+Pro&tag=catchdeal07-21",
-      "imageUrl": "https://cdn-ilbpcgf.nitrocdn.com/oYuCommTzsGQSwpvkrjrxmZojSdETFmy/assets/images/optimized/rev-7f7931a/shreddeddad.com/wp-content/uploads/2024/08/freak-athlete-hyper-pro-GHD.png",
-      "imageSourceUrl": "https://shreddeddad.com/product/freak-athlete-hyper-pro/",
-      "imageSourceTitle": "Freak Athlete Hyper Pro - Freak Athlete Discount Code"
+      "id": "1529921295",
+      "asin": "1529921295",
+      "title": "Protocols: An Operating Manual for the Human Body",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/1529921295",
+      "rating": "",
+      "rank": null
+    },
+    {
+      "id": "9390166268",
+      "asin": "9390166268",
+      "title": "The Psychology of Money",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71XEsXS5RlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/9390166268?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/9390166268",
+      "rating": "4.6 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0743DXTVX",
+      "asin": "B0743DXTVX",
+      "title": "SHNMN Sank Magic Practice Copybook, (4 BOOK +1 PEN + 10 REFILL) Number Tracing Book for Preschoolers with Pen, Magic calligraphy books for kids Reusable Writing Tool",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71fTA8TF23L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0743DXTVX?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0743DXTVX",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DRPCR5VK",
+      "asin": "B0DRPCR5VK",
+      "title": "Wembley Rechargeable Karaoke Mic with Speaker for Singing | Wireless Mini Portable Bluetooth Speaker with Microphone & LED Lights | Cute Birthday Gift for Kids Musical Toys for Boys, Girls and Adults",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61ijIp-5KZL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DRPCR5VK?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DRPCR5VK",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0C862R9VF",
+      "asin": "B0C862R9VF",
+      "title": "Lifelong LLKS03 Foldable Kick Skating Cycle| Skate Scooter for Kids(Max User Weight: 50Kg) Kids Scooter (Pink, Blue)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61xr-fzqcxL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0C862R9VF?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0C862R9VF",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0FYWTYXNW",
+      "asin": "B0FYWTYXNW",
+      "title": "Frendo Remote Control Drift Stunt Car 4WD | 360° Rotating | DualSided Climbing | High-Speed Tumbling | Rechargeable Stunt Car | C-Type Charging | Remote Control Car for Kids | Made in India. (Black)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71r2eob+BhL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FYWTYXNW?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FYWTYXNW",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0CCDTXNLF",
+      "asin": "B0CCDTXNLF",
+      "title": "Kidsmate Junior Tricycle for Kids with Parental Control | Cycle for Kids 1-4 Years | Baby Cycle | Bicycle with Storage Basket, Cushion Seat and Seat Belt Carrying Capacity 30 Kgs (Blue)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/817EnDKn6JL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CCDTXNLF?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CCDTXNLF",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0B2F8XS9L",
+      "asin": "B0B2F8XS9L",
+      "title": "Babique Dog Plush Soft Toy Cute Kids Animal Home Decor Boys/Girls/Baby (25 cm, White)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41Z37AWyjHL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0B2F8XS9L?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0B2F8XS9L",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07F2X8BHM",
+      "asin": "B07F2X8BHM",
+      "title": "Pampers Premium Care Pant Style Baby Diapers M 54 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61lab0hh7NL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07F2X8BHM?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07F2X8BHM",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DX7BJ6WH",
+      "asin": "B0DX7BJ6WH",
+      "title": "Huggies Complete Comfort Wonder Pants | Pant Style Baby Diapers L Size, 64 Count | India's Fastest Absorbing Diaper, Patented Dry Xpert Channel, Ideal for 9 to 14 Kgs (Pack of 2)",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Gb2F4tPkL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DX7BJ6WH?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DX7BJ6WH",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09MVWHJ9J",
+      "asin": "B09MVWHJ9J",
+      "title": "LuvLap Pant Style Baby Diapers, Large (L), 62 Count, For babies of Upto 9-14Kg with Aloe Vera Lotion for rash protection, with upto 12hr protection, Diapers",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61gpUlMLoGL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09MVWHJ9J?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09MVWHJ9J",
+      "rating": "3.7 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07CXGJKXL",
+      "asin": "B07CXGJKXL",
+      "title": "Pampers Complete Skin Comfort Pants, (XL) 56 Count, Anti-rash blanket, Lotion with Vitamin E & Aloe Vera, Extra Large size baby diapers, 12-17kg",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71k315tD9fL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07CXGJKXL?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07CXGJKXL",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07Y8S56RW",
+      "asin": "B07Y8S56RW",
+      "title": "New Mamypoko Pants Premium All Night Absorb| Pant Style Baby Diapers Large Size(L), 62 Count, Ideal for 9-14Kgs|1 Diaper= Upto All Night Absorption now with 10% increased power|Wider Crisscross Sheet|Gentle Coco Care| 12hr Leakage Protection| Prevents Heaviness.",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81pP7xp-UNL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Y8S56RW?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Y8S56RW",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09W5LHL7G",
+      "asin": "B09W5LHL7G",
+      "title": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Weights for Men & Women (6 Months Warranty)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51+b9IWWbjL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09W5LHL7G?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09W5LHL7G",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0B6NSDR2H",
+      "asin": "B0B6NSDR2H",
+      "title": "Slovic Pull Up Bar for Home for Kids & Adults [100 KG] | Anti-Skid Grip | No-Drill Insatallation Pull up Bar for Home Workout | Hanging Bar for Pull Ups | Gym Equipment for Home Workout (62-100 CM)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DCJYS6KG",
+      "asin": "B0DCJYS6KG",
+      "title": "Boldfit Pull up Bar for Home [100 KG] - Gym Equipment for Home Workout | Adjustable Door Way Chin Up Bar for Home Workout for Adults | PullUp Bar for Men & Women | Anti-Skid Grip (62-100 CM)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71WQF5nGb9L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DCJYS6KG?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DCJYS6KG",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B08H8KD72Q",
+      "asin": "B08H8KD72Q",
+      "title": "Boldfit Heavy Resistance Band for Workout & Exercise Pull Up, Stretching & Toning Bands for Men & Women Resistance Band Set for Home & Gym Workouts (Yellow, 3–7 Kg)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61JlKYdhFdL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B08H8KD72Q?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B08H8KD72Q",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0GWN14N9F",
+      "asin": "B0GWN14N9F",
+      "title": "Lifelong Pull Up Bar for Home Kids|Adjustable 62 100 cm Doorway PullUp Bar For Home Gym Equipment|No Screw Pull Up Bar Door Mounted|100kg Capacity,Anti-Slip Lock,Foam Grip Handles|Gym Equipment",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61wiwhVcZJL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0GWN14N9F?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0GWN14N9F",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07F8H9NYY",
+      "asin": "B07F8H9NYY",
+      "title": "Comfort Morning Fresh Fabric Conditioner 2 L Refill Pack|| After Wash Liquid Fabric Softener - For Softness|| Shine & Long Lasting Freshness",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81hjfHDwDXL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07F8H9NYY?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07F8H9NYY",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DPX93PJ9",
+      "asin": "B0DPX93PJ9",
+      "title": "Surf Excel Matic Liquid Detergent 5 kg for Top Load | Removes tough Stains in 1st wash | Superior Fragrance | Color Protection | Trusted by machine manufacturers like Whirlpool, Bosch, Lloyd, Voltas",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61ShrCBCKrL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DPX93PJ9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DPX93PJ9",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0D2XQQQ96",
+      "asin": "B0D2XQQQ96",
+      "title": "Godrej Fab Liquid Detergent Refill Pouch for Machine Wash - 2L",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71fvaQTBSML._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0D2XQQQ96?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0D2XQQQ96",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B086R15K73",
+      "asin": "B086R15K73",
+      "title": "App Store Code",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51z3HpbXZvL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B086R15K73?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B086R15K73",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0D9BHX9MZ",
+      "asin": "B0D9BHX9MZ",
+      "title": "Wellcore Pure Micronised Creatine Powder (33 Servings, Tropical Tango) | For Enhanced Muscle Strength With Rapid Absorption | Creatine Monohydrate | Wellcore Creatine Flavoured - 122g",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61EuwSpX+DL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0D9BHX9MZ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0D9BHX9MZ",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B077BFH786",
+      "asin": "B077BFH786",
+      "title": "SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey! Thick Lint & Streak-Free Multipurpose Cloths - Automotive Microfibre Towels for Car Bike Cleaning Polishing Washing & Detailing.",
+      "category": "car-motorbike",
+      "categoryLabel": "Car & Motorbike",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81dsWgzXLrL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B077BFH786?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B077BFH786",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0CXDQWYQP",
+      "asin": "B0CXDQWYQP",
+      "title": "Godrej aer O – Hanging Car Air Freshener – Assorted Pack of 3 (22.5g) | Gel Lasts up to 30 days | Car Accessories",
+      "category": "car-motorbike",
+      "categoryLabel": "Car & Motorbike",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71J1Pf6Qq9L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CXDQWYQP?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CXDQWYQP",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0BRY84H2H",
+      "asin": "B0BRY84H2H",
+      "title": "Boldfit face mask for Bikers Full face mask for Bikers Helmet Head Cover Balaclava for Men Bike Riding & Biker Head Cover for Helmet for Men Balaclava for Adult Black Masks for Bike Riding - Black",
+      "category": "car-motorbike",
+      "categoryLabel": "Car & Motorbike",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61qMdqTzapL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0BRY84H2H?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0BRY84H2H",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07FCHCQCW",
+      "asin": "B07FCHCQCW",
+      "title": "WD-40 Multipurpose Spray, Rust Remover, Cleans Bike Chains, Hinge Lubricant, Loosens Jammed Parts, Degreaser, and Cleaning Agent, 420ml (341g)",
+      "category": "car-motorbike",
+      "categoryLabel": "Car & Motorbike",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51iXu11jMdL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07FCHCQCW?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07FCHCQCW",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B00PPY2NB0",
+      "asin": "B00PPY2NB0",
+      "title": "Involve Your Senses One Musk Organic Car Perfume, Involve Your Senses Strong Fiber Air Freshener to Freshen'up Your Car - IONE01-40 g,Car Accessories interior car perfumes and fresheners",
+      "category": "car-motorbike",
+      "categoryLabel": "Car & Motorbike",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41n0ALyjZYL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B00PPY2NB0?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B00PPY2NB0",
+      "rating": "3.8 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B010FMJKFS",
+      "asin": "B010FMJKFS",
+      "title": "Jockey 1406 Women Cotton Hipster (Pack of 3, Colors & Prints May Vary)",
+      "category": "clothing-accessories",
+      "categoryLabel": "Clothing & Accessories",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71h1sBN9L2L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B010FMJKFS?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B010FMJKFS",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0FDW55HNT",
+      "asin": "B0FDW55HNT",
+      "title": "KLOSIA Women's Rayon Printed Anarkali Kurta and Pant with Dupatta Set",
+      "category": "clothing-accessories",
+      "categoryLabel": "Clothing & Accessories",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71I53evweVL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FDW55HNT?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FDW55HNT",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DZCBQ225",
+      "asin": "B0DZCBQ225",
+      "title": "TRYLO Riza T-FIT Women's Non-Padded,Non-Wired,Full Coverage,Seamless 100% Cotton Feel Fabric Bra Available in Multicolor",
+      "category": "clothing-accessories",
+      "categoryLabel": "Clothing & Accessories",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71Vak3ddC7L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DZCBQ225?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DZCBQ225",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0H3PX2MH9",
+      "asin": "B0H3PX2MH9",
+      "title": "GoSriKi Kurta Set Women Viscose Printed | Kurti Set Woman | Kurta Pant Dupatta 3 Piece Outfit | V-Neck Elbow Length Sleeve Straight Fit Ethnic Wear Ladies Dress Stylish Traditional Clothing",
+      "category": "clothing-accessories",
+      "categoryLabel": "Clothing & Accessories",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Rag7PIeiL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0H3PX2MH9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0H3PX2MH9",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07MZM26XG",
+      "asin": "B07MZM26XG",
+      "title": "Amazon Brand - Symbol Men's Cotton Rich Solid Polo Tshirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit (Available in Plus Sizes and Combo Pack of 2)",
+      "category": "clothing-accessories",
+      "categoryLabel": "Clothing & Accessories",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/713n+TxyfCL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07MZM26XG?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07MZM26XG",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
     }
   ]
 }
