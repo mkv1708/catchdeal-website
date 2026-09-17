@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T19:32:17.136431+00:00",
+  "generatedAt": "2026-09-17T19:47:21.435360+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -13,11 +13,6 @@
       "icon": "✨"
     },
     {
-      "id": "electronics",
-      "label": "Electronics",
-      "icon": "💻"
-    },
-    {
       "id": "books",
       "label": "Books",
       "icon": "📚"
@@ -26,6 +21,11 @@
       "id": "toys-games",
       "label": "Toys & Games",
       "icon": "🧸"
+    },
+    {
+      "id": "baby",
+      "label": "Baby",
+      "icon": "👶"
     },
     {
       "id": "sports-fitness",
@@ -45,7 +45,7 @@
       "title": "LPG cylinder booking",
       "category": "home-kitchen",
       "categoryLabel": "Home & Kitchen",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL600_SR600,400_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL300_SR300,200_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B07QP9PTZP?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B07QP9PTZP",
       "rating": "4.5 out of 5 stars",
@@ -232,102 +232,6 @@
       "rank": null
     },
     {
-      "id": "B0DDHM6D3L",
-      "asin": "B0DDHM6D3L",
-      "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbuds Design, TPE Anti Tangle Wire, in line Controls, Wide Compatibility(White)",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51GGwjwSr0L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DDHM6D3L?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DDHM6D3L",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B098NS6PVG",
-      "asin": "B098NS6PVG",
-      "title": "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61W8xeZTwxL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B098NS6PVG?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B098NS6PVG",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0FMDL81GS",
-      "asin": "B0FMDL81GS",
-      "title": "OnePlus Nord Buds 3r TWS Earbuds up to 54 Hours Playback, 2-mic Clear Calls, 3D Spatial Audio, AI Translation, 12.4mm Drivers, Dual-Device Connectivity, 47ms Low Latency - Ash Black",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51nBTTG3hNL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0FMDL81GS?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0FMDL81GS",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0D2R2MXXJ",
-      "asin": "B0D2R2MXXJ",
-      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy Tab S/A Series, Galaxy S10/M54/M55/A80/A90/S25/S24, White",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/512UVkoMMEL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0D2R2MXXJ",
-      "rating": "4.4 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0FM38916Y",
-      "asin": "B0FM38916Y",
-      "title": "boAt Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant & 120cm Cable (Active Black)",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51sxI5xpalL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0FM38916Y?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0FM38916Y",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0CF1M3PF9",
-      "asin": "B0CF1M3PF9",
-      "title": "Pikkme Flip Cover Leather Finish | Inside TPU with Card Pockets | Wallet Stand and Shock Proof | Complete Protection Flip Case for Redmi 12 5G / Poco M6 Pro 5G(Blue)",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rWAsKgNlL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0CF1M3PF9?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0CF1M3PF9",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0G2H4R5YB",
-      "asin": "B0G2H4R5YB",
-      "title": "Kratos TW02 Ear Buds Wireless with 60H Playtime, Noise Isolation & Clear Calls, Bluetooth Earbuds with Voice Assistant, Ear Buds with Bluetooth V 5.3 & with Type C Fast Charging, IPX5 TWS Earphones",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61IgAVQe1yL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0G2H4R5YB?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0G2H4R5YB",
-      "rating": "3.9 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0DCZ3WDTB",
-      "asin": "B0DCZ3WDTB",
-      "title": "Xiaomi Power Bank 4i 20000mAh 33W Super Fast Charging PD |Smart 12 Layer Protection|Type C Input & Output|Triple Output Ports|Supports Android,Apple, Tablets, Earbuds,Watch(MI Powerbank),Black",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41vBAaU8clL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DCZ3WDTB?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DCZ3WDTB",
-      "rating": "4.2 out of 5 stars",
-      "rank": null
-    },
-    {
       "id": "9387779262",
       "asin": "9387779262",
       "title": "My First Library Boxset For Kids (10 Board Books) | Ages 0–3 Years | Early Learning | Gift Set For Babies | Toddlers & Preschoolers | Latest Premium Edition | Abc | Numbers | Shapes | Colors & More",
@@ -360,7 +264,7 @@
       "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/1529921295",
-      "rating": "4.6 out of 5 stars",
+      "rating": "4.7 out of 5 stars",
       "rank": null
     },
     {
@@ -369,7 +273,7 @@
       "title": "The Psychology of Money",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71XEsXS5RlL._AC_UL600_SR600,400_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71XEsXS5RlL._AC_UL300_SR300,200_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/9390166268?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/9390166268",
       "rating": "4.6 out of 5 stars",
@@ -417,7 +321,7 @@
       "title": "The Very Hungry Caterpillar",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81seu48cujS._AC_UL600_SR600,400_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81seu48cujS._AC_UL300_SR300,200_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/0241003008?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/0241003008",
       "rating": "4.7 out of 5 stars",
@@ -517,6 +421,102 @@
       "amazonUrl": "https://www.amazon.in/dp/B0BCGFJ2H7?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0BCGFJ2H7",
       "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DX7BJ6WH",
+      "asin": "B0DX7BJ6WH",
+      "title": "Huggies Complete Comfort Wonder Pants | Pant Style Baby Diapers L Size, 64 Count | India's Fastest Absorbing Diaper, Patented Dry Xpert Channel, Ideal for 9 to 14 Kgs (Pack of 2)",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Gb2F4tPkL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DX7BJ6WH?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DX7BJ6WH",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07F2X8BHM",
+      "asin": "B07F2X8BHM",
+      "title": "Pampers Premium Care Pant Style Baby Diapers M 54 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61lab0hh7NL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07F2X8BHM?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07F2X8BHM",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09MVWHJ9J",
+      "asin": "B09MVWHJ9J",
+      "title": "LuvLap Pant Style Baby Diapers, Large (L), 62 Count, For babies of Upto 9-14Kg with Aloe Vera Lotion for rash protection, with upto 12hr protection, Diapers",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61gpUlMLoGL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09MVWHJ9J?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09MVWHJ9J",
+      "rating": "3.7 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07CXGJKXL",
+      "asin": "B07CXGJKXL",
+      "title": "Pampers Complete Skin Comfort Pants, (XL) 56 Count, Anti-rash blanket, Lotion with Vitamin E & Aloe Vera, Extra Large size baby diapers, 12-17kg",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71k315tD9fL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07CXGJKXL?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07CXGJKXL",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07Y8S56RW",
+      "asin": "B07Y8S56RW",
+      "title": "New Mamypoko Pants Premium All Night Absorb| Pant Style Baby Diapers Large Size(L), 62 Count, Ideal for 9-14Kgs|1 Diaper= Upto All Night Absorption now with 10% increased power|Wider Crisscross Sheet|Gentle Coco Care| 12hr Leakage Protection| Prevents Heaviness.",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81pP7xp-UNL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Y8S56RW?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Y8S56RW",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0781Z3BW6",
+      "asin": "B0781Z3BW6",
+      "title": "Pampers Active Baby Tape Style Baby Diapers, Newborn/Extra Small (NB/XS) Size, 72 Count, Adjustable Fit with 5 star skin protection, Up to 5kg Diapers",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71YbYJBhe8L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0781Z3BW6?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0781Z3BW6",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07Y8RXN65",
+      "asin": "B07Y8RXN65",
+      "title": "MamyPoko Pants Extra Absorb Baby Diapers, Large (L size) | 9-14 kg | 64 Count |Deep Sleep Diapers| Soft gentle fit |Deep Absorbent Crisscross | skin friendly with coconut oil |",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71A2kH6CtlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Y8RXN65?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Y8RXN65",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09ZHTRS6N",
+      "asin": "B09ZHTRS6N",
+      "title": "TEDDYY Easy Baby M Size Diaper Pant Style | 74 Count (Medium) | 7–12 kg (Pack of 1) | Long Protection Hours | Anti-Bacterial | Airy Breathable Fit | Rapid Soaker Channels with Wetness Indicator",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71AXGOD-i+L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09ZHTRS6N?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09ZHTRS6N",
+      "rating": "3.5 out of 5 stars",
       "rank": null
     },
     {
