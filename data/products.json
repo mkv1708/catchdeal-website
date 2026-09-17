@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T19:47:21.435360+00:00",
+  "generatedAt": "2026-09-17T19:51:33.327761+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -11,6 +11,11 @@
       "id": "beauty",
       "label": "Beauty",
       "icon": "✨"
+    },
+    {
+      "id": "electronics",
+      "label": "Electronics",
+      "icon": "💻"
     },
     {
       "id": "books",
@@ -28,11 +33,6 @@
       "icon": "👶"
     },
     {
-      "id": "sports-fitness",
-      "label": "Sports, Fitness & Outdoors",
-      "icon": "🏃"
-    },
-    {
       "id": "health-personal-care",
       "label": "Health & Personal Care",
       "icon": "❤️"
@@ -45,7 +45,7 @@
       "title": "LPG cylinder booking",
       "category": "home-kitchen",
       "categoryLabel": "Home & Kitchen",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL300_SR300,200_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B07QP9PTZP?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B07QP9PTZP",
       "rating": "4.5 out of 5 stars",
@@ -232,6 +232,102 @@
       "rank": null
     },
     {
+      "id": "B0DDHM6D3L",
+      "asin": "B0DDHM6D3L",
+      "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbuds Design, TPE Anti Tangle Wire, in line Controls, Wide Compatibility(White)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51GGwjwSr0L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DDHM6D3L?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DDHM6D3L",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B098NS6PVG",
+      "asin": "B098NS6PVG",
+      "title": "Ambrane Unbreakable 3A Fast Charging 1.5m Braided Type C Cable for Smartphones, Tablets & other Type C devices, 480Mbps Data Sync, Quick Charge 3.0 (RCT15A, Black)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61W8xeZTwxL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B098NS6PVG?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B098NS6PVG",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0FMDL81GS",
+      "asin": "B0FMDL81GS",
+      "title": "OnePlus Nord Buds 3r TWS Earbuds up to 54 Hours Playback, 2-mic Clear Calls, 3D Spatial Audio, AI Translation, 12.4mm Drivers, Dual-Device Connectivity, 47ms Low Latency - Ash Black",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51nBTTG3hNL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FMDL81GS?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FMDL81GS",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0D2R2MXXJ",
+      "asin": "B0D2R2MXXJ",
+      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy Tab S/A Series, Galaxy S10/M54/M55/A80/A90/S25/S24, White",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/512UVkoMMEL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0D2R2MXXJ",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0FM38916Y",
+      "asin": "B0FM38916Y",
+      "title": "boAt Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant & 120cm Cable (Active Black)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51sxI5xpalL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FM38916Y?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FM38916Y",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0CF1M3PF9",
+      "asin": "B0CF1M3PF9",
+      "title": "Pikkme Flip Cover Leather Finish | Inside TPU with Card Pockets | Wallet Stand and Shock Proof | Complete Protection Flip Case for Redmi 12 5G / Poco M6 Pro 5G(Blue)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rWAsKgNlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CF1M3PF9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CF1M3PF9",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0G2H4R5YB",
+      "asin": "B0G2H4R5YB",
+      "title": "Kratos TW02 Ear Buds Wireless with 60H Playtime, Noise Isolation & Clear Calls, Bluetooth Earbuds with Voice Assistant, Ear Buds with Bluetooth V 5.3 & with Type C Fast Charging, IPX5 TWS Earphones",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61IgAVQe1yL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0G2H4R5YB?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0G2H4R5YB",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DCZ3WDTB",
+      "asin": "B0DCZ3WDTB",
+      "title": "Xiaomi Power Bank 4i 20000mAh 33W Super Fast Charging PD |Smart 12 Layer Protection|Type C Input & Output|Triple Output Ports|Supports Android,Apple, Tablets, Earbuds,Watch(MI Powerbank),Black",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41vBAaU8clL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DCZ3WDTB?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DCZ3WDTB",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "9387779262",
       "asin": "9387779262",
       "title": "My First Library Boxset For Kids (10 Board Books) | Ages 0–3 Years | Early Learning | Gift Set For Babies | Toddlers & Preschoolers | Latest Premium Edition | Abc | Numbers | Shapes | Colors & More",
@@ -273,7 +369,7 @@
       "title": "The Psychology of Money",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71XEsXS5RlL._AC_UL300_SR300,200_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71XEsXS5RlL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/9390166268?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/9390166268",
       "rating": "4.6 out of 5 stars",
@@ -321,7 +417,7 @@
       "title": "The Very Hungry Caterpillar",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81seu48cujS._AC_UL300_SR300,200_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81seu48cujS._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/0241003008?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/0241003008",
       "rating": "4.7 out of 5 stars",
@@ -517,102 +613,6 @@
       "amazonUrl": "https://www.amazon.in/dp/B09ZHTRS6N?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B09ZHTRS6N",
       "rating": "3.5 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B09W5LHL7G",
-      "asin": "B09W5LHL7G",
-      "title": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Weights for Men & Women (6 Months Warranty)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51+b9IWWbjL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B09W5LHL7G?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B09W5LHL7G",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0B6NSDR2H",
-      "asin": "B0B6NSDR2H",
-      "title": "Slovic Pull Up Bar for Home for Kids & Adults [100 KG] | Anti-Skid Grip | No-Drill Insatallation Pull up Bar for Home Workout | Hanging Bar for Pull Ups | Gym Equipment for Home Workout (62-100 CM)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
-      "rating": "3.9 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0DCJYS6KG",
-      "asin": "B0DCJYS6KG",
-      "title": "Boldfit Pull up Bar for Home [100 KG] - Gym Equipment for Home Workout | Adjustable Door Way Chin Up Bar for Home Workout for Adults | PullUp Bar for Men & Women | Anti-Skid Grip (62-100 CM)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71WQF5nGb9L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DCJYS6KG?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DCJYS6KG",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B08H8KD72Q",
-      "asin": "B08H8KD72Q",
-      "title": "Boldfit Heavy Resistance Band for Workout & Exercise Pull Up, Stretching & Toning Bands for Men & Women Resistance Band Set for Home & Gym Workouts (Yellow, 3–7 Kg)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61JlKYdhFdL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B08H8KD72Q?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B08H8KD72Q",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0GWN14N9F",
-      "asin": "B0GWN14N9F",
-      "title": "Lifelong Pull Up Bar for Home Kids|Adjustable 62 100 cm Doorway PullUp Bar For Home Gym Equipment|No Screw Pull Up Bar Door Mounted|100kg Capacity,Anti-Slip Lock,Foam Grip Handles|Gym Equipment",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61wiwhVcZJL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0GWN14N9F?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0GWN14N9F",
-      "rating": "3.9 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0B77X44MX",
-      "asin": "B0B77X44MX",
-      "title": "Boldfit Hand Gripper for Men & Women Hand Grip Strengthener for Forearm, Wrist & Finger Workout Fitness Equipment for Home & Gym Training - Black 40Kg",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/612AmJbiG1L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0B77X44MX?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0B77X44MX",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B000FI8ER8",
-      "asin": "B000FI8ER8",
-      "title": "Yonex Mavis 350 Green Cap Nylon Shuttlecock (Yellow)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51qajHyNklL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B000FI8ER8?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B000FI8ER8",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0B7599YRJ",
-      "asin": "B0B7599YRJ",
-      "title": "Boldfit Yoga Mats For Women and Men Exercise For Home Workout Gym Anti Slip EVA Material Yoga Mat 4Mm For Kids Gym Mats - Green",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/6110q8vCTgL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0B7599YRJ?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0B7599YRJ",
-      "rating": "4.0 out of 5 stars",
       "rank": null
     },
     {
