@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T19:04:27.287393+00:00",
+  "generatedAt": "2026-09-17T19:25:47.556364+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -33,9 +33,9 @@
       "icon": "👶"
     },
     {
-      "id": "sports-fitness",
-      "label": "Sports, Fitness & Outdoors",
-      "icon": "🏃"
+      "id": "health-personal-care",
+      "label": "Health & Personal Care",
+      "icon": "❤️"
     }
   ],
   "products": [
@@ -616,27 +616,27 @@
       "rank": null
     },
     {
-      "id": "B09W5LHL7G",
-      "asin": "B09W5LHL7G",
-      "title": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Weights for Men & Women (6 Months Warranty)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51+b9IWWbjL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B09W5LHL7G?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B09W5LHL7G",
-      "rating": "4.0 out of 5 stars",
+      "id": "B07F8H9NYY",
+      "asin": "B07F8H9NYY",
+      "title": "Comfort Morning Fresh Fabric Conditioner 2 L Refill Pack|| After Wash Liquid Fabric Softener - For Softness|| Shine & Long Lasting Freshness",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81hjfHDwDXL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07F8H9NYY?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07F8H9NYY",
+      "rating": "4.4 out of 5 stars",
       "rank": null
     },
     {
-      "id": "B0B6NSDR2H",
-      "asin": "B0B6NSDR2H",
-      "title": "Slovic Pull Up Bar for Home for Kids & Adults [100 KG] | Anti-Skid Grip | No-Drill Insatallation Pull up Bar for Home Workout | Hanging Bar for Pull Ups | Gym Equipment for Home Workout (62-100 CM)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
-      "rating": "3.9 out of 5 stars",
+      "id": "B0DPX93PJ9",
+      "asin": "B0DPX93PJ9",
+      "title": "Surf Excel Matic Liquid Detergent 5 kg for Top Load | Removes tough Stains in 1st wash | Superior Fragrance | Color Protection | Trusted by machine manufacturers like Whirlpool, Bosch, Lloyd, Voltas",
+      "category": "health-personal-care",
+      "categoryLabel": "Health & Personal Care",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61ShrCBCKrL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DPX93PJ9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DPX93PJ9",
+      "rating": "4.4 out of 5 stars",
       "rank": null
     }
   ]
