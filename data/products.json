@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T21:27:43.339338+00:00",
+  "generatedAt": "2026-09-17T09:31:18.808785+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -36,21 +36,6 @@
       "id": "sports-fitness",
       "label": "Sports, Fitness & Outdoors",
       "icon": "🏃"
-    },
-    {
-      "id": "health-personal-care",
-      "label": "Health & Personal Care",
-      "icon": "❤️"
-    },
-    {
-      "id": "car-motorbike",
-      "label": "Car & Motorbike",
-      "icon": "🚗"
-    },
-    {
-      "id": "clothing-accessories",
-      "label": "Clothing & Accessories",
-      "icon": "👕"
     }
   ],
   "products": [
@@ -115,6 +100,42 @@
       "rank": null
     },
     {
+      "id": "B0CMTZ92DC",
+      "asin": "B0CMTZ92DC",
+      "title": "JIALTO 20 Pcs Self Adhesive Hooks for Secure Wall Hanging - Versatile 6mm Nail Hook for Photo Frames Hooks, Clocks, and More - Transparent, Heavy-Duty, No-Drill Solution",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61dhl+OHAhL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CMTZ92DC?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CMTZ92DC",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09J2T124D",
+      "asin": "B09J2T124D",
+      "title": "NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts (2 Jars & 1 Blade, Silver) - 2 Year Warranty",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rH4vEE4nL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09J2T124D?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09J2T124D",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B00OHNGJ2Y",
+      "asin": "B00OHNGJ2Y",
+      "title": "Godrej aer Spray | Room Freshener for Home & Office - Cool Aqua (180 ml)",
+      "category": "home-kitchen",
+      "categoryLabel": "Home & Kitchen",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/612dwuTHwSL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B00OHNGJ2Y?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B00OHNGJ2Y",
+      "rating": "4.1 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "B09S6M7JQJ",
       "asin": "B09S6M7JQJ",
       "title": "Ghar Soaps Sandalwood & Saffron Magic Bar For Bath (300 Gms Pack Of 3) | Paraben Free | Chandan & Kesar Bath Soap | Handmade Soaps For Glowing | Skin Brightening Soap For Men & Women",
@@ -175,6 +196,42 @@
       "rank": null
     },
     {
+      "id": "B0DVSNG7NC",
+      "asin": "B0DVSNG7NC",
+      "title": "Be Bodywise 6% AHA BHA Underarm Roll-on Deodorant for Even Tone Skin,Reduces Body Odor & Pigmentation | 1% Mandelic, 4% Lactic, 1% Salicylic & Kojic Acid, Alcohol & Aluminum Free |Flora Fragrance,50ml",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71cdcEWtZZL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DVSNG7NC?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DVSNG7NC",
+      "rating": "4.3 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0G4NHSGWS",
+      "asin": "B0G4NHSGWS",
+      "title": "KERALA SECRETS 60 Day Miracle Bringadi Hair Oil (100 ML) for Hair Growth and Hair Fall Control with Neeli Bhringraj and 15 Ayurvedic Herbs for Dandruff Treatment and Premature Greying Solution",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61mpoU3nLTL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0G4NHSGWS?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0G4NHSGWS",
+      "rating": "4.6 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B096PJMGPL",
+      "asin": "B096PJMGPL",
+      "title": "Minimalist Anti-Acne Salicylic Acid 2% Face Wash For Oily & Acne Prone Skin | With LHA for Pore Cleansing, Oil Control & Sebum Regulation | Cleanser for Women & Men | 100 ml",
+      "category": "beauty",
+      "categoryLabel": "Beauty",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51qpGr-1qzL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B096PJMGPL?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B096PJMGPL",
+      "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "B0DDHM6D3L",
       "asin": "B0DDHM6D3L",
       "title": "Portronics Conch Theta C in Ear Type C Wired Earphones with in Line HD Mic, Powerful Audio, 14.2mm Driver, Unique Earbuds Design, TPE Anti Tangle Wire, in line Controls, Wide Compatibility(White)",
@@ -184,18 +241,6 @@
       "amazonUrl": "https://www.amazon.in/dp/B0DDHM6D3L?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0DDHM6D3L",
       "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0D2R2MXXJ",
-      "asin": "B0D2R2MXXJ",
-      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy Tab S/A Series, Galaxy S10/M54/M55/A80/A90/S25/S24, White",
-      "category": "electronics",
-      "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/512UVkoMMEL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0D2R2MXXJ",
-      "rating": "4.4 out of 5 stars",
       "rank": null
     },
     {
@@ -223,6 +268,18 @@
       "rank": null
     },
     {
+      "id": "B0D2R2MXXJ",
+      "asin": "B0D2R2MXXJ",
+      "title": "Samsung Original 25W USB Type-C Travel Adaptor Without Cable for Google Pixel, Xiaomi, Motorola, iPhone, Samsung Galaxy Tab S/A Series, Galaxy S10/M54/M55/A80/A90/S25/S24, White",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/512UVkoMMEL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0D2R2MXXJ?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0D2R2MXXJ",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "B0FM38916Y",
       "asin": "B0FM38916Y",
       "title": "boAt Bassheads 300C Wired Earphones,Type-C Jack, 10mm Drivers, Signature Sound, in-Line Microphone, Integrated Controls, Voice Assistant & 120cm Cable (Active Black)",
@@ -232,6 +289,42 @@
       "amazonUrl": "https://www.amazon.in/dp/B0FM38916Y?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0FM38916Y",
       "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0CF1M3PF9",
+      "asin": "B0CF1M3PF9",
+      "title": "Pikkme Flip Cover Leather Finish | Inside TPU with Card Pockets | Wallet Stand and Shock Proof | Complete Protection Flip Case for Redmi 12 5G / Poco M6 Pro 5G(Blue)",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rWAsKgNlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CF1M3PF9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CF1M3PF9",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0G2H4R5YB",
+      "asin": "B0G2H4R5YB",
+      "title": "Kratos TW02 Ear Buds Wireless with 60H Playtime, Noise Isolation & Clear Calls, Bluetooth Earbuds with Voice Assistant, Ear Buds with Bluetooth V 5.3 & with Type C Fast Charging, IPX5 TWS Earphones",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61IgAVQe1yL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0G2H4R5YB?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0G2H4R5YB",
+      "rating": "3.9 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DCZ3WDTB",
+      "asin": "B0DCZ3WDTB",
+      "title": "Xiaomi Power Bank 4i 20000mAh 33W Super Fast Charging PD |Smart 12 Layer Protection|Type C Input & Output|Triple Output Ports|Supports Android,Apple, Tablets, Earbuds,Watch(MI Powerbank),Black",
+      "category": "electronics",
+      "categoryLabel": "Electronics",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41vBAaU8clL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DCZ3WDTB?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DCZ3WDTB",
+      "rating": "4.2 out of 5 stars",
       "rank": null
     },
     {
@@ -267,7 +360,7 @@
       "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/1529921295",
-      "rating": "",
+      "rating": "4.6 out of 5 stars",
       "rank": null
     },
     {
@@ -292,6 +385,42 @@
       "amazonUrl": "https://www.amazon.in/dp/B0743DXTVX?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0743DXTVX",
       "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "0241252083",
+      "asin": "0241252083",
+      "title": "White Nights by Fyodor Dostoyevsky: A Timeless Story of Love, Longing & Solitude | Classic Fiction, Russian Literature, Romantic Novella | Penguin Little Black Classics",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41y8H3QmVqL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/0241252083?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/0241252083",
+      "rating": "4.6 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "1847941834",
+      "asin": "1847941834",
+      "title": "Atomic Habits: Tiny Changes, Remarkable Results",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/817HaeblezL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/1847941834?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/1847941834",
+      "rating": "4.6 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "9360347981",
+      "asin": "9360347981",
+      "title": "My First Library Set of 10 Board Books for Kids, Early Learning Book for Babies & Toddlers, Alphabets, Body Parts, Numbers, 1-3 Years (Kids' First Library Box Set)",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61MmnHY2WuL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/9360347981?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/9360347981",
+      "rating": "4.5 out of 5 stars",
       "rank": null
     },
     {
@@ -355,15 +484,39 @@
       "rank": null
     },
     {
-      "id": "B07F2X8BHM",
-      "asin": "B07F2X8BHM",
-      "title": "Pampers Premium Care Pant Style Baby Diapers M 54 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness",
-      "category": "baby",
-      "categoryLabel": "Baby",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61lab0hh7NL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07F2X8BHM?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07F2X8BHM",
-      "rating": "4.4 out of 5 stars",
+      "id": "B0CM9MHFQP",
+      "asin": "B0CM9MHFQP",
+      "title": "Wembley Educational Kids Laptop Learning Toy for 2-5 Years Boys Girls Computer Toys for 3 Years Fun Activity Learning Alphabet,Letter,Words,Games,Mathematics,Music,Logic Memory Tool - Blue",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71KBMy1AVbL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CM9MHFQP?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CM9MHFQP",
+      "rating": "3.7 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0CNCY6G5K",
+      "asin": "B0CNCY6G5K",
+      "title": "TEC TAVAKKAL Duck Slide Toy Set, Funny Automatic Stair-Climbing Ducklings Cartoon Race Track Set Duck Roller Coaster Escalator Toy with Flashing Lights & Music (Duck Slide Track Set)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61w13QOIVmL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0CNCY6G5K?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0CNCY6G5K",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0BCGFJ2H7",
+      "asin": "B0BCGFJ2H7",
+      "title": "LuvLap Sunny Ride on & Car for Kids with Music & Horn Steering, Safety Guard, Under Seat Storage & Big Wheels, Ride on for Kids 1 to 3 Years Upto 25 Kgs (Pink)",
+      "category": "toys-games",
+      "categoryLabel": "Toys & Games",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rFHtE18mL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0BCGFJ2H7?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0BCGFJ2H7",
+      "rating": "4.1 out of 5 stars",
       "rank": null
     },
     {
@@ -376,6 +529,18 @@
       "amazonUrl": "https://www.amazon.in/dp/B0DX7BJ6WH?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0DX7BJ6WH",
       "rating": "4.2 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07F2X8BHM",
+      "asin": "B07F2X8BHM",
+      "title": "Pampers Premium Care Pant Style Baby Diapers M 54 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61lab0hh7NL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07F2X8BHM?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07F2X8BHM",
+      "rating": "4.4 out of 5 stars",
       "rank": null
     },
     {
@@ -415,6 +580,42 @@
       "rank": null
     },
     {
+      "id": "B0781Z3BW6",
+      "asin": "B0781Z3BW6",
+      "title": "Pampers Active Baby Tape Style Baby Diapers, Newborn/Extra Small (NB/XS) Size, 72 Count, Adjustable Fit with 5 star skin protection, Up to 5kg Diapers",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71YbYJBhe8L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0781Z3BW6?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0781Z3BW6",
+      "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B07Y8RXN65",
+      "asin": "B07Y8RXN65",
+      "title": "MamyPoko Pants Extra Absorb Baby Diapers, Large (L size) | 9-14 kg | 64 Count |Deep Sleep Diapers| Soft gentle fit |Deep Absorbent Crisscross | skin friendly with coconut oil |",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71A2kH6CtlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Y8RXN65?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Y8RXN65",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B09ZHTRS6N",
+      "asin": "B09ZHTRS6N",
+      "title": "TEDDYY Easy Baby M Size Diaper Pant Style | 74 Count (Medium) | 7–12 kg (Pack of 1) | Long Protection Hours | Anti-Bacterial | Airy Breathable Fit | Rapid Soaker Channels with Wetness Indicator",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71AXGOD-i+L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09ZHTRS6N?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09ZHTRS6N",
+      "rating": "3.5 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "B09W5LHL7G",
       "asin": "B09W5LHL7G",
       "title": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Weights for Men & Women (6 Months Warranty)",
@@ -435,222 +636,6 @@
       "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
-      "rating": "3.9 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0DCJYS6KG",
-      "asin": "B0DCJYS6KG",
-      "title": "Boldfit Pull up Bar for Home [100 KG] - Gym Equipment for Home Workout | Adjustable Door Way Chin Up Bar for Home Workout for Adults | PullUp Bar for Men & Women | Anti-Skid Grip (62-100 CM)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71WQF5nGb9L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DCJYS6KG?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DCJYS6KG",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B08H8KD72Q",
-      "asin": "B08H8KD72Q",
-      "title": "Boldfit Heavy Resistance Band for Workout & Exercise Pull Up, Stretching & Toning Bands for Men & Women Resistance Band Set for Home & Gym Workouts (Yellow, 3–7 Kg)",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61JlKYdhFdL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B08H8KD72Q?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B08H8KD72Q",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0GWN14N9F",
-      "asin": "B0GWN14N9F",
-      "title": "Lifelong Pull Up Bar for Home Kids|Adjustable 62 100 cm Doorway PullUp Bar For Home Gym Equipment|No Screw Pull Up Bar Door Mounted|100kg Capacity,Anti-Slip Lock,Foam Grip Handles|Gym Equipment",
-      "category": "sports-fitness",
-      "categoryLabel": "Sports, Fitness & Outdoors",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61wiwhVcZJL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0GWN14N9F?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0GWN14N9F",
-      "rating": "3.9 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B07F8H9NYY",
-      "asin": "B07F8H9NYY",
-      "title": "Comfort Morning Fresh Fabric Conditioner 2 L Refill Pack|| After Wash Liquid Fabric Softener - For Softness|| Shine & Long Lasting Freshness",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81hjfHDwDXL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07F8H9NYY?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07F8H9NYY",
-      "rating": "4.4 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0DPX93PJ9",
-      "asin": "B0DPX93PJ9",
-      "title": "Surf Excel Matic Liquid Detergent 5 kg for Top Load | Removes tough Stains in 1st wash | Superior Fragrance | Color Protection | Trusted by machine manufacturers like Whirlpool, Bosch, Lloyd, Voltas",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61ShrCBCKrL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DPX93PJ9?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DPX93PJ9",
-      "rating": "4.4 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0D2XQQQ96",
-      "asin": "B0D2XQQQ96",
-      "title": "Godrej Fab Liquid Detergent Refill Pouch for Machine Wash - 2L",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71fvaQTBSML._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0D2XQQQ96?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0D2XQQQ96",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B086R15K73",
-      "asin": "B086R15K73",
-      "title": "App Store Code",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51z3HpbXZvL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B086R15K73?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B086R15K73",
-      "rating": "4.4 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0D9BHX9MZ",
-      "asin": "B0D9BHX9MZ",
-      "title": "Wellcore Pure Micronised Creatine Powder (33 Servings, Tropical Tango) | For Enhanced Muscle Strength With Rapid Absorption | Creatine Monohydrate | Wellcore Creatine Flavoured - 122g",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61EuwSpX+DL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0D9BHX9MZ?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0D9BHX9MZ",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B077BFH786",
-      "asin": "B077BFH786",
-      "title": "SOFTSPUN Microfiber Cloth - 4 pcs - 40x40 cms - 340 GSM Grey! Thick Lint & Streak-Free Multipurpose Cloths - Automotive Microfibre Towels for Car Bike Cleaning Polishing Washing & Detailing.",
-      "category": "car-motorbike",
-      "categoryLabel": "Car & Motorbike",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81dsWgzXLrL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B077BFH786?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B077BFH786",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0CXDQWYQP",
-      "asin": "B0CXDQWYQP",
-      "title": "Godrej aer O – Hanging Car Air Freshener – Assorted Pack of 3 (22.5g) | Gel Lasts up to 30 days | Car Accessories",
-      "category": "car-motorbike",
-      "categoryLabel": "Car & Motorbike",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71J1Pf6Qq9L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0CXDQWYQP?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0CXDQWYQP",
-      "rating": "4.2 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0BRY84H2H",
-      "asin": "B0BRY84H2H",
-      "title": "Boldfit face mask for Bikers Full face mask for Bikers Helmet Head Cover Balaclava for Men Bike Riding & Biker Head Cover for Helmet for Men Balaclava for Adult Black Masks for Bike Riding - Black",
-      "category": "car-motorbike",
-      "categoryLabel": "Car & Motorbike",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61qMdqTzapL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0BRY84H2H?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0BRY84H2H",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B07FCHCQCW",
-      "asin": "B07FCHCQCW",
-      "title": "WD-40 Multipurpose Spray, Rust Remover, Cleans Bike Chains, Hinge Lubricant, Loosens Jammed Parts, Degreaser, and Cleaning Agent, 420ml (341g)",
-      "category": "car-motorbike",
-      "categoryLabel": "Car & Motorbike",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51iXu11jMdL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07FCHCQCW?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07FCHCQCW",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B00PPY2NB0",
-      "asin": "B00PPY2NB0",
-      "title": "Involve Your Senses One Musk Organic Car Perfume, Involve Your Senses Strong Fiber Air Freshener to Freshen'up Your Car - IONE01-40 g,Car Accessories interior car perfumes and fresheners",
-      "category": "car-motorbike",
-      "categoryLabel": "Car & Motorbike",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41n0ALyjZYL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B00PPY2NB0?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B00PPY2NB0",
-      "rating": "3.8 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B010FMJKFS",
-      "asin": "B010FMJKFS",
-      "title": "Jockey 1406 Women Cotton Hipster (Pack of 3, Colors & Prints May Vary)",
-      "category": "clothing-accessories",
-      "categoryLabel": "Clothing & Accessories",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71h1sBN9L2L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B010FMJKFS?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B010FMJKFS",
-      "rating": "4.2 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0FDW55HNT",
-      "asin": "B0FDW55HNT",
-      "title": "KLOSIA Women's Rayon Printed Anarkali Kurta and Pant with Dupatta Set",
-      "category": "clothing-accessories",
-      "categoryLabel": "Clothing & Accessories",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71I53evweVL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0FDW55HNT?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0FDW55HNT",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0DZCBQ225",
-      "asin": "B0DZCBQ225",
-      "title": "TRYLO Riza T-FIT Women's Non-Padded,Non-Wired,Full Coverage,Seamless 100% Cotton Feel Fabric Bra Available in Multicolor",
-      "category": "clothing-accessories",
-      "categoryLabel": "Clothing & Accessories",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71Vak3ddC7L._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DZCBQ225?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DZCBQ225",
-      "rating": "4.3 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0H3PX2MH9",
-      "asin": "B0H3PX2MH9",
-      "title": "GoSriKi Kurta Set Women Viscose Printed | Kurti Set Woman | Kurta Pant Dupatta 3 Piece Outfit | V-Neck Elbow Length Sleeve Straight Fit Ethnic Wear Ladies Dress Stylish Traditional Clothing",
-      "category": "clothing-accessories",
-      "categoryLabel": "Clothing & Accessories",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Rag7PIeiL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0H3PX2MH9?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0H3PX2MH9",
-      "rating": "4.1 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B07MZM26XG",
-      "asin": "B07MZM26XG",
-      "title": "Amazon Brand - Symbol Men's Cotton Rich Solid Polo Tshirt | Collar Tshirts | Half Sleeves | Plain-Regular Fit (Available in Plus Sizes and Combo Pack of 2)",
-      "category": "clothing-accessories",
-      "categoryLabel": "Clothing & Accessories",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/713n+TxyfCL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07MZM26XG?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07MZM26XG",
       "rating": "3.9 out of 5 stars",
       "rank": null
     }
