@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T19:51:33.327761+00:00",
+  "generatedAt": "2026-09-18T19:03:39.573864+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -33,9 +33,9 @@
       "icon": "👶"
     },
     {
-      "id": "health-personal-care",
-      "label": "Health & Personal Care",
-      "icon": "❤️"
+      "id": "sports-fitness",
+      "label": "Sports, Fitness & Outdoors",
+      "icon": "🏃"
     }
   ],
   "products": [
@@ -45,7 +45,7 @@
       "title": "LPG cylinder booking",
       "category": "home-kitchen",
       "categoryLabel": "Home & Kitchen",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL600_SR600,400_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL300_SR300,200_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B07QP9PTZP?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B07QP9PTZP",
       "rating": "4.5 out of 5 stars",
@@ -208,27 +208,27 @@
       "rank": null
     },
     {
-      "id": "B0G4NHSGWS",
-      "asin": "B0G4NHSGWS",
-      "title": "KERALA SECRETS 60 Day Miracle Bringadi Hair Oil (100 ML) for Hair Growth and Hair Fall Control with Neeli Bhringraj and 15 Ayurvedic Herbs for Dandruff Treatment and Premature Greying Solution",
+      "id": "B0B6Y3FNV7",
+      "asin": "B0B6Y3FNV7",
+      "title": "L'Oreal Paris Hyaluron Moisture 72H Conditioner - Hyaluronic Acid, 175ml | For dry & dehydrated hair. Provides 72HR of long-lasting hydration & detangling. Suitable for all hair types, no weigh down.",
       "category": "beauty",
       "categoryLabel": "Beauty",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61mpoU3nLTL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0G4NHSGWS?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0G4NHSGWS",
-      "rating": "4.6 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/511fPrnY+bL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0B6Y3FNV7?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0B6Y3FNV7",
+      "rating": "4.3 out of 5 stars",
       "rank": null
     },
     {
-      "id": "B096PJMGPL",
-      "asin": "B096PJMGPL",
-      "title": "Minimalist Anti-Acne Salicylic Acid 2% Face Wash For Oily & Acne Prone Skin | With LHA for Pore Cleansing, Oil Control & Sebum Regulation | Cleanser for Women & Men | 100 ml",
+      "id": "B08FW1GJ4F",
+      "asin": "B08FW1GJ4F",
+      "title": "L'Oreal Paris Extraordinary Oil Hair Serum - Heat Protection, 100ml | 100ml multi-use serum with 6 flower oils for frizz-free, shiny hair. Heat protection up to 230°C & UV protection too.",
       "category": "beauty",
       "categoryLabel": "Beauty",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51qpGr-1qzL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B096PJMGPL?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B096PJMGPL",
-      "rating": "4.2 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51GhOWodz1L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B08FW1GJ4F?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B08FW1GJ4F",
+      "rating": "4.3 out of 5 stars",
       "rank": null
     },
     {
@@ -316,15 +316,39 @@
       "rank": null
     },
     {
-      "id": "B0DCZ3WDTB",
-      "asin": "B0DCZ3WDTB",
-      "title": "Xiaomi Power Bank 4i 20000mAh 33W Super Fast Charging PD |Smart 12 Layer Protection|Type C Input & Output|Triple Output Ports|Supports Android,Apple, Tablets, Earbuds,Watch(MI Powerbank),Black",
+      "id": "B0FP22HBH9",
+      "asin": "B0FP22HBH9",
+      "title": "OpenTech® Military-Grade Tempered Glass Screen Protector Compatible for iPhone 17 with Edge to Edge Coverage - Case Friendly, Anti-scratch and Bubble free installation kit (6.3 Inches)",
       "category": "electronics",
       "categoryLabel": "Electronics",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41vBAaU8clL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DCZ3WDTB?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DCZ3WDTB",
-      "rating": "4.2 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/6151QO9IlAL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0FP22HBH9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0FP22HBH9",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0HJLVC8M9",
+      "asin": "B0HJLVC8M9",
+      "title": "I Declare - Hindi ( विजय में चलने के लिए रोज़ की घोषणाएँ)",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/712EeiWaICL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0HJLVC8M9?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0HJLVC8M9",
+      "rating": "",
+      "rank": null
+    },
+    {
+      "id": "B0HJLRY2R8",
+      "asin": "B0HJLRY2R8",
+      "title": "I Declare (Daily Declaration To Walk In Victory)",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/719P6tycNFL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0HJLRY2R8?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0HJLRY2R8",
+      "rating": "5.0 out of 5 stars",
       "rank": null
     },
     {
@@ -340,6 +364,18 @@
       "rank": null
     },
     {
+      "id": "1529921295",
+      "asin": "1529921295",
+      "title": "Protocols: An Operating Manual for the Human Body",
+      "category": "books",
+      "categoryLabel": "Books",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/1529921295",
+      "rating": "4.6 out of 5 stars",
+      "rank": null
+    },
+    {
       "id": "935886592X",
       "asin": "935886592X",
       "title": "PARMAR SSC Fatman | GK/GS Theory Book | English Medium | 2nd Edition, 2026 | Useful For SSC CGL and CHSL (Tier 1 & 2) | CPO | MTS | Steno | Selection ... One Day Competitive Examination | Parmar Sir",
@@ -349,18 +385,6 @@
       "amazonUrl": "https://www.amazon.in/dp/935886592X?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/935886592X",
       "rating": "4.5 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "1529921295",
-      "asin": "1529921295",
-      "title": "Protocols: An Operating Manual for the Human Body",
-      "category": "books",
-      "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/1529921295",
-      "rating": "4.7 out of 5 stars",
       "rank": null
     },
     {
@@ -388,39 +412,15 @@
       "rank": null
     },
     {
-      "id": "0241252083",
-      "asin": "0241252083",
-      "title": "White Nights by Fyodor Dostoyevsky: A Timeless Story of Love, Longing & Solitude | Classic Fiction, Russian Literature, Romantic Novella | Penguin Little Black Classics",
+      "id": "9387779319",
+      "asin": "9387779319",
+      "title": "My First Book of Patterns Pencil Control: Patterns Practice book for kids (Pattern Writing) |Best Selling Tracing Book for Kids in India | Early Learning | Tracing Lines & Pattern Writing Activities | Premium Quality Return Gift | Ages 2 - 5 Years | 1.5 hours of fun time",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41y8H3QmVqL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/0241252083?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/0241252083",
-      "rating": "4.6 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "B0HHDMTB3P",
-      "asin": "B0HHDMTB3P",
-      "title": "Speedy Current Affairs Yearly | Hindi Version | Check Suchit Sir Image Before Buying | SEPTEMBER 2025 to SEPTEMBER 2026 | Original Book Of Suchit Kumar",
-      "category": "books",
-      "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51SOotGT4tL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0HHDMTB3P?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0HHDMTB3P",
-      "rating": "4.7 out of 5 stars",
-      "rank": null
-    },
-    {
-      "id": "0241003008",
-      "asin": "0241003008",
-      "title": "The Very Hungry Caterpillar",
-      "category": "books",
-      "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81seu48cujS._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/0241003008?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/0241003008",
-      "rating": "4.7 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71UJZncWSpL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/9387779319?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/9387779319",
+      "rating": "4.4 out of 5 stars",
       "rank": null
     },
     {
@@ -520,18 +520,6 @@
       "rank": null
     },
     {
-      "id": "B0DX7BJ6WH",
-      "asin": "B0DX7BJ6WH",
-      "title": "Huggies Complete Comfort Wonder Pants | Pant Style Baby Diapers L Size, 64 Count | India's Fastest Absorbing Diaper, Patented Dry Xpert Channel, Ideal for 9 to 14 Kgs (Pack of 2)",
-      "category": "baby",
-      "categoryLabel": "Baby",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Gb2F4tPkL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DX7BJ6WH?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DX7BJ6WH",
-      "rating": "4.2 out of 5 stars",
-      "rank": null
-    },
-    {
       "id": "B07F2X8BHM",
       "asin": "B07F2X8BHM",
       "title": "Pampers Premium Care Pant Style Baby Diapers M 54 Count | No Marks Design | Voted India’s #1 Softest Diaper | All in 1 diaper with 360 Cottony Softness",
@@ -541,6 +529,18 @@
       "amazonUrl": "https://www.amazon.in/dp/B07F2X8BHM?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B07F2X8BHM",
       "rating": "4.4 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0DX7BJ6WH",
+      "asin": "B0DX7BJ6WH",
+      "title": "Huggies Complete Comfort Wonder Pants | Pant Style Baby Diapers L Size, 64 Count | India's Fastest Absorbing Diaper, Patented Dry Xpert Channel, Ideal for 9 to 14 Kgs (Pack of 2)",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61Gb2F4tPkL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0DX7BJ6WH?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0DX7BJ6WH",
+      "rating": "4.2 out of 5 stars",
       "rank": null
     },
     {
@@ -592,18 +592,6 @@
       "rank": null
     },
     {
-      "id": "B07Y8RXN65",
-      "asin": "B07Y8RXN65",
-      "title": "MamyPoko Pants Extra Absorb Baby Diapers, Large (L size) | 9-14 kg | 64 Count |Deep Sleep Diapers| Soft gentle fit |Deep Absorbent Crisscross | skin friendly with coconut oil |",
-      "category": "baby",
-      "categoryLabel": "Baby",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71A2kH6CtlL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07Y8RXN65?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07Y8RXN65",
-      "rating": "4.0 out of 5 stars",
-      "rank": null
-    },
-    {
       "id": "B09ZHTRS6N",
       "asin": "B09ZHTRS6N",
       "title": "TEDDYY Easy Baby M Size Diaper Pant Style | 74 Count (Medium) | 7–12 kg (Pack of 1) | Long Protection Hours | Anti-Bacterial | Airy Breathable Fit | Rapid Soaker Channels with Wetness Indicator",
@@ -616,27 +604,39 @@
       "rank": null
     },
     {
-      "id": "B07F8H9NYY",
-      "asin": "B07F8H9NYY",
-      "title": "Comfort Morning Fresh Fabric Conditioner 2 L Refill Pack|| After Wash Liquid Fabric Softener - For Softness|| Shine & Long Lasting Freshness",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/81hjfHDwDXL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B07F8H9NYY?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B07F8H9NYY",
-      "rating": "4.4 out of 5 stars",
+      "id": "B07Y8RXN65",
+      "asin": "B07Y8RXN65",
+      "title": "MamyPoko Pants Extra Absorb Baby Diapers, Large (L size) | 9-14 kg | 64 Count |Deep Sleep Diapers| Soft gentle fit |Deep Absorbent Crisscross | skin friendly with coconut oil |",
+      "category": "baby",
+      "categoryLabel": "Baby",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71A2kH6CtlL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B07Y8RXN65?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B07Y8RXN65",
+      "rating": "4.0 out of 5 stars",
       "rank": null
     },
     {
-      "id": "B0DPX93PJ9",
-      "asin": "B0DPX93PJ9",
-      "title": "Surf Excel Matic Liquid Detergent 5 kg for Top Load | Removes tough Stains in 1st wash | Superior Fragrance | Color Protection | Trusted by machine manufacturers like Whirlpool, Bosch, Lloyd, Voltas",
-      "category": "health-personal-care",
-      "categoryLabel": "Health & Personal Care",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61ShrCBCKrL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B0DPX93PJ9?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B0DPX93PJ9",
-      "rating": "4.4 out of 5 stars",
+      "id": "B09W5LHL7G",
+      "asin": "B09W5LHL7G",
+      "title": "Lifelong PVC Hex Fixed Dumbbells Pack of 2 (2kg*2) Black Color for Home Gym Equipment Fitness Barbell|Gym Exercise|Home Workout, Gym Weights for Men & Women (6 Months Warranty)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/51+b9IWWbjL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B09W5LHL7G?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B09W5LHL7G",
+      "rating": "4.0 out of 5 stars",
+      "rank": null
+    },
+    {
+      "id": "B0B6NSDR2H",
+      "asin": "B0B6NSDR2H",
+      "title": "Slovic Pull Up Bar for Home for Kids & Adults [100 KG] | Anti-Skid Grip | No-Drill Insatallation Pull up Bar for Home Workout | Hanging Bar for Pull Ups | Gym Equipment for Home Workout (62-100 CM)",
+      "category": "sports-fitness",
+      "categoryLabel": "Sports, Fitness & Outdoors",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
+      "rating": "3.9 out of 5 stars",
       "rank": null
     }
   ]
