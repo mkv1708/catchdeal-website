@@ -469,7 +469,7 @@ async function load(){
         :null;
 
 
-    updated.textContent=
+    if(updated) updated.textContent=
       when&&!Number.isNaN(when.valueOf())
         ?"Updated "+
           when.toLocaleDateString(
