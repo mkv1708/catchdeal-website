@@ -38,3 +38,13 @@ footer{background:#0e172a;color:#98a2b3}.footer-shell{max-width:1440px;margin:au
 .empty-state .product-buy{max-width:500px;margin:auto;font-size:.9rem;padding:15px}
 @media(max-width:880px){.category-scroll{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:600px){.search-hero{padding:28px 14px 24px}.search-hero h1{font-size:2rem}.search-hero p{font-size:.82rem}.hero-search-form{padding:5px;gap:4px}.hero-search-field{padding:0 8px;gap:6px}.hero-search-field input{font-size:.82rem}.hero-search-submit{padding:12px 14px;font-size:.8rem}.category-scroll{display:flex;overflow-x:auto}.category-card{min-width:110px}.catalogue-toolbar{top:76px}.empty-state:has(.product-buy){padding:24px 14px}}
+
+/* Picture-led Amazon search suggestion */
+.search-fallback{display:grid;grid-template-columns:minmax(145px,230px) minmax(0,1fr);align-items:center;gap:24px;max-width:980px!important;text-align:left!important}
+.search-picture{min-height:180px;border-radius:18px;background:#fff0e4;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;padding:10px}
+.search-picture img{display:block;width:100%;height:180px;object-fit:contain}
+.search-picture a{font-size:.6rem;color:#667085;margin-top:7px;text-decoration:underline;text-align:center}
+.search-picture-placeholder{font-size:5rem;line-height:1.4}
+.search-fallback-copy{text-align:center;min-width:0}
+.search-fallback-copy .product-buy{margin:0 auto}
+@media(max-width:600px){.search-fallback{grid-template-columns:1fr;gap:12px}.search-picture{min-height:125px;max-width:240px;width:100%;margin:auto}.search-picture img{height:125px}.search-picture-placeholder{font-size:3.5rem}}
