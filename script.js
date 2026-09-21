@@ -301,7 +301,7 @@ function render(){
         <div class="search-fallback-copy">
         <h3>Explore more options on Amazon</h3>
         <p>Continue your search for “${escapeHtml(state.query.trim())}” on Amazon India.</p>
-        <a class="product-buy" href="https://www.amazon.in/s?k=${encodeURIComponent(state.query.trim()).replace(/'/g,"%27")}&amp;tag=facebook011b-21" target="_blank" rel="nofollow sponsored noopener">See results on Amazon <span>↗</span></a>
+        <a class="product-buy" href="https://www.amazon.in/s?k=${encodeURIComponent(state.query.trim()).replace(/'/g,"%27")}&amp;tag=catchdeal07-21" target="_blank" rel="nofollow sponsored noopener">See results on Amazon <span>↗</span></a>
         </div>
       </div>`
     :'<div class="empty-state">Explore more products by choosing another category.</div>';
