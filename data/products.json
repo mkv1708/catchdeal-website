@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T09:07:45.297750+00:00",
+  "generatedAt": "2026-09-21T20:38:00.007164+00:00",
   "productCount": 50,
   "categories": [
     {
@@ -45,7 +45,7 @@
       "title": "LPG cylinder booking",
       "category": "home-kitchen",
       "categoryLabel": "Home & Kitchen",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL300_SR300,200_.jpg",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/415aawinNhL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B07QP9PTZP?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B07QP9PTZP",
       "rating": "4.5 out of 5 stars",
@@ -124,15 +124,15 @@
       "rank": null
     },
     {
-      "id": "B09J2T124D",
-      "asin": "B09J2T124D",
-      "title": "NutriPro Juicer Mixer Grinder - Smoothie Maker - 500 Watts (2 Jars & 1 Blade, Silver) - 2 Year Warranty",
+      "id": "B08LQRXXNB",
+      "asin": "B08LQRXXNB",
+      "title": "Homestrap Set of 6 Non-Woven Printed Saree Cover/Cloth Storage/Wardrobe Organizer For Clothes with Transparent Window (Grey)(Shark Tank Featured) 45cmx33cmx22cm",
       "category": "home-kitchen",
       "categoryLabel": "Home & Kitchen",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71rH4vEE4nL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/B09J2T124D?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/B09J2T124D",
-      "rating": "4.4 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/91Q4zeSaBpL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B08LQRXXNB?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B08LQRXXNB",
+      "rating": "4.0 out of 5 stars",
       "rank": null
     },
     {
@@ -168,7 +168,7 @@
       "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71x-JgwRslL._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B0GYCT961V?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0GYCT961V",
-      "rating": "4.1 out of 5 stars",
+      "rating": "4.0 out of 5 stars",
       "rank": null
     },
     {
@@ -376,15 +376,15 @@
       "rank": null
     },
     {
-      "id": "1529921295",
-      "asin": "1529921295",
-      "title": "Protocols: An Operating Manual for the Human Body",
+      "id": "9373580272",
+      "asin": "9373580272",
+      "title": "SUPERTET PRIMARY MASTER BOOK | 3200+ One Liners | 14 Subjects, 15 Model Papers & 26 Grand Tests | Complete Theory | Adhyayan Mantra",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/1529921295",
-      "rating": "4.6 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71kKyQtwVuL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/9373580272?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/9373580272",
+      "rating": "",
       "rank": null
     },
     {
@@ -400,27 +400,27 @@
       "rank": null
     },
     {
-      "id": "0241252083",
-      "asin": "0241252083",
-      "title": "White Nights by Fyodor Dostoyevsky: A Timeless Story of Love, Longing & Solitude | Classic Fiction, Russian Literature, Romantic Novella | Penguin Little Black Classics",
+      "id": "1529921295",
+      "asin": "1529921295",
+      "title": "Protocols: An Operating Manual for the Human Body",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/41y8H3QmVqL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/0241252083?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/0241252083",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/61-l7DEtdaL._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/1529921295?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/1529921295",
       "rating": "4.6 out of 5 stars",
       "rank": null
     },
     {
-      "id": "1847941834",
-      "asin": "1847941834",
-      "title": "Atomic Habits: Tiny Changes, Remarkable Results",
+      "id": "B0743DXTVX",
+      "asin": "B0743DXTVX",
+      "title": "SHNMN Sank Magic Practice Copybook, (4 BOOK +1 PEN + 10 REFILL) Number Tracing Book for Preschoolers with Pen, Magic calligraphy books for kids Reusable Writing Tool",
       "category": "books",
       "categoryLabel": "Books",
-      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/817HaeblezL._AC_UL600_SR600,400_.jpg",
-      "amazonUrl": "https://www.amazon.in/dp/1847941834?tag=facebook011b-21",
-      "productUrl": "https://www.amazon.in/dp/1847941834",
-      "rating": "4.6 out of 5 stars",
+      "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71fTA8TF23L._AC_UL600_SR600,400_.jpg",
+      "amazonUrl": "https://www.amazon.in/dp/B0743DXTVX?tag=facebook011b-21",
+      "productUrl": "https://www.amazon.in/dp/B0743DXTVX",
+      "rating": "4.2 out of 5 stars",
       "rank": null
     },
     {
@@ -636,7 +636,7 @@
       "imageUrl": "https://images-eu.ssl-images-amazon.com/images/I/71+J9cM+N-L._AC_UL600_SR600,400_.jpg",
       "amazonUrl": "https://www.amazon.in/dp/B0B6NSDR2H?tag=facebook011b-21",
       "productUrl": "https://www.amazon.in/dp/B0B6NSDR2H",
-      "rating": "",
+      "rating": "3.9 out of 5 stars",
       "rank": null
     }
   ]
