@@ -1,10 +1,12 @@
-const state={category:"all",query:""};
+const state={category:"all",query:"",page:1};
+const PAGE_SIZE=15;
 let catalogue=null;
 
 const container=document.getElementById("products-container");
 const tabsWrap=document.getElementById("category-tabs");
 const categoryCards=document.getElementById("category-cards");
 const featured=document.getElementById("featured-products");
+const pagination=document.getElementById("pagination");
 const heroShowcase=document.getElementById("hero-showcase");
 const search=document.getElementById("product-search");
 const navSearch=document.getElementById("nav-search");
@@ -83,6 +85,7 @@ const badgeClass=p=>{
 function setCategory(category){
 
   state.category=category;
+  state.page=1;
 
   document
     .querySelectorAll(".tab")
@@ -116,42 +119,6 @@ function setCategory(category){
 // ==========================================================
 // HERO PRODUCTS
 // ==========================================================
-
-function renderHero(){
-
-  const products=[...(catalogue.products||[])];
-
-  const withImages=products
-    .filter(p=>p.imageUrl)
-    .sort((a,b)=>{
-      const rankA=a.rank??999;
-      const rankB=b.rank??999;
-      return rankA-rankB;
-    });
-
-
-  const picks=(
-    withImages.length>=3
-      ?withImages
-      :products
-  ).slice(0,3);
-
-
-  heroShowcase.innerHTML=picks
-    .map(p=>`
-      <a
-        class="hero-product"
-        href="${escapeHtml(p.amazonUrl)}"
-        target="_blank"
-        rel="nofollow sponsored noopener"
-        aria-label="View ${escapeHtml(p.title)} on Amazon"
-      >
-        ${productImg(p,p.category)}
-      </a>
-    `)
-    .join("");
-}
-
 
 // ==========================================================
 // CATEGORY NAVIGATION
@@ -252,278 +219,52 @@ function renderCategoryNavigation(){
 // FEATURED / TOP PICKS
 // ==========================================================
 
-function renderFeatured(){
-
-  const products=[
-    ...(catalogue.products||[])
-  ];
-
-
-  // Prioritize the best visible Amazon rank.
-
-  const picks=products
-    .sort((a,b)=>{
-
-      const imageA=a.imageUrl?1:0;
-      const imageB=b.imageUrl?1:0;
-
-      if(imageA!==imageB){
-        return imageB-imageA;
-      }
-
-      const rankA=a.rank??999;
-      const rankB=b.rank??999;
-
-      return rankA-rankB;
-
-    })
-    .slice(0,5);
-
-
-  featured.innerHTML=picks.length
-    ?picks.map(p=>`
-
-      <article class="featured-card">
-
-        <div class="featured-visual">
-          ${productImg(p,p.category)}
-        </div>
-
-        <div class="featured-body">
-
-          <span class="featured-badge ${badgeClass(p)}">
-            ${escapeHtml(rankLabel(p))}
-          </span>
-
-          <h3>
-            ${escapeHtml(p.title)}
-          </h3>
-
-          <div class="featured-meta">
-            ★ ${escapeHtml(ratingLabel(p))}
-          </div>
-
-          <p>
-            ${escapeHtml(
-              p.categoryLabel||
-              "Amazon India Best Seller"
-            )}
-          </p>
-
-          <a
-            class="buy-button"
-            href="${escapeHtml(p.amazonUrl)}"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-          >
-            Buy Now <span>→</span>
-          </a>
-
-        </div>
-
-      </article>
-
-    `).join("")
-
-    :'<div class="empty-state">Top picks are currently unavailable.</div>';
-}
-
-
 // ==========================================================
 // ALL PRODUCTS
 // ==========================================================
 
-function renderProducts(){
-
-  const products=catalogue.products||[];
-
-
-  container.innerHTML=(catalogue.categories||[])
-    .map(cat=>{
-
-      const items=products
-        .filter(p=>p.category===cat.id);
-
-
-      if(!items.length){
-        return "";
-      }
-
-
-      return `
-
-        <section
-          class="category-section"
-          id="${escapeHtml(cat.id)}"
-          data-category="${escapeHtml(cat.id)}"
-        >
-
-          <div class="category-header">
-
-            <div class="category-icon-wrap">
-              ${escapeHtml(cat.icon||"🛍️")}
-            </div>
-
-            <span class="category-name">
-              ${escapeHtml(cat.label)}
-            </span>
-
-            <span class="category-count">
-              ${items.length} products
-            </span>
-
-          </div>
-
-
-          <div class="products-grid">
-
-            ${items.map(p=>`
-
-              <article class="product-card">
-
-                <div class="product-visual">
-                  ${productImg(p,cat.id)}
-                </div>
-
-
-                <div class="product-body">
-
-                  <span class="badge ${badgeClass(p)}">
-                    ${escapeHtml(rankLabel(p))}
-                  </span>
-
-
-                  <p class="product-name">
-                    ${escapeHtml(p.title)}
-                  </p>
-
-
-                  <div class="product-meta">
-                    ★ ${escapeHtml(ratingLabel(p))}
-                  </div>
-
-
-                  <p class="product-why">
-                    ${escapeHtml(
-                      p.categoryLabel||
-                      cat.label
-                    )}
-                  </p>
-
-
-                  <a
-                    class="product-buy"
-                    href="${escapeHtml(p.amazonUrl)}"
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
-                  >
-                    Buy Now <span>→</span>
-                  </a>
-
-                </div>
-
-              </article>
-
-            `).join("")}
-
-          </div>
-
-        </section>
-      `;
-
-    })
-    .join("")
-
-    ||'<div class="empty-state">No products are available yet.</div>';
-}
-
-
-// ==========================================================
-// FILTER PRODUCTS
-// ==========================================================
-
 function render(){
-
-  const q=state.query
-    .trim()
-    .toLowerCase();
-
-  let visible=0;
-
-
-  document
-    .querySelectorAll(".category-section")
-    .forEach(section=>{
-
-      const cat=section.dataset.category;
-
-      let matches=0;
-
-
-      section
-        .querySelectorAll(".product-card")
-        .forEach(card=>{
-
-          const categoryMatch=
-            state.category==="all"||
-            state.category===cat;
-
-
-          const searchMatch=
-            !q||
-            card.textContent
-              .toLowerCase()
-              .includes(q);
-
-
-          const ok=
-            categoryMatch&&
-            searchMatch;
-
-
-          card.hidden=!ok;
-
-
-          if(ok){
-            matches++;
-            visible++;
-          }
-
-        });
-
-
-      section.hidden=matches===0;
-
-    });
-
-
-  count.textContent=
-    visible
-      ?`${visible} products`
-      :"No products found";
-
-
-  mobileCount.textContent=
-    `${visible} ${
-      visible===1
-        ?"product"
-        :"products"
-    }`;
-
-
-  reset.style.display=
-    (
-      state.category!=="all"||
-      q
-    )
-      ?"block"
-      :"none";
-
-
-  clear.style.display=
-    q
-      ?"block"
-      :"none";
+  if(!catalogue)return;
+  const q=state.query.trim().toLowerCase();
+  const filtered=catalogue.products.filter(p=>
+    (state.category==="all"||p.category===state.category)&&
+    (!q||[p.title,p.categoryLabel,p.category].some(v=>String(v||"").toLowerCase().includes(q)))
+  );
+  const pages=Math.max(1,Math.ceil(filtered.length/PAGE_SIZE));
+  state.page=Math.min(Math.max(1,state.page),pages);
+  const offset=(state.page-1)*PAGE_SIZE;
+  const shown=filtered.slice(offset,offset+PAGE_SIZE);
+  const categories=new Map(catalogue.categories.map(c=>[c.id,c]));
+  container.innerHTML=shown.length?'<div class="products-grid">'+shown.map(p=>{
+    const cat=categories.get(p.category)||{label:p.categoryLabel||"Products",icon:"🛍️"};
+    return `<article class="product-card">
+      <div class="product-visual">${productImg(p,p.category)}</div>
+      <div class="product-body">
+        <span class="badge ${badgeClass(p)}">${escapeHtml(rankLabel(p))}</span>
+        <p class="product-name">${escapeHtml(p.title)}</p>
+        <div class="product-meta">★ ${escapeHtml(ratingLabel(p))}</div>
+        <p class="product-why">${escapeHtml(cat.label)}</p>
+        <a class="product-buy" href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Buy Now <span>→</span></a>
+      </div>
+    </article>`;
+  }).join("")+'</div>':'<div class="empty-state">No products found.</div>';
+  count.textContent=filtered.length
+    ?`Showing ${offset+1}–${offset+shown.length} of ${filtered.length} products`
+    :"No products found";
+  mobileCount.textContent=`${filtered.length} ${filtered.length===1?"product":"products"}`;
+  reset.style.display=(state.category!=="all"||q)?"block":"none";
+  clear.style.display=q?"block":"none";
+  pagination.innerHTML=filtered.length>PAGE_SIZE
+    ?`<button type="button" data-page="${state.page-1}" ${state.page===1?"disabled":""}>← Previous</button>
+      <span>Page ${state.page} of ${pages}</span>
+      <button type="button" data-page="${state.page+1}" ${state.page===pages?"disabled":""}>Next →</button>`:"";
+  pagination.querySelectorAll("button[data-page]").forEach(button=>
+    button.addEventListener("click",()=>{
+      state.page=Number(button.dataset.page);
+      render();
+      document.getElementById("deals").scrollIntoView({behavior:"smooth",block:"start"});
+    })
+  );
 }
 
 
@@ -537,6 +278,7 @@ function applySearch(
 ){
 
   state.query=value;
+  state.page=1;
 
   search.value=value;
 
@@ -567,6 +309,7 @@ function setupSearch(){
     e=>{
 
       state.query=e.target.value;
+      state.page=1;
 
       if(navSearch){
         navSearch.value=e.target.value;
@@ -585,6 +328,7 @@ function setupSearch(){
       e=>{
 
         state.query=e.target.value;
+      state.page=1;
 
         search.value=e.target.value;
 
@@ -634,6 +378,7 @@ function setupSearch(){
     ()=>{
 
       state.category="all";
+      state.page=1;
       state.query="";
 
       search.value="";
@@ -708,13 +453,10 @@ async function load(){
     }
 
 
-    renderHero();
 
     renderCategoryNavigation();
 
-    renderFeatured();
 
-    renderProducts();
 
     setupSearch();
 
@@ -727,7 +469,7 @@ async function load(){
         :null;
 
 
-    updated.textContent=
+    if(updated) updated.textContent=
       when&&!Number.isNaN(when.valueOf())
         ?"Updated "+
           when.toLocaleDateString(
@@ -753,15 +495,12 @@ async function load(){
     );
 
 
-    heroShowcase.innerHTML="";
 
 
     categoryCards.innerHTML=
       '<div class="empty-state">Categories unavailable.</div>';
 
 
-    featured.innerHTML=
-      '<div class="empty-state">Top picks are temporarily unavailable.</div>';
 
 
     container.innerHTML=
