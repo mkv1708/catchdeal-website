@@ -13,3 +13,28 @@ footer{background:#0e172a;color:#98a2b3}.footer-shell{max-width:1440px;margin:au
 
 /* Compact catalogue and pagination */
 .category-band{padding:14px 24px 4px}.category-card{min-height:76px;padding:9px 8px}.category-thumb{width:36px;height:32px;margin-bottom:4px}.section-shell{padding:24px 24px}.catalogue{border-top:0}.catalogue-head{margin-bottom:14px}.catalogue-head h1{font:800 clamp(1.45rem,2.4vw,2rem)/1.15 Manrope,sans-serif}.catalogue-intro{color:var(--muted);font-size:.78rem;margin-top:5px}.products-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.pagination{display:flex;align-items:center;justify-content:center;gap:16px;padding:24px 0 8px;font-size:.8rem;font-weight:700}.pagination button{border:1px solid var(--line);background:#fff;padding:10px 14px;border-radius:10px;cursor:pointer}.pagination button:disabled{opacity:.4;cursor:not-allowed}@media(max-width:880px){.products-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.category-band{padding:10px}.section-shell{padding:18px 14px}.products-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pagination{gap:10px}.pagination button{padding:9px}}
+
+/* Single prominent search and compact category browsing */
+.search-hero{background:radial-gradient(circle at 88% 10%,#ffe6d0,transparent 34%),linear-gradient(115deg,#fffaf4,#fff);padding:40px 24px 30px;border-bottom:1px solid #f4e8dd}
+.search-hero-inner{max-width:1040px;margin:auto;text-align:center}
+.search-hero h1{font:800 clamp(2rem,4vw,3.3rem)/1.12 Manrope,sans-serif;letter-spacing:-1.5px;margin:8px 0 10px}
+.search-hero h1 span{color:var(--orange)}
+.search-hero p{color:var(--muted);font-size:.93rem;line-height:1.5}
+.hero-search-form{display:flex;align-items:center;gap:8px;background:#fff;border:2px solid var(--orange);border-radius:999px;padding:6px;margin:22px auto 12px;max-width:880px;box-shadow:0 12px 30px rgba(255,107,0,.11)}
+.hero-search-field{display:flex;align-items:center;gap:12px;flex:1;min-width:0;text-align:left;padding:0 15px;color:#475467;font-size:1.5rem}
+.hero-search-field input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);font-size:1rem;padding:13px 0}
+.hero-search-submit{border:0;border-radius:999px;background:linear-gradient(135deg,var(--orange),var(--orange2));color:#fff;padding:15px 38px;font-weight:800;cursor:pointer;white-space:nowrap}
+.hero-search-submit:hover{filter:brightness(.96)}
+.popular-searches{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;font-size:.73rem;color:#475467}
+.popular-searches button{background:#fff;border:1px solid #e2e5eb;border-radius:999px;padding:7px 13px;cursor:pointer;color:#344054}
+.popular-searches button:hover{border-color:var(--orange);color:var(--orange)}
+.category-scroll{grid-template-columns:repeat(7,minmax(0,1fr));gap:9px}
+.category-card{min-width:0;min-height:82px}
+.category-card strong{line-height:1.3;text-align:center}
+.catalogue-toolbar{top:88px}
+.empty-state:has(.product-buy){max-width:900px;margin:0 auto;padding:34px 24px;background:linear-gradient(110deg,#fff9f2,#fff);border:1px solid #ffe1c7}
+.empty-state h3{font:800 clamp(1.2rem,2.3vw,1.65rem) Manrope,sans-serif;color:var(--ink);margin-bottom:8px}
+.empty-state p{font-size:.85rem;line-height:1.5;margin-bottom:18px}
+.empty-state .product-buy{max-width:500px;margin:auto;font-size:.9rem;padding:15px}
+@media(max-width:880px){.category-scroll{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:600px){.search-hero{padding:28px 14px 24px}.search-hero h1{font-size:2rem}.search-hero p{font-size:.82rem}.hero-search-form{padding:5px;gap:4px}.hero-search-field{padding:0 8px;gap:6px}.hero-search-field input{font-size:.82rem}.hero-search-submit{padding:12px 14px;font-size:.8rem}.category-scroll{display:flex;overflow-x:auto}.category-card{min-width:110px}.catalogue-toolbar{top:76px}.empty-state:has(.product-buy){padding:24px 14px}}
