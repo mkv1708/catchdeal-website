@@ -247,11 +247,20 @@ function render(){
         <a class="product-buy" href="${escapeHtml(p.amazonUrl)}" target="_blank" rel="nofollow sponsored noopener">Buy Now <span>→</span></a>
       </div>
     </article>`;
-  }).join("")+'</div>':'<div class="empty-state">No products found.</div>';
+  }).join("")+'</div>':q
+    ?`<div class="empty-state">
+        <h3>Explore more options on Amazon</h3>
+        <p>Continue your search for “${escapeHtml(state.query.trim())}” on Amazon India.</p>
+        <a class="product-buy" href="https://www.amazon.in/s?k=${encodeURIComponent(state.query.trim()).replace(/'/g,"%27")}&amp;tag=facebook011b-21" target="_blank" rel="nofollow sponsored noopener">See results on Amazon <span>↗</span></a>
+        <small>Affiliate link · Opens Amazon India</small>
+      </div>`
+    :'<div class="empty-state">Explore more products by choosing another category.</div>';
   count.textContent=filtered.length
     ?`Showing ${offset+1}–${offset+shown.length} of ${filtered.length} products`
-    :"No products found";
-  mobileCount.textContent=`${filtered.length} ${filtered.length===1?"product":"products"}`;
+    :q?"Explore more options on Amazon":"Explore other categories";
+  mobileCount.textContent=filtered.length
+    ?`${filtered.length} ${filtered.length===1?"product":"products"}`
+    :q?"Explore on Amazon":"Explore categories";
   reset.style.display=(state.category!=="all"||q)?"block":"none";
   clear.style.display=q?"block":"none";
   pagination.innerHTML=filtered.length>PAGE_SIZE
