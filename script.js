@@ -9,8 +9,8 @@ const featured=document.getElementById("featured-products");
 const pagination=document.getElementById("pagination");
 const heroShowcase=document.getElementById("hero-showcase");
 const search=document.getElementById("product-search");
-const navSearch=document.getElementById("nav-search");
-const clear=document.getElementById("clear-search");
+const searchForm=document.getElementById("search-form");
+
 const reset=document.getElementById("reset-filters");
 const count=document.getElementById("results-count");
 const mobileCount=document.getElementById("mobile-count");
@@ -252,7 +252,6 @@ function render(){
         <h3>Explore more options on Amazon</h3>
         <p>Continue your search for “${escapeHtml(state.query.trim())}” on Amazon India.</p>
         <a class="product-buy" href="https://www.amazon.in/s?k=${encodeURIComponent(state.query.trim()).replace(/'/g,"%27")}&amp;tag=facebook011b-21" target="_blank" rel="nofollow sponsored noopener">See results on Amazon <span>↗</span></a>
-        <small>Affiliate link · Opens Amazon India</small>
       </div>`
     :'<div class="empty-state">Explore more products by choosing another category.</div>';
   count.textContent=filtered.length
@@ -262,7 +261,6 @@ function render(){
     ?`${filtered.length} ${filtered.length===1?"product":"products"}`
     :q?"Explore on Amazon":"Explore categories";
   reset.style.display=(state.category!=="all"||q)?"block":"none";
-  clear.style.display=q?"block":"none";
   pagination.innerHTML=filtered.length>PAGE_SIZE
     ?`<button type="button" data-page="${state.page-1}" ${state.page===1?"disabled":""}>← Previous</button>
       <span>Page ${state.page} of ${pages}</span>
@@ -281,143 +279,29 @@ function render(){
 // SEARCH
 // ==========================================================
 
-function applySearch(
-  value,
-  scroll=true
-){
-
+function applySearch(value,scroll=true){
   state.query=value;
+  state.category="all";
   state.page=1;
-
   search.value=value;
-
-  if(navSearch){
-    navSearch.value=value;
-  }
-
+  document.querySelectorAll(".tab").forEach(tab=>
+    tab.classList.toggle("active",tab.dataset.category==="all")
+  );
+  document.querySelectorAll(".category-card").forEach(card=>card.classList.remove("active"));
   render();
-
-
-  if(scroll){
-
-    document
-      .getElementById("deals")
-      ?.scrollIntoView({
-        behavior:"smooth",
-        block:"start"
-      });
-
-  }
+  if(scroll)document.getElementById("deals")?.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-
 function setupSearch(){
-
-  search.addEventListener(
-    "input",
-    e=>{
-
-      state.query=e.target.value;
-      state.page=1;
-
-      if(navSearch){
-        navSearch.value=e.target.value;
-      }
-
-      render();
-
-    }
+  search.addEventListener("input",event=>applySearch(event.target.value,false));
+  searchForm.addEventListener("submit",event=>{
+    event.preventDefault();
+    applySearch(search.value);
+  });
+  document.querySelectorAll("[data-search-term]").forEach(button=>
+    button.addEventListener("click",()=>applySearch(button.dataset.searchTerm))
   );
-
-
-  if(navSearch){
-
-    navSearch.addEventListener(
-      "input",
-      e=>{
-
-        state.query=e.target.value;
-      state.page=1;
-
-        search.value=e.target.value;
-
-        render();
-
-      }
-    );
-
-
-    navSearch.addEventListener(
-      "keydown",
-      e=>{
-
-        if(e.key==="Enter"){
-
-          e.preventDefault();
-
-          applySearch(
-            navSearch.value
-          );
-
-        }
-
-      }
-    );
-
-  }
-
-
-  clear.addEventListener(
-    "click",
-    ()=>{
-
-      applySearch(
-        "",
-        false
-      );
-
-      search.focus();
-
-    }
-  );
-
-
-  reset.addEventListener(
-    "click",
-    ()=>{
-
-      state.category="all";
-      state.page=1;
-      state.query="";
-
-      search.value="";
-
-      if(navSearch){
-        navSearch.value="";
-      }
-
-
-      document
-        .querySelectorAll(".tab")
-        .forEach(t=>
-          t.classList.toggle(
-            "active",
-            t.dataset.category==="all"
-          )
-        );
-
-
-      document
-        .querySelectorAll(".category-card")
-        .forEach(t=>
-          t.classList.remove("active")
-        );
-
-
-      render();
-
-    }
-  );
+  reset.addEventListener("click",()=>applySearch(""));
 }
 
 
