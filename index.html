@@ -128,23 +128,6 @@
       </nav>
 
 
-      <label class="nav-search">
-
-        <span>
-          ⌕
-        </span>
-
-        <input
-          id="nav-search"
-          type="search"
-          placeholder="Search products..."
-          autocomplete="off"
-          aria-label="Search products"
-        >
-
-      </label>
-
-
       <a
         class="nav-action"
         href="#deals"
@@ -164,6 +147,27 @@
 
   <main>
 
+
+    <section class="search-hero" id="search">
+      <div class="search-hero-inner">
+        <span class="eyebrow">Find your next favourite</span>
+        <h1>Find it. Love it. <span>Explore more.</span></h1>
+        <p>Search CatchDeal’s picks, then explore more options on Amazon India.</p>
+        <form id="search-form" class="hero-search-form" role="search">
+          <label class="hero-search-field" for="product-search"><span aria-hidden="true">⌕</span>
+            <input id="product-search" type="search" placeholder="Search products, brands or anything…" autocomplete="off" aria-label="Search products">
+          </label>
+          <button type="submit" class="hero-search-submit">Search <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="popular-searches"><strong>Popular searches:</strong>
+          <button type="button" data-search-term="laptop">Laptop</button>
+          <button type="button" data-search-term="wireless earbuds">Wireless earbuds</button>
+          <button type="button" data-search-term="smart watch">Smart watch</button>
+          <button type="button" data-search-term="gaming chair">Gaming chair</button>
+          <button type="button" data-search-term="coffee maker">Coffee maker</button>
+        </div>
+      </div>
+    </section>
 
     <!-- ===================================================
          CATEGORY CARDS
@@ -219,34 +223,6 @@
              =============================================== -->
 
         <div class="catalogue-toolbar">
-
-
-          <label class="search-box">
-
-            <span aria-hidden="true">
-              ⌕
-            </span>
-
-
-            <input
-              id="product-search"
-              type="search"
-              placeholder="Search products..."
-              autocomplete="off"
-              aria-label="Search products"
-            >
-
-
-            <button
-              id="clear-search"
-              type="button"
-              aria-label="Clear search"
-            >
-              ×
-            </button>
-
-          </label>
-
 
 
           <div
@@ -411,7 +387,7 @@
     </span>
 
 
-    <a href="#top-deals">
+    <a href="#search">
       Shop now
     </a>
 
