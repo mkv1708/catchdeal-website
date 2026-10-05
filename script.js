@@ -1,6 +1,6 @@
 const state={category:"all",query:"",page:1};
 const PAGE_SIZE=15;
-let catalogue=null;
+let catalogue=null;\nlet searchIndex={terms:{}};
 
 const container=document.getElementById("products-container");
 const tabsWrap=document.getElementById("category-tabs");
@@ -224,7 +224,25 @@ function renderCategoryNavigation(){
 function loadSearchPicture(term){
   const slot=document.getElementById("search-picture");
   if(!slot||!term.trim())return;
-  slot.innerHTML=`<div class="search-picture-placeholder" aria-hidden="true">⌕</div>`;
+
+  const query=term.trim().toLowerCase();
+  const terms=searchIndex?.terms||{};
+  const exact=terms[query];
+  const related=exact||Object.entries(terms).find(([key])=>
+    key.includes(query)||query.includes(key)
+  )?.[1];
+  const product=related?.[0];
+
+  if(!product?.imageUrl){
+    slot.innerHTML='<div class="search-picture-placeholder" aria-hidden="true">⌕</div>';
+    return;
+  }
+
+  slot.innerHTML=`<img src="${escapeHtml(product.imageUrl)}"
+    alt="${escapeHtml(product.title||term)}"
+    loading="lazy"
+    referrerpolicy="no-referrer"
+    onerror="this.parentElement.innerHTML='<div class=&quot;search-picture-placeholder&quot; aria-hidden=&quot;true&quot;>⌕</div>'">`;
 }
 
 // ==========================================================
@@ -344,7 +362,7 @@ async function load(){
     }
 
 
-    catalogue=await r.json();
+    catalogue=await r.json();\n\n    try{\n      const searchResponse=await fetch("data/search_index.json?ts="+Date.now(),{cache:"no-store"});\n      if(searchResponse.ok)searchIndex=await searchResponse.json();\n    }catch(error){\n      console.warn("Search image index unavailable:",error);\n    }
 
 
     if(
