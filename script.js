@@ -1,6 +1,8 @@
 const state={category:"all",query:"",page:1};
 const PAGE_SIZE=15;
-let catalogue=null;\nlet searchIndex={terms:{}};
+let catalogue=null;
+let searchIndex={terms:{}};
+let searchIndexRequest=null;
 
 const container=document.getElementById("products-container");
 const tabsWrap=document.getElementById("category-tabs");
@@ -225,6 +227,20 @@ function loadSearchPicture(term){
   const slot=document.getElementById("search-picture");
   if(!slot||!term.trim())return;
 
+  if(!searchIndexRequest&&Object.keys(searchIndex.terms).length===0){
+    searchIndexRequest=fetchJson("data/search_index.json")
+      .then(data=>{
+        if(!data.terms||typeof data.terms!=="object"||Array.isArray(data.terms)){
+          throw new Error("Invalid search index");
+        }
+        searchIndex=data;
+        if(state.query.trim())loadSearchPicture(state.query.trim());
+      })
+      .catch(error=>{
+        console.warn("Search image index unavailable:",error);
+        searchIndexRequest=null;
+      });
+  }
   const query=term.trim().toLowerCase();
   const terms=searchIndex?.terms||{};
   const exact=terms[query];
@@ -340,102 +356,44 @@ function setupSearch(){
 // LOAD COLLECTOR DATA
 // ==========================================================
 
-async function load(){
-
+// Revalidate cached data and bound both download and JSON parsing time.
+async function fetchJson(url){
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),10000);
   try{
+    const response=await fetch(url,{cache:"no-cache",signal:controller.signal});
+    if(!response.ok)throw new Error(`Unable to fetch ${url}: ${response.status}`);
+    return await response.json();
+  }finally{
+    clearTimeout(timer);
+  }
+}
 
-    const r=await fetch(
-      "data/products.json?ts="+
-      Date.now(),
-      {
-        cache:"no-store"
-      }
-    );
-
-
-    if(!r.ok){
-
-      throw new Error(
-        "Product catalogue unavailable"
-      );
-
+async function load(){
+  count.textContent="Loading products…";
+  container.innerHTML='<div class="loading-card" role="status">Loading current products…</div>';
+  try{
+    const data=await fetchJson("data/products.json");
+    if(!Array.isArray(data.products)||!Array.isArray(data.categories)){
+      throw new Error("Invalid product catalogue");
     }
-
-
-    catalogue=await r.json();\n\n    try{\n      const searchResponse=await fetch("data/search_index.json?ts="+Date.now(),{cache:"no-store"});\n      if(searchResponse.ok)searchIndex=await searchResponse.json();\n    }catch(error){\n      console.warn("Search image index unavailable:",error);\n    }
-
-
-    if(
-      !Array.isArray(catalogue.products)||
-      !Array.isArray(catalogue.categories)
-    ){
-
-      throw new Error(
-        "Invalid product catalogue"
-      );
-
-    }
-
-
-
+    catalogue=data;
     renderCategoryNavigation();
-
-
-
-    setupSearch();
-
     render();
-
-
-    const when=
-      catalogue.generatedAt
-        ?new Date(catalogue.generatedAt)
-        :null;
-
-
-    if(updated) updated.textContent=
-      when&&!Number.isNaN(when.valueOf())
-        ?"Updated "+
-          when.toLocaleDateString(
-            "en-IN",
-            {
-              day:"numeric",
-              month:"short"
-            }
-          )
-        :"Fresh products";
-
-
-    console.log(
-      `CatchDeal loaded ${catalogue.products.length} products`
-    );
-
+    const when=catalogue.generatedAt?new Date(catalogue.generatedAt):null;
+    if(updated)updated.textContent=when&&!Number.isNaN(when.valueOf())
+      ?"Updated "+when.toLocaleDateString("en-IN",{day:"numeric",month:"short"})
+      :"Fresh products";
+    console.log(`CatchDeal loaded ${catalogue.products.length} products`);
+  }catch(error){
+    console.error("Unable to load CatchDeal products:",error);
+    categoryCards.innerHTML='<div class="empty-state">Categories unavailable.</div>';
+    container.innerHTML='<div class="empty-state" role="status"><p>We could not load products right now.</p><button type="button" id="retry-products" class="product-buy">Try again</button></div>';
+    count.textContent="Products unavailable";
+    mobileCount.textContent="Try again";
+    pagination.innerHTML="";
+    document.getElementById("retry-products").addEventListener("click",load);
   }
-  catch(err){
-
-    console.error(
-      "Unable to load CatchDeal products:",
-      err
-    );
-
-
-
-
-    categoryCards.innerHTML=
-      '<div class="empty-state">Categories unavailable.</div>';
-
-
-
-
-    container.innerHTML=
-      '<div class="empty-state">We could not load products right now.</div>';
-
-
-    count.textContent=
-      "Products unavailable";
-
-  }
-
 }
 
 
@@ -449,4 +407,5 @@ document.getElementById(
   new Date().getFullYear();
 
 
+setupSearch();
 load();
