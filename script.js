@@ -219,52 +219,12 @@ function renderCategoryNavigation(){
 // FEATURED / TOP PICKS
 // ==========================================================
 
-// Look up a representative picture only for searches without catalogue matches.
-// Commons pictures are illustrations, not Amazon product listings.
-let pictureRequest=0;
-let pictureTimer=null;
-const pictureCache=new Map();
-
+// Use a clean CatchDeal fallback for searches without catalogue matches.
+// We intentionally do not fetch unrelated third-party pictures.
 function loadSearchPicture(term){
-  const request=++pictureRequest;
-  clearTimeout(pictureTimer);
   const slot=document.getElementById("search-picture");
   if(!slot||!term.trim())return;
-  const key=term.trim().toLowerCase();
-  const show=picture=>{
-    if(request!==pictureRequest||!document.getElementById("search-picture"))return;
-    if(!picture){slot.innerHTML='<span class="search-picture-placeholder" aria-hidden="true">🛍️</span>';return;}
-    slot.innerHTML=`<img src="${escapeHtml(picture.url)}" alt="Illustration related to ${escapeHtml(term)}" loading="lazy" referrerpolicy="no-referrer"><a href="${escapeHtml(picture.page)}" target="_blank" rel="noopener noreferrer">Image source and credits ↗</a>`;
-    slot.querySelector("img").addEventListener("error",()=>{if(request===pictureRequest)slot.innerHTML='<span class="search-picture-placeholder" aria-hidden="true">🛍️</span>';},{once:true});
-  };
-  if(pictureCache.has(key)){show(pictureCache.get(key));return;}
-  pictureTimer=setTimeout(async()=>{
-    try{
-      const url=new URL("https://commons.wikimedia.org/w/api.php");
-      url.search=new URLSearchParams({
-        action:"query",format:"json",origin:"*",generator:"search",
-        gsrsearch:term.trim(),gsrnamespace:"6",gsrlimit:"12",
-        prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"480"
-      }).toString();
-      const response=await fetch(url.toString());
-      if(!response.ok)throw new Error("Picture search unavailable");
-      const data=await response.json();
-      const words=key.match(/[a-z0-9]+/g)?.filter(word=>word.length>2)||[];
-      const pictures=Object.values(data.query?.pages||{}).filter(page=>{
-        const name=page.title?.replace(/^File:/i,"").replace(/[_-]/g," ").toLowerCase()||"";
-        const info=page.imageinfo?.[0];
-        const license=info?.extmetadata?.LicenseShortName?.value||"";
-        return words.length>0&&words.every(word=>name.includes(word))&&
-          /^(cc0|public domain|pd)/i.test(license)&&
-          /^https:\/\//.test(info?.thumburl||"")&&
-          /^https:\/\//.test(info?.descriptionurl||"");
-      });
-      const found=pictures[0]?.imageinfo?.[0];
-      const picture=found?{url:found.thumburl,page:found.descriptionurl}:null;
-      pictureCache.set(key,picture);
-      show(picture);
-    }catch(error){show(null);}
-  },450);
+  slot.innerHTML=`<div class="search-picture-placeholder" aria-hidden="true">⌕</div>`;
 }
 
 // ==========================================================
@@ -306,7 +266,7 @@ function render(){
       </div>`
     :'<div class="empty-state">Explore more products by choosing another category.</div>';
   if(!shown.length&&q)loadSearchPicture(state.query.trim());
-  else{++pictureRequest;clearTimeout(pictureTimer);}
+
   count.textContent=filtered.length
     ?`Showing ${offset+1}–${offset+shown.length} of ${filtered.length} products`
     :q?"Explore more options on Amazon":"Explore other categories";
