@@ -20,5 +20,10 @@ GitHub supplies a short-lived `GITHUB_TOKEN` automatically for each job.
 - Failure details appear in the Actions run. GitHub's personal Actions notification
   settings control failure emails; they are not changed by this workflow.
 
-The former private collector repository is retained for history with its schedule
-removed after migration. Update the scripts here for future changes.
+The former private collector repository is retained for history. Its old workflow
+is disabled after the new refresh and recovery deployments were verified. Update the scripts here for future changes.
+
+The optional voice/shortcut endpoint in `catchdeal-refresh-trigger` dispatches
+`refresh-and-deploy.yml` in this repository. Its separate `GITHUB_TRIGGER_TOKEN`
+needs Actions write access here; the scheduled refresh and Pages deployment do
+not use that credential.
