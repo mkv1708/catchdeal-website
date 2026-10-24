@@ -82,6 +82,14 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      - name: Keep failed collection diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-collection-${{ github.run_id }}
+          path: staging/
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Refresh summary
         if: always()
         run: |

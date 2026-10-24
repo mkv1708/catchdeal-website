@@ -60,10 +60,15 @@ def clean_text(value):
 
 def collect_term(page, term):
     url = f"https://www.amazon.in/s?k={quote_plus(term)}"
-    page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
     page.wait_for_timeout(1800)
 
     cards = page.locator('div[data-component-type="s-search-result"]')
+    try:
+        cards.first.wait_for(state="visible", timeout=5000)
+    except Exception:
+        print(f"  No result cards: status={response.status if response else 'unknown'}, title={page.title()!r}")
+        return []
     results = []
     seen = set()
 
@@ -100,15 +105,16 @@ def collect_term(page, term):
     return results
 
 
-def main():
+def collect_entries(page, terms):
     entries = {}
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=IS_CI)
-        context = browser.new_context(viewport={"width": 1440, "height": 1000})
-        page = context.new_page()
-
-        for number, term in enumerate(SEARCH_TERMS, 1):
-            print(f"[{number}/{len(SEARCH_TERMS)}] Searching: {term}")
+    # Retry only empty/failed searches, once, after the first pass. This gives
+    # slow result pages another chance without repeatedly fetching successes.
+    for attempt in range(2):
+        missing = [term for term in terms if term not in entries]
+        if not missing:
+            break
+        for number, term in enumerate(missing, 1):
+            print(f"[pass {attempt + 1}, {number}/{len(missing)}] Searching: {term}")
             try:
                 results = collect_term(page, term)
                 if results:
@@ -118,7 +124,15 @@ def main():
                     print("  No valid products")
             except Exception as error:
                 print(f"  Search failed: {error}")
+    return entries
 
+
+def main():
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=IS_CI)
+        context = browser.new_context(viewport={"width": 1440, "height": 1000})
+        page = context.new_page()
+        entries = collect_entries(page, SEARCH_TERMS)
         browser.close()
 
     data = {
