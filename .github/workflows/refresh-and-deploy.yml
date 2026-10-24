@@ -1,0 +1,105 @@
+name: Refresh CatchDeal and deploy
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
+      - '**.md'
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: Collect fresh Amazon products before publishing
+        type: boolean
+        default: true
+  schedule:
+    # Monday 07:20 in Dubai (03:20 UTC).
+    - cron: '20 3 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catchdeal-publishing
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install collector dependencies
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh
+        run: |
+          python -m pip install -r collector/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Collect new catalogue and search index
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh
+        env:
+          CI: 'true'
+          PYTHONUNBUFFERED: '1'
+        run: |
+          mkdir -p staging
+          cd staging
+          python ../collector/category_collector.py > catalogue.log 2>&1 &
+          catalogue_pid=$!
+          python ../collector/search_index_collector.py > search.log 2>&1 &
+          search_pid=$!
+          result=0
+          wait "$catalogue_pid" || result=1
+          wait "$search_pid" || result=1
+          cat catalogue.log search.log
+          exit "$result"
+      - name: Validate both fresh datasets before replacing published data
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh
+        run: |
+          python scripts/validate_catalogue.py staging --baseline data
+          cp staging/products.json data/products.json
+          cp staging/search_index.json data/search_index.json
+      - name: Record validated catalogue in this repository
+        if: github.event_name != 'workflow_dispatch' || inputs.refresh
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/products.json data/search_index.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh validated CatchDeal catalogue'
+            git push origin HEAD:main
+          fi
+      - name: Validate and package website
+        run: |
+          python scripts/validate_catalogue.py data
+          node --check script.js
+          python scripts/package_site.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Refresh summary
+        if: always()
+        run: |
+          echo '### CatchDeal refresh' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Only validated catalogue and search data are published. A failed build leaves the last deployed site online.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'No personal access token or cross-repository checkout is used.' >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy validated website
+        id: deployment
+        uses: actions/deploy-pages@v4
